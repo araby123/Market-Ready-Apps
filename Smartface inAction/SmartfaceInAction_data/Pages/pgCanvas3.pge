@@ -1,0 +1,10 @@
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<Page name="pgCanvas3" id="A8B1486B-439F-472A-B5D2-492322C96C14" backgroundImage="00000000-0000-0000-0000-100000000001" fillColor="#333333" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="true" showNavigationBar="true" showActionBar="true" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<controls>
+				<Canvas name="cnvsLineGraph2" id="A44C3865-5C09-490D-BEC4-8B56D8200301" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="95.6249833106995%" height="38.1249964237213%" left="0%" top="20.4199999570847%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" loopPeriod="50" loopEnabled="true" onDraw="pgCanvas3_cnvsLineGraph2_OnDraw(e);" />
+			</controls>
+			<EVENTS onShow="pgCanvas3_Self_OnShow(e);" onKeyPress="pgCanvas3_Self_OnKeyPress(e);" />
+		</Page>
+	</UI>
+</SMF>
