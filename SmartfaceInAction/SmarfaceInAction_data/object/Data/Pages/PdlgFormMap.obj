@@ -1,0 +1,58 @@
+<PG ID="FE3D5551-7658-4297-81F3-1C6849E10094" Type="1" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="dlgFormMap" BgClr="f0f0f0" BgTparent="1" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" EnableTabBar="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" TouchEnabled="1">
+	<EDGE X="0%" Y="0%" W="1000%" H="1000%" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<RECT ID="7A136CB1-7363-496C-B31A-25BFDA294A59" Nm="rectBackground" Vsb="1" Alpha="93" TouchEnabled="1" Clr="222222" BrW="0" Fill="1" BrClr="666666" PxlEdg="0">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<ROT Angle="0" />
+			<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+		</RECT>
+		<PIC ID="D09EB324-8C74-4311-97AE-45B15788C497" Nm="imgClose" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="431%" Y="24%" W="138%" H="96%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="15" SMode="1" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://closer.png" />
+			</DATA>
+			<ONTOUCHENDED script="dlgFormMap_imgClose_OnTouchEnded(e);" />
+		</PIC>
+		<CONTAINER ID="F14C2227-07EF-4450-BDD4-F50A6FC01773" Nm="cntItems" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="100%" Y="150%" W="800%" H="700%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="1" LayoutOrientation="1" LayoutAlignment="0" LayoutHorizontalGap="0" LayoutVerticalGap="0" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<CONTAINER ID="7A748659-A35F-43D9-8E0B-3F4337931835" Nm="cntItem1" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="50%" Y="0%" W="1000%" H="400%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<LBL ID="D84CEAA7-DDC3-462F-8976-BD75204AFB1A" Nm="lblDescription1" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="225%" Y="173%" W="732%" H="588%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.formMap" />
+							</DATA>
+						</LBL>
+						<PIC ID="F99580AA-6D9E-446D-BE15-58CB759A71C8" Nm="imgIcon1" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="64%" Y="153%" W="156%" H="252%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="7" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+						</PIC>
+					</ITEMS>
+				</CONTAINER>
+			</ITEMS>
+		</CONTAINER>
+		<PIC ID="15139C0F-D45B-4800-A00C-32A4E3FB2DA8" Nm="imgInfo" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="0%" Y="750%" W="1000%" H="250%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="15" SMode="1" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://info_logo.png" />
+			</DATA>
+		</PIC>
+	</BODY>
+	<EVENTS>
+		<ONKEYP script="dlgFormMap_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

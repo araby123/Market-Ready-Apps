@@ -1,0 +1,181 @@
+<PG ID="61FDC7A7-2F9D-4F78-894D-0E3F5221AABE" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgMap1" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<MAPVIEW ID="90AF8B17-DBCC-4705-9017-5AACEDEA2858" Nm="map" Vsb="1" MapType="0" CenterLatitude="37,3835747" CenterLongitude="-121,9985353" ZoomLevel="10" EnableZoom="1" EnableScroll="1" ShowUserLocation="0" ShowPins="1" TouchEnabled="1">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<DATA>
+				<PRM Nm="Bind1" Val="" />
+				<PRM Nm="Bind2" Val="" />
+				<PRM Nm="Bind3" Val="" />
+				<PRM Nm="Bind4" Val="" />
+				<PRM Nm="Bind5" Val="" />
+				<PRM Nm="Bind6" Val="" />
+			</DATA>
+			<ONPINSELECTED script="pgMap1_map_OnPINSelected(e);" />
+			<ONLONGTOUCH script="pgMap1_map_OnLongTouch(e);" />
+		</MAPVIEW>
+		<CONTAINER ID="3CFE6807-39A7-4375-8258-3B309499E290" Nm="contFilterType" Vsb="0" TouchEnabled="1" AutoSize="0">
+			<LCT X="50%" Y="43043d" W="900%" H="4025d" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<RECT ID="B97F82F7-2B19-4B14-A008-AA50D5347F21" Nm="recBackgroundofFilterType" Vsb="1" Alpha="87" TouchEnabled="1" Clr="333333" BrW="0" Fill="1" BrClr="666666" PxlEdg="6">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<BTN ID="A676B147-3B3B-4A5C-88EF-C4EB6FF1624D" Nm="imgBtnAll" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="87%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="64" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="all.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_imgBtnAll_OnPressed(e);" />
+				</BTN>
+				<BTN ID="D6324121-70B1-49A2-B351-FDD50E8D9EF2" Nm="imgBtnTriangle" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="314%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="64" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="ucgen.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_imgBtnTriangle_OnPressed(e);" />
+				</BTN>
+				<BTN ID="5394B6FE-85B5-4AF1-B4B8-D38B7B766815" Nm="imgBtnSquare" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="543%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="64" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="square.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_imgBtnSquare_OnPressed(e);" />
+				</BTN>
+				<BTN ID="F0A0A6B4-F6FF-44E8-B403-B74F43392DAF" Nm="imgBtnCircle" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="771%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="64" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="circle.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_imgBtnCircle_OnPressed(e);" />
+				</BTN>
+				<RECT ID="A4941B5F-64E1-4334-8573-1CB5BE61000D" Nm="rectForBtnAll" Vsb="1" Alpha="30" TouchEnabled="1" Clr="00ccff" BrW="0" Fill="1" BrClr="666666" PxlEdg="6">
+					<LCT X="87%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<RECT ID="B926D939-CFB6-4050-847B-76D1A774B740" Nm="rectForBtnTriangle" Vsb="0" Alpha="30" TouchEnabled="1" Clr="00ccff" BrW="0" Fill="1" BrClr="666666" PxlEdg="4">
+					<LCT X="314%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<RECT ID="5D1C2377-C97C-4C82-A88A-D527D4066E6D" Nm="rectForBtnSquare" Vsb="0" Alpha="30" TouchEnabled="1" Clr="00ccff" BrW="0" Fill="1" BrClr="666666" PxlEdg="6">
+					<LCT X="543%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<RECT ID="7674750A-635D-41FE-9F89-081DAEEE677A" Nm="rectForBtnCircle" Vsb="0" Alpha="30" TouchEnabled="1" Clr="00ccff" BrW="0" Fill="1" BrClr="666666" PxlEdg="6">
+					<LCT X="771%" Y="0%" W="142%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+			</ITEMS>
+		</CONTAINER>
+		<CONTAINER ID="927FF0C0-2ED3-4694-9F33-40BC1BBDEAE6" Nm="contFilter" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="50%" Y="800%" W="900%" H="150%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="333333" />
+			<ITEMS>
+				<RECT ID="87666413-EC17-4A70-B8B0-E0E15B031BB0" Nm="recBackgroundFilter" Vsb="1" Alpha="87" TouchEnabled="0" Clr="333333" BrW="0" Fill="1" BrClr="666666" PxlEdg="6">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<LBL ID="40B6408B-C8F9-47A0-AE52-526D56C64C87" Nm="lblNumberOfResults" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="660%" Y="98%" W="339%" H="500%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="9p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;6&quot;" />
+					</DATA>
+				</LBL>
+				<LBL ID="5B274532-FF3F-481A-89FF-0BD5A30D8776" Nm="lblResultsText" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="660%" Y="500%" W="339%" H="299%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="lang.mapResult" />
+					</DATA>
+				</LBL>
+				<BTN ID="3759803B-B0CB-4D8B-8DBB-94B7050BD993" Nm="btnFilter" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="339%" Y="213%" W="323%" H="567%" Z="0" Anc="2" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="1" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="filter.png" />
+						<HGHLIGHTD HighlightedResName="filter2.png" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_btnFilter_OnPressed(e);" />
+				</BTN>
+				<BTN ID="4D948D1E-8070-4887-A6E1-FD3CC362794B" Nm="btnMapType" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="100%" Y="206%" W="155%" H="681%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="15" SMode="1" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="world.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgMap1_btnMapType_OnPressed(e);" />
+				</BTN>
+			</ITEMS>
+			<ONTOUCH script="pgMap1_contFilter_OnTouch(e);" />
+			<ONTOUCHENDED script="pgMap1_contFilter_OnTouchEnded(e);" />
+		</CONTAINER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgMap1_Self_OnShow(e);" />
+		<ONKEYP script="pgMap1_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

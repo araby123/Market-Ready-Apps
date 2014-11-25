@@ -1,0 +1,248 @@
+<PG ID="AA98DF0E-8BA2-4F30-8F79-A0C59D9E3DE4" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgRegister" BgClr="f1f0ec" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="0" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<SCROLLVIEW ID="203DB084-F898-484E-8662-2FCFF92BDF1E" Nm="scrollMainRegister" Vsb="1" TouchEnabled="1">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" ContentW="1000%" ContentH="1648%" EnableVScrl="1" EnableHScrl="0" ShwVScrl="1" ShwHScrl="0" EnbZm="0" ScrlIndStyle="0" DclRate="0" ScrollX="0" ScrollY="0" EnableVPaging="0" EnableHPaging="0" AutoSize="0" />
+			<ITEMS>
+				<CONTAINER ID="28449808-16AD-4F68-B78F-2E988BB43441" Nm="contUserInfo1" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="188%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<PIC ID="DD566EA0-13F5-443B-B9A4-E3A059096CB4" Nm="imgTop" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="0%" W="1000%" H="811%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://back_photo.png" />
+							</DATA>
+						</PIC>
+						<CONTAINER ID="B09E1CA2-1DF6-464C-9973-8D7C7970A4E0" Nm="cntProfile" Vsb="1" TouchEnabled="1" AutoSize="0">
+							<LCT X="91%" Y="465%" W="256%" H="526%" Z="0" Anc="9" LockAutoSize="0" LockAutoPosition="0" />
+							<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+							<STYLE BrClr="ffffff" BrW="5" BgTparent="0" BgClr="ffffff" />
+							<ITEMS>
+								<PIC ID="D83C705F-8CFA-4954-B237-3BE464CB168C" Nm="imgProfile" Vsb="1" Alpha="100" TouchEnabled="1">
+									<LCT X="10%" Y="10%" W="980%" H="980%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<POS Pos="15" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="" />
+									</DATA>
+									<ONTOUCHENDED script="pgRegister_imgProfile_OnTouchEnded(e);" />
+								</PIC>
+							</ITEMS>
+						</CONTAINER>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="AF4EEE1E-8FD9-4053-8191-D611D9A8EAA1" Nm="contUserInfo2" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="-3%" Y="208%" W="1006%" H="258%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="c7c3be" BrW="1" BgTparent="0" BgClr="edebe7" />
+					<ITEMS>
+						<EDIT ID="5FAA47EF-5024-4F95-B6B4-5595233BE0E8" Nm="edtEmail" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+							<LCT X="54%" Y="0%" W="939%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<PlaceHolder>
+								<PRM Nm="Bind" Val="lang.email" />
+							</PlaceHolder>
+							<FONT FName="Default" FSize="8p" AdjustFSize="1" MinFSize="6" FColor="7a7a7a" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+							<ONRETURNKEY script="pgRegister_edtEmail_OnReturnKey(e);" />
+						</EDIT>
+						<LINE ID="E96F3619-F261-40D5-91E0-3E82668F39F8" Nm="lineDivideRow1" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
+							<LCT X="47%" Y="246%" W="947%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<EDIT ID="7DE9BBCC-6B0F-44A6-937C-39B4A179820F" Nm="edtPassword" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+							<LCT X="54%" Y="252%" W="939%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<PlaceHolder>
+								<PRM Nm="Bind" Val="lang.password" />
+							</PlaceHolder>
+							<FONT FName="Default" FSize="8p" AdjustFSize="1" MinFSize="6" FColor="7a7a7a" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+						</EDIT>
+						<LINE ID="2D92495F-3608-4003-8606-87D035056F15" Nm="lineDivideRow2" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
+							<LCT X="47%" Y="498%" W="947%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<LINE ID="BF0BB7CD-3B53-4CE7-BF7D-61178413BD17" Nm="lineDivideRow3" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
+							<LCT X="47%" Y="750%" W="947%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<EDIT ID="4C120B8C-CC70-4D53-8267-925CA23D6142" Nm="edtPhoneNumber" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="0" EnableClearButton="0" EnableUpperCase="0">
+							<LCT X="31%" Y="756%" W="939%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<PlaceHolder>
+								<PRM Nm="Bind" Val="lang.phoneNumber" />
+							</PlaceHolder>
+							<FONT FName="Default" FSize="8p" AdjustFSize="1" MinFSize="6" FColor="7a7a7a" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="15" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+							<ONENTER script="pgRegister_edtPhoneNumber_OnEnter(e);" />
+						</EDIT>
+						<LBL ID="A97FD246-AB03-4669-967F-467598F84157" Nm="lblBirthDate" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="5" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="54%" Y="504%" W="939%" H="243%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="1" MinFSize="6" FColor="bfb8b4" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.birthDate" />
+							</DATA>
+							<ONTOUCHENDED script="pgRegister_lblBirthDate_OnTouchEnded(e);" />
+						</LBL>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="5976EAEB-30EE-4973-8641-6D3BB0E9C6CC" Nm="contUserInfo3" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="0%" Y="467%" W="1000%" H="146%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<MAPVIEW ID="29B7819F-1311-4390-98EF-0F54003681E1" Nm="mapAddress" Vsb="1" MapType="1" CenterLatitude="41,037736" CenterLongitude="29,04532" ZoomLevel="20" EnableZoom="0" EnableScroll="0" ShowUserLocation="0" ShowPins="1" TouchEnabled="0">
+							<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<DATA>
+								<PRM Nm="Bind1" Val="" />
+								<PRM Nm="Bind2" Val="" />
+								<PRM Nm="Bind3" Val="" />
+								<PRM Nm="Bind4" Val="" />
+								<PRM Nm="Bind5" Val="" />
+								<PRM Nm="Bind6" Val="" />
+							</DATA>
+						</MAPVIEW>
+						<LBL ID="2E52F451-7945-4F18-B946-8B437AC0F76E" Nm="lblAddress" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="50%" Y="570%" W="850%" H="400%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="2" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;Label&quot;" />
+							</DATA>
+						</LBL>
+						<BTN ID="3426631E-19E5-4772-AC88-3C588A8DC8EF" Nm="imgMap" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+							<LCT X="800%" Y="296%" W="161%" H="407%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FColor="333333" PressedFColor="ffffff" DisabledFColor="ff0000" FStyle="0" Undrln="0" />
+							<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<POS Pos="15" SMode="2" />
+							<IMGS>
+								<INACT InactiveResName="" />
+								<DEFAULT DefaultResName="mapdetails.png" />
+								<HGHLIGHTD HighlightedResName="mapdetails_onpressed.png" />
+								<FOC FocusedResName="" />
+							</IMGS>
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;&quot;" />
+							</DATA>
+							<ONPRESSED script="pgRegister_imgMap_OnPressed(e);" />
+						</BTN>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="869F0C8F-8696-4D36-892C-3A6B1B281F5E" Nm="contUserInfo4" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="-3%" Y="612%" W="1006%" H="280%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="c7c3be" BrW="1" BgTparent="0" BgClr="edebe7" />
+					<ITEMS>
+						<LBL ID="FB512C96-80DF-4D16-9F32-706F2974C158" Nm="lblAllowMessages" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="5" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="54%" Y="0%" W="543%" H="224%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.allowMsg" />
+							</DATA>
+						</LBL>
+						<SWITCHBUTTON ID="7FB8F2C3-4D50-41BE-86C5-E5362344030F" Nm="sbNotifications" Vsb="1" Alpha="100" Checked="1" TouchEnabled="1" TintColor="00ea7f">
+							<LCT X="730%" Y="50%" W="5100d" H="3100d" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ONCHANGE script="pgRegister_sbNotifications_OnChange(e);" />
+						</SWITCHBUTTON>
+						<LINE ID="CC090B86-294F-49AF-BFAA-D6F6090B9F5C" Nm="lineDivideRow4" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
+							<LCT X="0%" Y="226%" W="1000%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<LBL ID="D8A276BD-841A-442A-B875-BEDA740BC9F7" Nm="lblLikeThisApp" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="5" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="54%" Y="232%" W="543%" H="224%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.likeThisApp" />
+							</DATA>
+						</LBL>
+						<PIC ID="3546ACDA-9410-4706-9D2F-2243E1BA0440" Nm="imgLike" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="830%" Y="292%" W="78%" H="99%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://emotion_cool.png" />
+							</DATA>
+						</PIC>
+						<LINE ID="0B48638C-854B-4491-B974-52EF9FA05340" Nm="lineDivideRow5" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
+							<LCT X="0%" Y="690%" W="1000%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<SLIDER ID="6CCDD0B2-F5D2-42BB-9A84-012F05E61B09" Nm="sliderLike" Vsb="1" Enb="1" Value="70" MinValue="0" MaxValue="100" MinTrackClr="fb7a05" MaxTrackClr="c7c3be" ShowThumb="1" ThumbClr="000000" MinTrackImg="" MaxTrackImg="" ThumbImg="slider_handle.png" Alpha="100" Continuous="1" TouchEnabled="1">
+							<LCT X="200%" Y="530%" W="600%" H="91%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<STYLE BgTparent="1" />
+							<DATASOURCE>
+								<PRM Nm="Bind" Val="" />
+							</DATASOURCE>
+							<ONCHANGE script="pgRegister_sliderLike_OnChange(e);" />
+						</SLIDER>
+						<LBL ID="AB293657-F94A-4651-AD73-67EDF6DFC5FD" Nm="lblLikePoint" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="826%" Y="516%" W="174%" H="81%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="f89f65" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;70&quot;" />
+							</DATA>
+						</LBL>
+						<BTN ID="B2A652CA-F47F-4E32-BFF7-A97CCB526499" Nm="btnInteres" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+							<LCT X="54%" Y="696%" W="939%" H="304%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="000000" FStyle="0" Undrln="0" />
+							<STYLE BgClr="edebe7" PressedBgClr="edebe7" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.chooseInterest" />
+							</DATA>
+							<ONPRESSED script="pgRegister_btnInteres_OnPressed(e);" />
+						</BTN>
+						<PIC ID="3BC23D40-862C-4895-8002-35283426CF48" Nm="imgInterest" Vsb="1" Alpha="100" TouchEnabled="0">
+							<LCT X="900%" Y="816%" W="37%" H="71%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://hobby_arrow.png" />
+							</DATA>
+						</PIC>
+						<LBL ID="609F6C3C-7A4D-431F-A559-8EDA31E95D3B" Nm="lblInterest" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="106%" Y="901%" W="870%" H="82%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="2d39c1" FStyle="2" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;Music,Sport,Films&quot;" />
+							</DATA>
+						</LBL>
+					</ITEMS>
+				</CONTAINER>
+				<BTN ID="48441D1F-64ED-4671-AE9E-48F1A1B31339" Nm="btnSubmit" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="5" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+					<LCT X="50%" Y="910%" W="900%" H="57%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="8p" FColor="ffffff" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+					<STYLE BgClr="70cc2d" PressedBgClr="008000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="lang.submit" />
+					</DATA>
+					<ONPRESSED script="pgRegister_btnSubmit_OnPressed(e);" />
+				</BTN>
+				<RECT ID="43D44ED5-061E-4C80-8C38-A752C26E1803" Nm="recBackground" Vsb="1" Alpha="25" TouchEnabled="0" Clr="c0c0c0" BrW="0" Fill="1" BrClr="666666" PxlEdg="3">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+					<ONTOUCH script="pgRegister_recBackground_OnTouch(e);" />
+				</RECT>
+			</ITEMS>
+		</SCROLLVIEW>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgRegister_Self_OnShow(e);" />
+		<ONKEYP script="pgRegister_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

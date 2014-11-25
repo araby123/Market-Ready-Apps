@@ -1,0 +1,98 @@
+<PG ID="117E8100-C5EC-43DE-A9E3-B841AB626DA6" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgInfo" BgClr="3b2d23" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="1024" H="768" />
+	<POS Pos="3" SMode="2" />
+	<BODY>
+		<PIC ID="FCEB73D1-08FF-49C0-8734-A725B0684590" Nm="logo" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="128%" Y="0%" W="762%" H="140%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://logo.png" />
+			</DATA>
+		</PIC>
+		<PIC ID="41513E18-6BA6-4E38-B997-F84C20AC629B" Nm="Image1" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="61%" Y="443%" W="891%" H="204%" Z="0" Anc="15" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="3" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://siyah_zemin.png" />
+			</DATA>
+		</PIC>
+		<LBL ID="C4BD57A0-7935-4605-B9E9-518FA1FB9CFE" Nm="Label1" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="120%" Y="320%" W="800%" H="125%" Z="0" Anc="15" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="7p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;This Application is developed by Mobinex with Smartface App Studio.&quot;" />
+			</DATA>
+		</LBL>
+		<LBL ID="3264F441-228B-4B03-9560-A0DE5032F705" Nm="Label2" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="4%" Y="120%" W="995%" H="73%" Z="0" Anc="15" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="7p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Version V1.0.0&quot;" />
+			</DATA>
+		</LBL>
+		<LBL ID="24DA1DDA-E04D-4266-ADFE-2C26BCE78373" Nm="Label3" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="88%" Y="475%" W="372%" H="165%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="13" FUnit=" px" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;&quot;" />
+			</DATA>
+			<ONTOUCH script="pgInfo_Label3_OnTouch(e);" />
+		</LBL>
+		<LBL ID="9399C3F5-B309-40E9-BA15-2DC2BA3034DC" Nm="Label4" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="525%" Y="477%" W="397%" H="154%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="13" FUnit=" px" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;&quot;" />
+			</DATA>
+			<ONTOUCH script="pgInfo_Label4_OnTouch(e);" />
+		</LBL>
+		<LBL ID="2875067F-B4BE-4C98-A01D-A05D5B401B90" Nm="Label5" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="0%" Y="640%" W="1006%" H="73%" Z="0" Anc="15" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="999999" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;©Copyright 2013 Mobinex&quot;" />
+			</DATA>
+		</LBL>
+		<CONTAINER ID="A44FDCB7-9276-46D3-9EFE-FF8DEAF47D79" Nm="ConMenu" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="330%" Y="752%" W="366%" H="90%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<PIC ID="547A725C-A9E7-449A-B8AC-009406A2F68D" Nm="Image11" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://infoMenu.png" />
+					</DATA>
+				</PIC>
+				<LBL ID="2AB7E946-7E96-44D7-AD17-9DC7DCD1960C" Nm="LblCon" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;Continue&quot;" />
+					</DATA>
+					<ONTOUCH script="pgInfo_LblCon_OnTouch(e);" />
+					<ONTOUCHENDED script="pgInfo_LblCon_OnTouchEnded(e);" />
+				</LBL>
+				<LBL ID="AA41BCF1-BD7B-4C88-A830-955035784155" Nm="CopyofLblCon" Type="2" Mask="" Vsb="0" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="999999" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;Continue&quot;" />
+					</DATA>
+				</LBL>
+			</ITEMS>
+		</CONTAINER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgInfo_Self_OnShow(e);" />
+		<ONKEYP script="pgInfo_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

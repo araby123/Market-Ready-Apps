@@ -1,0 +1,162 @@
+<PG ID="CAACB386-27C1-481D-B84F-2C3677E71C3F" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgLineStyle" BgClr="e7e7e7" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<SCROLLVIEW ID="85C3055D-66B6-4D69-9043-36769A88DF18" Nm="svNewsContentPager" Vsb="1" TouchEnabled="1">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="0000ff" BrW="0" BgTparent="1" BgClr="0000ff" ContentW="1000%" ContentH="1000%" EnableVScrl="0" EnableHScrl="1" ShwVScrl="0" ShwHScrl="0" EnbZm="0" ScrlIndStyle="0" DclRate="0" ScrollX="0" ScrollY="0" EnableVPaging="0" EnableHPaging="1" AutoSize="0" />
+			<ITEMS>
+				<CONTAINER ID="53DD8940-F254-4D3D-B337-0F020D4CB907" Nm="svNewsContent0" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="e7e7e7" />
+					<ITEMS>
+						<PIC ID="83B5BF56-886D-4FEC-B34F-E9B7C67B1E3A" Nm="imgNewsContent" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="0%" W="1000%" H="405%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+						</PIC>
+						<SCROLLVIEW ID="A5B353B1-18CE-4505-B4BC-CA166349FE7C" Nm="content0" Vsb="1" TouchEnabled="1">
+							<LCT X="0%" Y="420%" W="1000%" H="560%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+							<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="e7e7e7" ContentW="1000%" ContentH="1200%" EnableVScrl="1" EnableHScrl="0" ShwVScrl="0" ShwHScrl="0" EnbZm="0" ScrlIndStyle="0" DclRate="0" ScrollX="0" ScrollY="0" EnableVPaging="0" EnableHPaging="0" AutoSize="0" />
+							<ITEMS>
+								<LBL ID="45F4A660-19F3-4CBE-9EF6-CE566D56D3E6" Nm="lblNewsContentTitle" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="0%" W="900%" H="50%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="0066ff" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="2" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LBL ID="7C0B7B4D-69D5-43D9-A277-A1DAD42BC8A9" Nm="lblNewsContentDescription" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="100%" W="900%" H="880%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="e7e7e7" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LINE ID="CFB22A9A-ED4C-4538-BD7A-95DDB6594DFF" Nm="lineNewsContentSeparator" Vsb="1" Alpha="100" TouchEnabled="0" Clr="000000" BrW="1" Dashed="0">
+									<LCT X="50%" Y="70%" W="950%" H="20%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<ROT Angle="0" />
+								</LINE>
+							</ITEMS>
+						</SCROLLVIEW>
+						<PIC ID="99DFD024-173B-4BE5-BEFE-2EEF48786E19" Nm="imgShadow0" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="344%" W="1000%" H="5%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="32" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://shadowmaster.png" />
+							</DATA>
+						</PIC>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="42DD4060-0514-4FB8-B47D-044972121179" Nm="svNewsContent1" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<PIC ID="6F2FF67F-4766-46B3-9258-7A3261964A12" Nm="imgNewsContent1" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="0%" W="1000%" H="405%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+						</PIC>
+						<SCROLLVIEW ID="36AF567E-BB11-45F6-B353-C23414E6DD29" Nm="content1" Vsb="1" TouchEnabled="1">
+							<LCT X="0%" Y="420%" W="1000%" H="560%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+							<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" ContentW="1000%" ContentH="1200%" EnableVScrl="1" EnableHScrl="0" ShwVScrl="0" ShwHScrl="0" EnbZm="0" ScrlIndStyle="0" DclRate="0" ScrollX="0" ScrollY="0" EnableVPaging="0" EnableHPaging="0" AutoSize="0" />
+							<ITEMS>
+								<LBL ID="CAAB3FF2-1418-4770-86F4-DD31697E551D" Nm="lblNewsContentTitle1" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="0%" W="900%" H="50%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="e7e7e7" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="2" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LBL ID="685E7889-7FDF-40D3-88AA-BCC243911491" Nm="lblNewsContentDescription1" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="100%" W="900%" H="880%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="e7e7e7" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LINE ID="26BB807A-FDFA-4ADA-82DA-CF9FFCBB7BF2" Nm="lineNewsContentSeparator1" Vsb="1" Alpha="100" TouchEnabled="0" Clr="000000" BrW="1" Dashed="0">
+									<LCT X="50%" Y="70%" W="950%" H="20%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<ROT Angle="0" />
+								</LINE>
+							</ITEMS>
+						</SCROLLVIEW>
+						<PIC ID="B4E98294-9172-4A60-97AB-D3D147B3E501" Nm="imgShadow1" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="344%" W="1000%" H="5%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="32" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://shadowmaster.png" />
+							</DATA>
+						</PIC>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="4719EE07-AFFB-4BCC-BDB6-30639010C881" Nm="svNewsContent2" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<PIC ID="53654EB3-2FF9-4F4E-A746-1FA990A4AD83" Nm="imgNewsContent2" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="0%" W="1000%" H="405%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="" />
+							</DATA>
+						</PIC>
+						<SCROLLVIEW ID="C4692AA8-83E6-42CF-A93D-07313E9AA77B" Nm="content2" Vsb="1" TouchEnabled="1">
+							<LCT X="0%" Y="420%" W="1000%" H="560%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+							<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" ContentW="1000%" ContentH="1200%" EnableVScrl="1" EnableHScrl="0" ShwVScrl="0" ShwHScrl="0" EnbZm="0" ScrlIndStyle="0" DclRate="0" ScrollX="0" ScrollY="0" EnableVPaging="0" EnableHPaging="0" AutoSize="0" />
+							<ITEMS>
+								<LBL ID="F04C188B-D07D-44EB-92B6-B4BB3117E4BA" Nm="lblNewsContentTitle2" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="0%" W="900%" H="50%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="e7e7e7" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="2" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LBL ID="4727AD6C-8B01-4B09-BCF7-44D03AB48D01" Nm="lblNewsContentDescription2" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+									<LCT X="50%" Y="100%" W="900%" H="880%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+									<STYLE BgTparent="1" BgClr="e7e7e7" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+									<DATA>
+										<PRM Nm="Bind" Val="&quot;&quot;" />
+									</DATA>
+								</LBL>
+								<LINE ID="62F1545A-D2E1-456A-970D-C653B5740A1F" Nm="lineNewsContentSeparator2" Vsb="1" Alpha="100" TouchEnabled="0" Clr="000000" BrW="1" Dashed="0">
+									<LCT X="0%" Y="70%" W="950%" H="20%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+									<ROT Angle="0" />
+								</LINE>
+							</ITEMS>
+						</SCROLLVIEW>
+						<PIC ID="666CBCDC-AD3A-4C9F-8327-C3964D26E152" Nm="imgShadow2" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="0%" Y="344%" W="1000%" H="5%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="32" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://shadowmaster.png" />
+							</DATA>
+						</PIC>
+					</ITEMS>
+				</CONTAINER>
+			</ITEMS>
+			<ONPAGECHANGED script="pgLineStyle_svNewsContentPager_OnPageChanged(e);" />
+		</SCROLLVIEW>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgLineStyle_Self_OnShow(e);" />
+		<ONKEYP script="pgLineStyle_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

@@ -1,300 +1,42 @@
-<PAGE ID="FD613802-B162-4AAC-AEFE-B97A520DE03C" Name="pgFirst" Navigation="0" Left="0" Top="0" Width="320" Height="480" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" SolidBorder="0" Type="0" BgColor="3878179" BgTransparent="0" PicID="00000000-0000-0000-0000-100000000001" Position="3" SizeMode="32" FocusObj="00000000-0000-0000-0000-100000000001" ShowStatusBar="0" ParentTabBarID="00000000-0000-0000-0000-100000000001" EnableTabBar="0" LockOrientation="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" IsSplashScreen="0">
-	<OBJECTS>
-		<TIMER>
-			<Properties ID="97BB47E3-F3EA-4BE1-9C71-66E363D84735" Name="Timer1" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="98" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer1_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="509E7076-D954-468A-AC24-F36B767B7C63" Name="Timer2" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="100" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer2_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="C71EC117-3846-4C43-B018-409091467E5A" Name="Timer3" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="102" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer3_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="65E65B18-C468-4C1E-AF5C-82A6838F67FF" Name="Timer4" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="104" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer4_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="46E29B74-F1DC-4A14-9930-E248805760B9" Name="Timer5" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="106" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer5_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="D8BAAB93-97DA-4C46-A549-285ADBA9F545" Name="Timer6" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="108" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer6_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="A02D638F-DB30-4291-8E31-E069243E042E" Name="Timer7" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="110" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer7_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="D77C7773-A41D-4D50-B244-C3686CD08D2F" Name="Timer8" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="112" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer8_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<TIMER>
-			<Properties ID="49606813-3D98-4520-9455-2A403FC66F2C" Name="Timer9" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="114" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="100" Active="0" Offset="100" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer9_OnTimer(e);" />
-			</Events>
-		</TIMER>
-		<CONTAINER>
-			<Properties ID="103C763E-6059-469F-B0E1-52B4407BEAF8" Name="Cnt" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="116" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="41" Top="127" Width="239" Height="224" dpLeft="41" dpTop="127" dpWidth="239" dpHeight="224" LeftPerc="0.128124997019768" TopPerc="0.264583319425583" WidthPerc="0.746874988079071" HeightPerc="0.466666668653488" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="1" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific BorderColor="3223601" BorderWidth="0" BackgroundColor="15725551" Transparent="1" AutoSize="0">
-					<Layout Type="0" Ort="0" Align="0" HrtGap="5" VrtGap="5" />
-				</TypeSpecific>
-			</Properties>
-		</CONTAINER>
-		<PICTURE>
-			<Properties ID="E130030C-8130-48CB-9F0E-D11B38D87757" Name="table9" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="118" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="162" Top="152" Width="77" Height="72" dpLeft="161" dpTop="152" dpWidth="77" dpHeight="72" LeftPerc="0.677799999713898" TopPerc="0.678600013256073" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="63743ACE-14EA-4C84-AC5A-8DC03DADE0B1" Name="table8" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="120" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="81" Top="152" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0.338899999856949" TopPerc="0.678600013256073" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="B216BF18-7661-49FA-B9B6-503B2840222C" Name="table7" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="122" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="152" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0" TopPerc="0.678600013256073" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="16F9A6EE-E297-4474-89BC-2F18E8B49ACD" Name="table6" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="124" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="162" Top="76" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="34" LeftPerc="0.677799999713898" TopPerc="0.339300006628036" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="78756E63-25E1-4BD7-8688-CFE178B06155" Name="table5" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="126" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="81" Top="76" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="34" LeftPerc="0.338899999856949" TopPerc="0.339300006628036" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="2216DDE1-AC57-42F0-B533-CBCCBCA23ED8" Name="table4" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="128" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="76" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="34" LeftPerc="0" TopPerc="0.339300006628036" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="14C37FDD-F71E-43CF-8ECA-5A4B08167AD3" Name="table3" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="130" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="162" Top="0" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="35" LeftPerc="0.677799999713898" TopPerc="0" WidthPerc="0.322175741195679" HeightPerc="0.321428567171097" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="26DFF499-A279-441D-A609-BF0373F4FBCC" Name="table2" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="132" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="81" Top="0" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="72" LeftPerc="0.338899999856949" TopPerc="0" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="9887E28C-5FC3-408D-8757-33611BFBA59A" Name="table1" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="134" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="0" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="35" LeftPerc="0" TopPerc="0" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="b" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="43615271-E3AE-4650-9173-E886E460D996" Name="xImage1" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="136" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="0" Top="0" Width="77" Height="72" dpLeft="0" dpTop="61" dpWidth="77" dpHeight="72" LeftPerc="0" TopPerc="0" WidthPerc="0.322175741195679" HeightPerc="0.321428567171097" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="x" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="951153C4-9339-499F-B37A-459F2138E86F" Name="xImage3" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="138" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="162" Top="0" Width="77" Height="72" dpLeft="162" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0.677824258804321" TopPerc="0" WidthPerc="0.322175741195679" HeightPerc="0.321428567171097" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="x" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="D7C1AD95-6426-491A-AD20-E401EBA91F21" Name="xImage5" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="140" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="81" Top="76" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="70" LeftPerc="0.338899999856949" TopPerc="0.339300006628036" WidthPerc="0.322175741195679" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="x" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="6D4EC177-3CE5-4B25-9BA7-0A0EAC7568B6" Name="xImage7" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="142" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="0" Top="152" Width="77" Height="72" dpLeft="0" dpTop="152" dpWidth="77" dpHeight="72" LeftPerc="0" TopPerc="0.678571403026581" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="x" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="29C9B8E2-AD53-42BE-923A-4AFF805D87A2" Name="xImage9" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="144" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="162" Top="152" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0.677799999713898" TopPerc="0.678600013256073" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="x" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="C2609F0C-CD70-4A29-8147-E2519EB28AA4" Name="oImage2" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="146" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="81" Top="0" Width="77" Height="72" dpLeft="81" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0.338912129402161" TopPerc="0" WidthPerc="0.322175741195679" HeightPerc="0.321428567171097" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="o" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="327F5F17-87CE-482A-87F5-F38DEFCB2AD5" Name="oImage4" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="148" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="0" Top="76" Width="77" Height="72" dpLeft="0" dpTop="76" dpWidth="77" dpHeight="72" LeftPerc="0" TopPerc="0.33928570151329" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="o" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="81FBF419-FAA0-4329-A148-FE31BBBEE31C" Name="oImage6" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="150" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="162" Top="76" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="58" dpHeight="35" LeftPerc="0.677799999713898" TopPerc="0.339300006628036" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="o" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="FD7BCAA2-59BA-463D-979C-B88B3C25F55D" Name="oImage8" Parent="103C763E-6059-469F-B0E1-52B4407BEAF8" ParentMode="-1" Prio="152" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="81" Top="152" Width="77" Height="72" dpLeft="0" dpTop="0" dpWidth="77" dpHeight="72" LeftPerc="0.338899999856949" TopPerc="0.678600013256073" WidthPerc="0.322200000286102" HeightPerc="0.321399986743927" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="o" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="E5D00F99-7348-4A4B-BDCE-819AAD898A5F" Name="logo" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="154" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="41" Top="0" Width="244" Height="67" dpLeft="41" dpTop="0" dpWidth="244" dpHeight="67" LeftPerc="0.128124997019768" TopPerc="0" WidthPerc="0.762499988079071" HeightPerc="0.139583334326744" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="logo" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<TIMER>
-			<Properties ID="D14C5019-A052-4589-BBBA-65FD9673AB64" Name="Timer10" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="156" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="10" Top="240" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<TypeSpecific Period="3000" Active="0" Offset="3000" />
-			</Properties>
-			<Events>
-				<OnTimer script="pgFirst_Timer10_OnTimer(e);" />
-			</Events>
-		</TIMER>
-	</OBJECTS>
-	<EVENTS>
-		<OnShow script="pgFirst_Self_OnShow(e);" />
-		<OnKeyPress script="pgFirst_Self_OnKeyPress(e);" />
-	</EVENTS>
-</PAGE>
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<Page id="FD613802-B162-4AAC-AEFE-B97A520DE03C" name="pgFirst" backgroundImage="00000000-0000-0000-0000-100000000001" fillColor="#232d3b" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" showNavigationBar="false" showActionBar="false" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<controls>
+				<Timer name="Timer1" id="26DF44D5-8DE9-41BC-9DF9-A6BDE6AB9D45" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer1_OnTimer(e);" />
+				<Timer name="Timer2" id="97785875-40F7-4F02-9C1F-4A91A247DE9A" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer2_OnTimer(e);" />
+				<Timer name="Timer3" id="97DE3077-C6CE-42B7-9B0E-959FC5EE3044" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer3_OnTimer(e);" />
+				<Timer name="Timer4" id="832834DC-CE98-4A32-A456-3DCCC66AE1A8" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer4_OnTimer(e);" />
+				<Timer name="Timer5" id="CB0F34FE-9565-41CB-8126-191A43B104F9" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer5_OnTimer(e);" />
+				<Timer name="Timer6" id="3D1EB27E-0F1E-4DAA-946B-35DE5DCAF0E9" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer6_OnTimer(e);" />
+				<Timer name="Timer7" id="3C661950-79BA-4348-9AD4-DD3224A3D065" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer7_OnTimer(e);" />
+				<Timer name="Timer8" id="0129A108-F604-4AF8-8C4F-348C9DE49B21" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer8_OnTimer(e);" />
+				<Timer name="Timer9" id="6218332A-34F9-4E1E-AD36-D686CB98CA81" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="100" active="false" initialDelay="100" onTimer="pgFirst_Timer9_OnTimer(e);" />
+				<Container name="Cnt" id="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="74,6874988079071%" height="46,6666668653488%" left="12,8124997019768%" top="26,4583319425583%" lockAutoSize="true" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" enabled="false" autoSize="false" backgroundTransparent="true" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" borderColor="#313031" borderWitdh="0" fillColor="#eff3ef" layoutType="SMF.UI.LayoutType.absolute" alignment="SMF.UI.LayoutAlignment.none" orientation="SMF.UI.Orientation.none" verticalGap="5px" horizontalGap="5px">
+					<controls>
+						<Image name="table9" id="CB920BBE-5832-4DF7-B1D2-0A3E76088FAC" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="67,7799999713898%" top="67,8600013256073%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table8" id="04D7CE60-5B88-4407-A833-D6D7B126DA14" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="33,8899999856949%" top="67,8600013256073%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table7" id="FC8D5A6B-FB46-4727-A140-E089590297E0" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="0%" top="67,8600013256073%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table6" id="9190153C-68B7-4C79-932D-69425D77D2E8" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="67,7799999713898%" top="33,9300006628036%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table5" id="1679E478-5B4C-447B-9B3E-D59ED4446DB6" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="33,8899999856949%" top="33,9300006628036%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table4" id="9473C56F-54D4-47F8-8D93-4F37C0ED6774" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="0%" top="33,9300006628036%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table3" id="815B7BB8-5C53-4D01-B715-0069656D0553" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2175741195679%" height="32,1428567171097%" left="67,7799999713898%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table2" id="60E0F188-DD77-45C0-912E-ACFF28C09F30" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="33,8899999856949%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="table1" id="D5114CE4-788A-4DB0-9DAF-DC276246B886" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="b" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="xImage1" id="CF5BC373-5582-4A99-9B77-89891599F3BE" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2175741195679%" height="32,1428567171097%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="x" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="xImage3" id="DE7DD913-3082-4874-9F4C-1B712CCF7DB7" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2175741195679%" height="32,1428567171097%" left="67,7824258804321%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="x" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="xImage5" id="F567101B-ACF5-4A1F-B293-E2AAFFF2F772" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2175741195679%" height="32,1399986743927%" left="33,8899999856949%" top="33,9300006628036%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="x" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="xImage7" id="10BB309A-11F1-413F-B4E0-0489943AB6F4" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="0%" top="67,8571403026581%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="x" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="xImage9" id="645D1D2D-5AB0-4BB1-B852-75B5597DA128" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="67,7799999713898%" top="67,8600013256073%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="x" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="oImage2" id="474BB7B1-09C9-468A-A663-508E277F333B" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2175741195679%" height="32,1428567171097%" left="33,8912129402161%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="o" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="oImage4" id="5C4D9300-B10B-4468-B68D-46002564E000" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="0%" top="33,928570151329%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="o" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="oImage6" id="F75DEDAC-DD0D-4212-8F1D-FD9A85FA8634" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="67,7799999713898%" top="33,9300006628036%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="o" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Image name="oImage8" id="02249848-798D-46C9-ABF3-D84343F34206" parent="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" parentMode="-1" width="32,2200000286102%" height="32,1399986743927%" left="33,8899999856949%" top="67,8600013256073%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="o" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+					</controls>
+				</Container>
+				<Image name="logo" id="03F1BC5F-D196-4BBB-B1AB-AC01FB3EDABE" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="76,2499988079071%" height="13,9583334326744%" left="12,8124997019768%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="logo" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+				<Timer name="Timer10" id="E7254B6D-4E97-4AD4-B860-DAB36198008A" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="10px" top="240px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" period="3000" active="false" initialDelay="3000" onTimer="pgFirst_Timer10_OnTimer(e);" />
+			</controls>
+			<EVENTS onShow="pgFirst_Self_OnShow(e);" onKeyPress="pgFirst_Self_OnKeyPress(e);" />
+		</Page>
+	</UI>
+</SMF>

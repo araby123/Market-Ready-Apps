@@ -1,0 +1,180 @@
+<PG ID="FD613802-B162-4AAC-AEFE-B97A520DE03C" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgFirst" BgClr="3b2d23" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="1024" H="768" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<TIMER ID="26DF44D5-8DE9-41BC-9DF9-A6BDE6AB9D45" Nm="Timer1" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer1_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="97785875-40F7-4F02-9C1F-4A91A247DE9A" Nm="Timer2" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer2_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="97DE3077-C6CE-42B7-9B0E-959FC5EE3044" Nm="Timer3" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer3_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="832834DC-CE98-4A32-A456-3DCCC66AE1A8" Nm="Timer4" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer4_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="CB0F34FE-9565-41CB-8126-191A43B104F9" Nm="Timer5" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer5_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="3D1EB27E-0F1E-4DAA-946B-35DE5DCAF0E9" Nm="Timer6" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer6_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="3C661950-79BA-4348-9AD4-DD3224A3D065" Nm="Timer7" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer7_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="0129A108-F604-4AF8-8C4F-348C9DE49B21" Nm="Timer8" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer8_OnTimer(e);" />
+		</TIMER>
+		<TIMER ID="6218332A-34F9-4E1E-AD36-D686CB98CA81" Nm="Timer9" Period="100" Active="0" Offset="100">
+			<ONTIMER script="pgFirst_Timer9_OnTimer(e);" />
+		</TIMER>
+		<CONTAINER ID="F698B155-298F-4DA9-B2E0-2BC93CEEB7C5" Nm="Cnt" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="128%" Y="265%" W="747%" H="467%" Z="0" Anc="3" LockAutoSize="1" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<PIC ID="CB920BBE-5832-4DF7-B1D2-0A3E76088FAC" Nm="table9" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="04D7CE60-5B88-4407-A833-D6D7B126DA14" Nm="table8" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="FC8D5A6B-FB46-4727-A140-E089590297E0" Nm="table7" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="9190153C-68B7-4C79-932D-69425D77D2E8" Nm="table6" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="1679E478-5B4C-447B-9B3E-D59ED4446DB6" Nm="table5" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="9473C56F-54D4-47F8-8D93-4F37C0ED6774" Nm="table4" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="815B7BB8-5C53-4D01-B715-0069656D0553" Nm="table3" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="60E0F188-DD77-45C0-912E-ACFF28C09F30" Nm="table2" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="D5114CE4-788A-4DB0-9DAF-DC276246B886" Nm="table1" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://b.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="CF5BC373-5582-4A99-9B77-89891599F3BE" Nm="xImage1" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://x.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="DE7DD913-3082-4874-9F4C-1B712CCF7DB7" Nm="xImage3" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://x.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="F567101B-ACF5-4A1F-B293-E2AAFFF2F772" Nm="xImage5" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://x.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="10BB309A-11F1-413F-B4E0-0489943AB6F4" Nm="xImage7" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://x.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="645D1D2D-5AB0-4BB1-B852-75B5597DA128" Nm="xImage9" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://x.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="474BB7B1-09C9-468A-A663-508E277F333B" Nm="oImage2" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://o.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="5C4D9300-B10B-4468-B68D-46002564E000" Nm="oImage4" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://o.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="F75DEDAC-DD0D-4212-8F1D-FD9A85FA8634" Nm="oImage6" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="678%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://o.png" />
+					</DATA>
+				</PIC>
+				<PIC ID="02249848-798D-46C9-ABF3-D84343F34206" Nm="oImage8" Vsb="0" Alpha="100" TouchEnabled="1">
+					<LCT X="339%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://o.png" />
+					</DATA>
+				</PIC>
+			</ITEMS>
+		</CONTAINER>
+		<PIC ID="03F1BC5F-D196-4BBB-B1AB-AC01FB3EDABE" Nm="logo" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="128%" Y="0%" W="762%" H="140%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://logo.png" />
+			</DATA>
+		</PIC>
+		<TIMER ID="E7254B6D-4E97-4AD4-B860-DAB36198008A" Nm="Timer10" Period="3000" Active="0" Offset="3000">
+			<ONTIMER script="pgFirst_Timer10_OnTimer(e);" />
+		</TIMER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgFirst_Self_OnShow(e);" />
+		<ONKEYP script="pgFirst_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

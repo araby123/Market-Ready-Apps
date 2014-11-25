@@ -1,8 +1,9 @@
-<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="958" LType="1" Name="TicTacToe" UID="1831762537" SID="-1" SName="No service selected" WS="http://www.smartface.biz" PublishUrl="http://www.smartface.biz" LastObjectID="CB744D78-D9D6-4757-A4D2-BAD6EC49BCC0" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
-	<Platform ScreenHeight="480" ScreenWidth="320" Dpi="163" AndroidVirtualDevice="" />
+<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1019" LType="1" Name="TicTacToe" UID="1831762537" SID="-1" SName="No service selected" WS="http://www.smartface.biz" PublishUrl="http://www.smartface.biz" LastObjectID="CB744D78-D9D6-4757-A4D2-BAD6EC49BCC0" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
+	<MainPageSettings Name="pgFirst" />
+	<Platform ScreenHeight="768" ScreenWidth="1024" Dpi="132" iOSProfileName="iPad" androidProfileName="" AndroidVirtualDevice="" />
 	<SocialNetworks FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="" />
 	<MapApi AndroidMapKey="" IosGeocodingKey="" />
-	<AdMob PublisherId="" TestUsage="0" />
+	<AdMob PublisherId="" TestUsage="0" AdmobUsage="0" />
 	<FlurryAnalytics Enable="0" IOSAppID="" AndroidAppID="">
 		<LogUserInfoStatistics Enable="1" const_UserID="" const_Age="" const_Gender="">
 			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
@@ -28,5 +29,6 @@
 		<File FileName="" Data="" />
 	</AndroidKeyStore>
 	<IOSKeyStore IOSUrlIdentifier="" IOSUrlSchemes="" />
-	<DebugParameters ConnectionTypeName="USB" ConnectionPort1="10001" ConnectionPort2="11001" />
+	<NavigationBarUpdate NavigationBarUpdate="0" />
+	<DebugParameters ConnectionTypeName="USB" ConnectionPort1="10001" ConnectionPort2="11001" OpenLogs="1" />
 </SMARTFACEPROJECT>

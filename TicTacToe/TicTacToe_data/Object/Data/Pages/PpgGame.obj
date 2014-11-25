@@ -1,0 +1,276 @@
+<PG ID="DF623F75-5AE3-4B3F-A689-4398ACB8BB07" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgGame" BgClr="3b2d23" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="1024" H="768" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<TIMER ID="94D11BBB-35D7-47FF-8740-668022E728B1" Nm="resetTimer" Period="1000" Active="1" Offset="1000">
+			<ONTIMER script="pgGame_resetTimer_OnTimer(e);" />
+		</TIMER>
+		<RECT ID="F90E0DF0-4498-4D18-8B13-7BA678A875DA" Nm="Rectangle1" Vsb="0" Alpha="0" TouchEnabled="1" Clr="666666" BrW="1" Fill="1" BrClr="666666" PxlEdg="3">
+			<LCT X="128%" Y="265%" W="750%" H="469%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<ROT Angle="0" />
+			<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+		</RECT>
+		<CONTAINER ID="132A2E99-8BFA-4053-AECA-1BDA68EB3E8F" Nm="CntGameBoard" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="128%" Y="265%" W="747%" H="467%" Z="0" Anc="3" LockAutoSize="1" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<BTN ID="11BC1E91-A060-4CA7-A7CA-C5C4CE1E440A" Nm="gameButton1" Vsb="-1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="0%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton1_OnPressed(e);" />
+				</BTN>
+				<BTN ID="F5561F50-89C0-4426-AA34-FB6B25D0674F" Nm="gameButton2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="339%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton2_OnPressed(e);" />
+				</BTN>
+				<BTN ID="8412FF72-338A-4D51-AC8B-2EDB627F9220" Nm="gameButton3" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="678%" Y="0%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton3_OnPressed(e);" />
+				</BTN>
+				<BTN ID="2DF2F613-F4B3-42D3-9DB7-9279FE237B5D" Nm="gameButton4" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="0%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton4_OnPressed(e);" />
+				</BTN>
+				<BTN ID="10767163-57F9-441F-A508-9D14AF24E6EA" Nm="gameButton5" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="339%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton5_OnPressed(e);" />
+				</BTN>
+				<BTN ID="EF68C33B-3C9B-439C-8FDE-BFE1DCDF4A2D" Nm="gameButton6" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="678%" Y="339%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton6_OnPressed(e);" />
+				</BTN>
+				<BTN ID="84A40C1B-9E57-4DF3-9E3E-54446029584F" Nm="gameButton7" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="0%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton7_OnPressed(e);" />
+				</BTN>
+				<BTN ID="71899901-72D8-4621-A204-4A8FF6E2B37A" Nm="gameButton8" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="339%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton8_OnPressed(e);" />
+				</BTN>
+				<BTN ID="42DF9B59-F345-4782-A472-86CBA4AA12C9" Nm="gameButton9" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+					<LCT X="678%" Y="679%" W="322%" H="321%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+					<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<POS Pos="3" SMode="2" />
+					<IMGS>
+						<INACT InactiveResName="" />
+						<DEFAULT DefaultResName="b.png" />
+						<HGHLIGHTD HighlightedResName="" />
+						<FOC FocusedResName="ButtonFocused.png" />
+					</IMGS>
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+					<ONPRESSED script="pgGame_gameButton9_OnPressed(e);" />
+				</BTN>
+				<ACTIVITYINDICATOR ID="D39DBC76-ED5B-40C9-BB75-5A35435EA3BA" Nm="ActivityIndicator1" Vsb="0" Style="1" TouchEnabled="1">
+					<LCT X="466%" Y="477%" W="21" H="21" Z="0" Anc="3" LockAutoPosition="0" />
+				</ACTIVITYINDICATOR>
+			</ITEMS>
+		</CONTAINER>
+		<PIC ID="30B04EFC-FDEE-4FE9-A893-1B456F07CFCC" Nm="logo" Vsb="1" Alpha="100" TouchEnabled="1">
+			<LCT X="128%" Y="0%" W="762%" H="140%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+			<DATA>
+				<PRM Nm="Bind" Val="resources://logo.png" />
+			</DATA>
+		</PIC>
+		<CONTAINER ID="F30B207C-E9ED-487E-9BC4-2C7DA0A39001" Nm="CntScoreBoard" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="128%" Y="152%" W="747%" H="100%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<LBL ID="4D25492E-44A1-4940-8779-70579FB0FD98" Nm="turnLabel" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="350%" Y="250%" W="300%" H="500%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default TUR" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="9d9691" FStyle="0" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;X can go&quot;" />
+					</DATA>
+				</LBL>
+				<LBL ID="48FECB14-A96B-46F6-83A9-9B977EFCA521" Nm="LblX" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="150%" Y="0%" W="200%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Arial" FSize="12p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="04bcfe" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+				</LBL>
+				<LBL ID="19780515-FC88-4714-9FAF-5991009D2781" Nm="LblO" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="660%" Y="0%" W="200%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Arial" FSize="12p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="c6d746" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+				</LBL>
+			</ITEMS>
+		</CONTAINER>
+		<CONTAINER ID="0D48DAA9-0DB6-4EF1-9664-1496E83ED47C" Nm="ConMenu" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="128%" Y="752%" W="747%" H="90%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<PIC ID="6BD473C3-2B36-4E4B-B913-1AAE039D11AD" Nm="Image1" Vsb="1" Alpha="100" TouchEnabled="1">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<POS Pos="3" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="resources://fpmenubck.png" />
+					</DATA>
+				</PIC>
+				<LBL ID="FC3F833B-F64A-4923-BFB0-DEE0A9BB5424" Nm="LblStart" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="0%" Y="0%" W="460%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;New Game&quot;" />
+					</DATA>
+					<ONTOUCH script="pgGame_LblStart_OnTouch(e);" />
+					<ONTOUCHENDED script="pgGame_LblStart_OnTouchEnded(e);" />
+				</LBL>
+				<LBL ID="791CCDD1-6438-43FA-A984-44D2987424CC" Nm="LblStrtPre" Type="2" Mask="" Vsb="0" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="0%" Y="0%" W="460%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="999999" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;New Game&quot;" />
+					</DATA>
+				</LBL>
+				<LBL ID="E6C6EB8F-18FE-4841-9148-8A362E93DB02" Nm="LblRe" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="540%" Y="0%" W="460%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;Restart&quot;" />
+					</DATA>
+					<ONTOUCH script="pgGame_LblRe_OnTouch(e);" />
+					<ONTOUCHENDED script="pgGame_LblRe_OnTouchEnded(e);" />
+				</LBL>
+				<LBL ID="AC3BEF55-3D72-4640-8334-EEF1B411EE31" Nm="LblRePre" Type="2" Mask="" Vsb="0" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="540%" Y="0%" W="460%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="HelveticaNeue" FSize="5p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="999999" FStyle="1" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;Restart&quot;" />
+					</DATA>
+				</LBL>
+			</ITEMS>
+		</CONTAINER>
+		<BTN ID="81A07BE2-03FC-4470-BD00-3947BF382BED" Nm="ImgBtnInfo" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="0">
+			<LCT X="853%" Y="38%" W="103%" H="63%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<FONT FName="Default" FSize="13" FColor="333333" PressedFColor="ffffff" DisabledFColor="000011" FStyle="0" Undrln="0" />
+			<STYLE HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+			<POS Pos="3" SMode="2" />
+			<IMGS>
+				<INACT InactiveResName="info2.png" />
+				<DEFAULT DefaultResName="info2.png" />
+				<HGHLIGHTD HighlightedResName="info1.png" />
+				<FOC FocusedResName="ButtonFocused.png" />
+			</IMGS>
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;&quot;" />
+			</DATA>
+			<ONPRESSED script="pgGame_ImgBtnInfo_OnPressed(e);" />
+		</BTN>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgGame_Self_OnShow(e);" />
+		<ONKEYP script="pgGame_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

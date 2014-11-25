@@ -1,2 +1,6 @@
-<PAGE ID="00000000-0000-0000-0000-000000000002" Name="SplashPage" Navigation="0" Left="0" Top="0" Width="320" Height="480" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" SolidBorder="0" Type="0" BgColor="16777215" BgTransparent="0" PicID="default_splash" Position="3" SizeMode="2" FocusObj="00000000-0000-0000-0000-100000000001" ShowStatusBar="0" ParentTabBarID="00000000-0000-0000-0000-100000000001" EnableTabBar="0" LockOrientation="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" IsSplashScreen="1">
-</PAGE>
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<SplashPage id="00000000-0000-0000-0000-000000000002" name="SplashPage" backgroundImage="default_splash" fillColor="#ffffff" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" showNavigationBar="false" showActionBar="false" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+		</SplashPage>
+	</UI>
+</SMF>

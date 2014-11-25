@@ -1,0 +1,23 @@
+<OBJECT>
+	<TABLE>
+		<Properties ID="CB744D78-D9D6-4757-A4D2-BAD6EC49BCC0" Name="In-App Products List" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="-1" Lock="0" TextDirection="0">
+			<Location Visible="1" VOnDesign="1" Left="0" Top="0" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
+			<TypeSpecific LastFieldID="4" Guid="" OverrideOnUpdate="1" ReadOnly="1" isServerObject="0" OneToOneType="0" ActualFileSize="0">
+				<Columns>
+					<Column ID="1" Name="ProductKey" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+					<Column ID="2" Name="Title" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+					<Column ID="3" Name="Description" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+					<Column ID="4" Name="Price" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				</Columns>
+				<Rows>
+					<Row ID="-1" Caption="">
+						<Cell Value="123" />
+						<Cell Value="Book" />
+						<Cell Value="History Book" />
+						<Cell Value="10" />
+					</Row>
+				</Rows>
+			</TypeSpecific>
+		</Properties>
+	</TABLE>
+</OBJECT>

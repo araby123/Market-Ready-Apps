@@ -1,35 +1,32 @@
 <OBJECT>
-	<TABLE>
-		<Properties ID="272D494F-1001-4B04-9D97-3B7D7B11BC53" Name="Device Contacts" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="-1" Lock="0" TextDirection="0">
-			<Location Visible="1" VOnDesign="1" Left="0" Top="0" Width="0" Height="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-			<TypeSpecific LastFieldID="4" Guid="" OverrideOnUpdate="1" ReadOnly="1" isServerObject="0" OneToOneType="25031988" ActualFileSize="0">
-				<Columns>
-					<Column ID="1" Name="GivenName" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
-					<Column ID="2" Name="FamilyName" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
-					<Column ID="3" Name="PhoneNumber" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
-					<Column ID="4" Name="EMail" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
-				</Columns>
-				<Rows>
-					<Row ID="-1" Caption="">
-						<Cell Value="John" />
-						<Cell Value="Smith" />
-						<Cell Value="0870 070 0191" />
-						<Cell Value="john.smith@mail.com" />
-					</Row>
-					<Row ID="-1" Caption="">
-						<Cell Value="Jerard" />
-						<Cell Value="Depardieu" />
-						<Cell Value="0800 200 6200" />
-						<Cell Value="jerard.depardieu@mail.com" />
-					</Row>
-					<Row ID="-1" Caption="">
-						<Cell Value="Charles" />
-						<Cell Value="Welsh" />
-						<Cell Value="0800 800150" />
-						<Cell Value="charles.welsh@mail.com" />
-					</Row>
-				</Rows>
-			</TypeSpecific>
-		</Properties>
-	</TABLE>
+	<Table name="Device Contacts" id="272D494F-1001-4B04-9D97-3B7D7B11BC53" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific LastFieldID="4" Guid="" OverrideOnUpdate="1" ReadOnly="1" isServerObject="0" OneToOneType="25031988" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="GivenName" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="2" Name="FamilyName" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="3" Name="PhoneNumber" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="4" Name="EMail" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+			<Rows>
+				<Row ID="-1" Caption="">
+					<Cell Value="John" />
+					<Cell Value="Smith" />
+					<Cell Value="0870 070 0191" />
+					<Cell Value="john.smith@mail.com" />
+				</Row>
+				<Row ID="-1" Caption="">
+					<Cell Value="Jerard" />
+					<Cell Value="Depardieu" />
+					<Cell Value="0800 200 6200" />
+					<Cell Value="jerard.depardieu@mail.com" />
+				</Row>
+				<Row ID="-1" Caption="">
+					<Cell Value="Charles" />
+					<Cell Value="Welsh" />
+					<Cell Value="0800 800150" />
+					<Cell Value="charles.welsh@mail.com" />
+				</Row>
+			</Rows>
+		</TypeSpecific>
+	</Table>
 </OBJECT>

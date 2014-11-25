@@ -1,0 +1,34 @@
+<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1019" LType="1" Name="SmarfaceInAction" UID="1667327604" SID="-1" SName="No service selected" WS="http://www.smartface.biz" PublishUrl="http://www.smartface.biz" LastObjectID="D796D961-0828-4DB5-A712-3B8ED17E78C7" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
+	<MainPageSettings Name="pgDashboard" />
+	<Platform ScreenHeight="1536" ScreenWidth="2048" Dpi="264" iOSProfileName="New iPad (3-4-Air)" androidProfileName="" AndroidVirtualDevice="" />
+	<SocialNetworks FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="" />
+	<MapApi AndroidMapKey="" IosGeocodingKey="" />
+	<AdMob PublisherId="" TestUsage="0" AdmobUsage="0" />
+	<FlurryAnalytics Enable="0" IOSAppID="" AndroidAppID="">
+		<LogUserInfoStatistics Enable="1" const_UserID="" const_Age="" const_Gender="">
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+		</LogUserInfoStatistics>
+		<Events LogApplicationUsageDurations="1" LogNetworkUsage="0" LogApplicationStartEvents="0" LogAudioPlayDurations="0" LogVideoPlayDurations="0" LogShowPageActions="0" LogCallActions="0" LogSendSMSActions="0" />
+	</FlurryAnalytics>
+	<SESAnalytics SESAPIKey="BaLsq7OWNkiRQXjofMhJGw" SESAPIURL="http://analytics.smartface.io/api/AnalyticsData/" />
+	<DeviceOrientations Portrait="1" UpsideDown="0" LandscapeLeft="0" LandscapeRight="0" />
+	<AndroidProductKey AndroidProductKey="" />
+	<AndroidSenderID AndroidSenderID="" />
+	<ApplicationCacheSize ApplicationCacheSize="50" />
+	<ApplicationName ApplicationName="Smartface in Action" />
+	<Logging ServerUrl="" MaxLogSize="30">
+		<Events LogError="0" LogWarning="0" LogDebug="0" />
+	</Logging>
+	<ProjectDetails Owner="" MiddletInfoUrl="" Description="" EnableIntro="1" SplashScreenBackgroundColor="3947526" VersionTextColor="16777215" EnableSum="1" />
+	<AndroidKeyStore UseCustomKeyStore="1" AliasName="androiddebugkey" StorePass="android" KeyPass="android" FingerPrintMD5="">
+		<File FileName="debug.keystore" Data="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" />
+	</AndroidKeyStore>
+	<IOSKeyStore IOSUrlIdentifier="" IOSUrlSchemes="" />
+	<NavigationBarUpdate NavigationBarUpdate="1" />
+	<DebugParameters ConnectionTypeName="USB" ConnectionPort1="10001" ConnectionPort2="11001" OpenLogs="1" />
+</SMARTFACEPROJECT>

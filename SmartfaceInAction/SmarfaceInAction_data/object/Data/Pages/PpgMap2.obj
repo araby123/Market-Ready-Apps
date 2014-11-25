@@ -1,0 +1,122 @@
+<PG ID="56296458-3F23-4A01-A21F-E4FA1617FAD7" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgMap2" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<CONTAINER ID="61A32C7D-2BE4-4F25-B2FF-CC4078C1939A" Nm="contMain" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="1" LayoutOrientation="1" LayoutAlignment="0" LayoutHorizontalGap="0d" LayoutVerticalGap="0" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<CONTAINER ID="1744DB1E-E6BB-4100-B707-93EC29EA67A2" Nm="contMap" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="1000%" Y="1791%" W="1000%" H="275%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<MAPVIEW ID="65F5C59D-0874-4634-931F-1873096DD8C1" Nm="map" Vsb="1" MapType="1" CenterLatitude="41,035972" CenterLongitude="29,046902" ZoomLevel="10" EnableZoom="1" EnableScroll="1" ShowUserLocation="1" ShowPins="1" TouchEnabled="0">
+							<LCT X="0d" Y="0" W="1000%" H="1000%" Z="0" Anc="2" LockAutoSize="0" LockAutoPosition="0" />
+							<DATA>
+								<PRM Nm="Bind1" Val="" />
+								<PRM Nm="Bind2" Val="" />
+								<PRM Nm="Bind3" Val="" />
+								<PRM Nm="Bind4" Val="" />
+								<PRM Nm="Bind5" Val="" />
+								<PRM Nm="Bind6" Val="" />
+							</DATA>
+						</MAPVIEW>
+						<EDIT ID="D387888F-D293-4319-8B4E-9747D80EEE33" Nm="edtPinName" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="0" MtLn="0" PxlEdg="0" EnableClearButton="1" EnableUpperCase="0">
+							<LCT X="75%" Y="98%" W="598%" H="144%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<PlaceHolder>
+								<PRM Nm="Bind" Val="" />
+							</PlaceHolder>
+							<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;EditBox&quot;" />
+							</DATA>
+						</EDIT>
+						<RECT ID="BB84F820-FB05-4B85-AA88-828115E633D7" Nm="recBackgroundMap" Vsb="1" Alpha="100" TouchEnabled="1" Clr="000000" BrW="0" Fill="1" BrClr="666666" PxlEdg="3">
+							<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+							<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+						</RECT>
+					</ITEMS>
+				</CONTAINER>
+				<CONTAINER ID="D2CCEC6E-F32B-41C6-8085-F68ADEBD2E14" Nm="contFunctions" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="1000%" Y="301" W="1000%" H="700%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="0" BgClr="ffffff" />
+					<ITEMS>
+						<LBL ID="B6670A60-FA8C-4EE5-93B9-D31035B507A1" Nm="lblAdress" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="66%" Y="30%" W="484%" H="56%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="139bf3" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.mapAddress" />
+							</DATA>
+						</LBL>
+						<LBL ID="D0E138CB-5E66-44A0-AD91-5558FE4B36D3" Nm="lblAdressDef" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="66%" Y="125%" W="639%" H="168%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="000000" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="&quot;Reşitbet Sokağı 1-9 34676 Istanbul Burhaniye Turkey&quot;" />
+							</DATA>
+						</LBL>
+						<BTN ID="DBEBF4B7-280A-4E89-BAB6-7F607DFC8DEA" Nm="btnShowRoute" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+							<LCT X="66%" Y="317%" W="773%" H="77%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FColor="139bf3" PressedFColor="138cb4" FStyle="0" Undrln="0" />
+							<STYLE BgClr="ffffff" PressedBgClr="ffffff" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.mapRoute" />
+							</DATA>
+							<ONPRESSED script="pgMap2_btnShowRoute_OnPressed(e);" />
+						</BTN>
+						<BTN ID="0DA1FB40-84F0-4744-A7C8-555FB23844DB" Nm="btnAddContact" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+							<LCT X="66%" Y="430%" W="795%" H="77%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FColor="139bf3" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+							<STYLE BgClr="ffffff" PressedBgClr="ffffff" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.mapAddContact" />
+							</DATA>
+							<ONPRESSED script="pgMap2_btnAddContact_OnPressed(e);" />
+						</BTN>
+						<BTN ID="22B1A130-8C24-4111-941A-4F282A1D538F" Nm="btnShare" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+							<LCT X="66%" Y="543%" W="784%" H="77%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FColor="139bf3" PressedFColor="138cb4" FStyle="0" Undrln="0" />
+							<STYLE BgClr="ffffff" PressedBgClr="ffffff" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.mapShare" />
+							</DATA>
+							<ONPRESSED script="pgMap2_btnShare_OnPressed(e);" />
+						</BTN>
+						<LINE ID="13F92ED7-B79D-491C-9A83-82FDC28B4E41" Nm="lineDivideRow1" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c4c4c4" BrW="1" Dashed="0">
+							<LCT X="66%" Y="400%" W="934%" H="14%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<LINE ID="1979696B-95FC-4AA0-BDFE-CFBAF761AE07" Nm="lineDivideRow2" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c0c0c0" BrW="1" Dashed="0">
+							<LCT X="66%" Y="510%" W="934%" H="14%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<LINE ID="19ACE94B-AC2B-4EA7-87DA-E80826DD2A45" Nm="lineDivideRow3" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c0c0c0" BrW="1" Dashed="0">
+							<LCT X="66%" Y="620%" W="934%" H="14%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<ROT Angle="0" />
+						</LINE>
+						<BTN ID="A940BA32-6EFB-431F-98F3-A43A1F102FE8" Nm="btnRemovePin" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+							<LCT X="66%" Y="655%" W="784%" H="77%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="7p" FColor="139bf3" PressedFColor="138cb4" FStyle="0" Undrln="0" />
+							<STYLE BgClr="ffffff" PressedBgClr="ffffff" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.mapRemovePin" />
+							</DATA>
+							<ONPRESSED script="pgMap2_btnRemovePin_OnPressed(e);" />
+						</BTN>
+					</ITEMS>
+				</CONTAINER>
+			</ITEMS>
+		</CONTAINER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgMap2_Self_OnShow(e);" />
+		<ONKEYP script="pgMap2_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>

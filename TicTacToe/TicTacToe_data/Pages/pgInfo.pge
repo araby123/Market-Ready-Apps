@@ -1,172 +1,23 @@
-<PAGE ID="117E8100-C5EC-43DE-A9E3-B841AB626DA6" Name="pgInfo" Navigation="0" Left="0" Top="0" Width="320" Height="480" LeftPerc="0" TopPerc="0" WidthPerc="0" HeightPerc="0" isLeftPerc="0" isTopPerc="0" isWidthPerc="0" isHeightPerc="0" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" SolidBorder="0" Type="0" BgColor="3878179" BgTransparent="0" PicID="00000000-0000-0000-0000-100000000001" Position="3" SizeMode="2" FocusObj="00000000-0000-0000-0000-100000000001" ShowStatusBar="0" ParentTabBarID="00000000-0000-0000-0000-100000000001" EnableTabBar="0" LockOrientation="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" IsSplashScreen="0">
-	<OBJECTS>
-		<PICTURE>
-			<Properties ID="F00A1513-D5C1-4B46-8EF2-3F06F3E3E054" Name="logo" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="14" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="41" Top="0" Width="244" Height="67" dpLeft="41" dpTop="0" dpWidth="244" dpHeight="67" LeftPerc="0.128124997019768" TopPerc="0" WidthPerc="0.762499988079071" HeightPerc="0.139583334326744" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="logo" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<PICTURE>
-			<Properties ID="FE2225E7-A576-45CF-BF7F-D6225C663784" Name="Image1" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="30" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="20" Top="213" Width="285" Height="98" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0.0610000006854534" TopPerc="0.443333357572556" WidthPerc="0.89062488079071" HeightPerc="0.204166650772095" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="15" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="siyah_zemin" Position="3" SizeMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<LABEL>
-			<Properties ID="ADD9CB30-45F0-401D-9BE0-E583F2248F24" Name="Label1" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="32" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="38" Top="154" Width="256" Height="60" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0.119999997317791" TopPerc="0.319999992847443" WidthPerc="0.800000011920929" HeightPerc="0.125" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="15" TouchEnabled="0" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="&quot;This Application is developed by Mobinex with Smartface App Studio.&quot;">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1254\deff0{\fonttbl{\f0\fnil\fcharset162 Default2;}}
-{\colortbl ;\red255\green255\blue255;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\lang1055\f0\fs22 This Application is developed by Mobinex with Smartface App Studio.\par
-}
-" FValue="7" FUnit="pt" MultiLine="1" />
-				</TypeSpecific>
-			</Properties>
-		</LABEL>
-		<LABEL>
-			<Properties ID="D894FE19-1CF7-4E54-A713-FF525B24E26F" Name="Label2" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="34" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="1" Top="58" Width="318" Height="35" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0.00437496602535248" TopPerc="0.119999997317791" WidthPerc="0.995000600814819" HeightPerc="0.0729166641831398" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="15" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="&quot;Version V1.0.0&quot;">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1254\deff0{\fonttbl{\f0\fnil\fcharset162 Default2;}}
-{\colortbl ;\red255\green255\blue255;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\cf1\lang1055\f0\fs22 Version V1.0.0\par
-}
-" FValue="7" FUnit="pt" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-		</LABEL>
-		<LABEL>
-			<Properties ID="93906073-4B46-4AEE-BE61-EF5D81DA64CA" Name="Label3" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="36" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="28" Top="228" Width="119" Height="79" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0.0875000432133675" TopPerc="0.474999696016312" WidthPerc="0.371875196695328" HeightPerc="0.164583325386047" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1254\deff0{\fonttbl{\f0\fnil\fcharset162 Default2;}}
-{\colortbl ;\red102\green102\blue102;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\lang1055\f0\fs20\par
-}
-" FValue="13" FUnit=" px" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-			<Events>
-				<OnTouch script="pgInfo_Label3_OnTouch(e);" />
-			</Events>
-		</LABEL>
-		<LABEL>
-			<Properties ID="D3A09482-5E11-4E1C-8714-C713DAC482B7" Name="Label4" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="38" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="168" Top="229" Width="127" Height="74" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0.525000274181366" TopPerc="0.477083474397659" WidthPerc="0.396874725818634" HeightPerc="0.154166638851166" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1254\deff0{\fonttbl{\f0\fnil\fcharset162 Default2;}}
-{\colortbl ;\red102\green102\blue102;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\lang1055\f0\fs20\par
-}
-" FValue="13" FUnit=" px" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-			<Events>
-				<OnTouch script="pgInfo_Label4_OnTouch(e);" />
-			</Events>
-		</LABEL>
-		<LABEL>
-			<Properties ID="695C02CB-0992-438A-9619-275EFC625BCA" Name="Label5" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="40" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="307" Width="322" Height="35" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="2.47266136454982E-8" TopPerc="0.639999985694885" WidthPerc="1.00625026226044" HeightPerc="0.0729166641831398" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="15" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="&quot;©Copyright 2013 Mobinex&quot;">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1254\deff0{\fonttbl{\f0\fnil\fcharset162 Default2;}}
-{\colortbl ;\red153\green153\blue153;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\cf1\lang1055\f0\fs20\&apos;a9Copyright 2013 Mobinex\par
-}
-" FValue="6" FUnit="pt" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-		</LABEL>
-		<CONTAINER>
-			<Properties ID="7D58D345-61C5-437D-8391-FD0523B700E8" Name="ConMenu" Parent="00000000-0000-0000-0000-100000000001" ParentMode="-1" Prio="46" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="106" Top="361" Width="117" Height="43" dpLeft="40.2453994750977" dpTop="354.355834960938" dpWidth="234.601226806641" dpHeight="42.2085876464844" LeftPerc="0.330000013113022" TopPerc="0.752083361148834" WidthPerc="0.365624994039536" HeightPerc="0.0895833298563957" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific BorderColor="3223601" BorderWidth="0" BackgroundColor="15725551" Transparent="1" AutoSize="0">
-					<Layout Type="0" Ort="0" Align="0" HrtGap="5" VrtGap="5" />
-				</TypeSpecific>
-			</Properties>
-		</CONTAINER>
-		<PICTURE>
-			<Properties ID="33397D57-16C9-41F2-B3DE-AB2F3F1235AE" Name="Image11" Parent="7D58D345-61C5-437D-8391-FD0523B700E8" ParentMode="-1" Prio="48" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="0" Width="117" Height="43" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="1" HeightPerc="1" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Alpha="100" Res="infoMenu" Position="3" SizeMode="2" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-			</Properties>
-		</PICTURE>
-		<LABEL>
-			<Properties ID="371CCE71-3B2E-459A-A554-1B784D878C7A" Name="LblCon" Parent="7D58D345-61C5-437D-8391-FD0523B700E8" ParentMode="-1" Prio="56" Lock="0" TextDirection="0">
-				<Location Visible="1" VOnDesign="1" Left="0" Top="0" Width="117" Height="43" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="1" HeightPerc="1" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="&quot;Continue&quot;">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 HelveticaNeue;}}
-{\colortbl ;\red255\green255\blue255;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\cf1\lang1033\b\f0\fs16 Continue\par
-}
-" FValue="5" FUnit="pt" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-			<Events>
-				<OnTouch script="pgInfo_LblCon_OnTouch(e);" />
-				<OnTouchEnded script="pgInfo_LblCon_OnTouchEnded(e);" />
-			</Events>
-		</LABEL>
-		<LABEL>
-			<Properties ID="4BE380F9-4C6F-4266-BCDE-2431C797A579" Name="CopyofLblCon" Parent="7D58D345-61C5-437D-8391-FD0523B700E8" ParentMode="-1" Prio="60" Lock="0" TextDirection="0">
-				<Location Visible="0" VOnDesign="1" Left="0" Top="0" Width="117" Height="43" dpLeft="0" dpTop="0" dpWidth="0" dpHeight="0" LeftPerc="0" TopPerc="0" WidthPerc="1" HeightPerc="1" isLeftPerc="1" isTopPerc="1" isWidthPerc="1" isHeightPerc="1" OnTop="0" Anchors="3" TouchEnabled="1" LockAutoSize="0" LockAutoPosition="0" />
-				<Data ConstVal="&quot;Continue&quot;">
-					<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" TblID="00000000-0000-0000-0000-100000000001" />
-					<CustomVrblBind Use="0" Name="" />
-				</Data>
-				<TypeSpecific Type="2" Mask="" BackColor="13421772" Transparent="1" BorderColor="10066329" BorderWidth="0" PixelEdge="3" VTAlign="1" ShowScrollbars="0" Alpha="100" AdjustFontSizeToFit="0" MinFontSize="7" AutoLink="0" ShowShadow="0" ShadowXOffset="0" ShadowYOffset="0" ShadowColor="0" AutoSize="0" HorizontalGapValue="0">
-					<Text Text="{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 HelveticaNeue;}}
-{\colortbl ;\red153\green153\blue153;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\cf1\lang1033\b\f0\fs16 Continue\par
-}
-" FValue="5" FUnit="pt" MultiLine="0" />
-				</TypeSpecific>
-			</Properties>
-		</LABEL>
-	</OBJECTS>
-	<EVENTS>
-		<OnShow script="pgInfo_Self_OnShow(e);" />
-		<OnKeyPress script="pgInfo_Self_OnKeyPress(e);" />
-	</EVENTS>
-</PAGE>
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<Page id="117E8100-C5EC-43DE-A9E3-B841AB626DA6" name="pgInfo" backgroundImage="00000000-0000-0000-0000-100000000001" fillColor="#232d3b" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" showNavigationBar="false" showActionBar="false" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<controls>
+				<Image name="logo" id="FCEB73D1-08FF-49C0-8734-A725B0684590" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="76,2499988079071%" height="13,9583334326744%" left="12,8124997019768%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="logo" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+				<Image name="Image1" id="41513E18-6BA6-4E38-B997-F84C20AC629B" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="89,062488079071%" height="20,4166650772095%" left="6,10000006854534%" top="44,3333357572556%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.aspectfit" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="siyah_zemin" alpha="1" anchor.left="true" anchor.top="true" anchor.right="true" anchor.bottom="true" enableScroll="false" enableCache="false" enableZoom="false" />
+				<Label name="Label1" id="C4BD57A0-7935-4605-B9E9-518FA1FB9CFE" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="80,0000011920929%" height="12,5%" left="11,9999997317791%" top="31,9999992847443%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="false" designVisible="true" backgroundTransparent="true" text="&quot;This Application is developed by Mobinex with Smartface App Studio.&quot;" font.name="Default" font.size="7pt" fontColor="#ffffff" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="true" anchor.bottom="true" textAlignment="SMF.UI.Alignment.left" multipleLine="true" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" />
+				<Label name="Label2" id="3264F441-228B-4B03-9560-A0DE5032F705" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="99,5000600814819%" height="7,29166641831398%" left="0,437496602535248%" top="11,9999997317791%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="&quot;Version V1.0.0&quot;" font.name="Default" font.size="7pt" fontColor="#ffffff" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="true" anchor.bottom="true" textAlignment="SMF.UI.Alignment.center" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" />
+				<Label name="Label3" id="24DA1DDA-E04D-4266-ADFE-2C26BCE78373" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="37,1875196695328%" height="16,4583325386047%" left="8,75000432133675%" top="47,4999696016312%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="" font.name="Default" font.size="13px" fontColor="#666666" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.left" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" onTouch="pgInfo_Label3_OnTouch(e);" />
+				<Label name="Label4" id="9399C3F5-B309-40E9-BA15-2DC2BA3034DC" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="39,6874725818634%" height="15,4166638851166%" left="52,5000274181366%" top="47,7083474397659%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="" font.name="Default" font.size="13px" fontColor="#666666" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.left" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" onTouch="pgInfo_Label4_OnTouch(e);" />
+				<Label name="Label5" id="2875067F-B4BE-4C98-A01D-A05D5B401B90" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="100,625026226044%" height="7,29166641831398%" left="2,47266136454982E-6%" top="63,9999985694885%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="&quot;©Copyright 2013 Mobinex&quot;" font.name="Default" font.size="6pt" fontColor="#999999" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="true" anchor.bottom="true" textAlignment="SMF.UI.Alignment.center" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" />
+				<Container name="ConMenu" id="A44FDCB7-9276-46D3-9EFE-FF8DEAF47D79" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="36,5624994039536%" height="8,95833298563957%" left="33,0000013113022%" top="75,2083361148834%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" enabled="true" autoSize="false" backgroundTransparent="true" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" borderColor="#313031" borderWitdh="0" fillColor="#eff3ef" layoutType="SMF.UI.LayoutType.absolute" alignment="SMF.UI.LayoutAlignment.none" orientation="SMF.UI.Orientation.none" verticalGap="5px" horizontalGap="5px">
+					<controls>
+						<Image name="Image11" id="547A725C-A9E7-449A-B8AC-009406A2F68D" parent="A44FDCB7-9276-46D3-9EFE-FF8DEAF47D79" parentMode="-1" width="100%" height="100%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" dataSource="" image="infoMenu" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+						<Label name="LblCon" id="2AB7E946-7E96-44D7-AD17-9DC7DCD1960C" parent="A44FDCB7-9276-46D3-9EFE-FF8DEAF47D79" parentMode="-1" width="100%" height="100%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="&quot;Continue&quot;" font.name="HelveticaNeue" font.size="5pt" fontColor="#ffffff" font.bold="true" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.center" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" onTouch="pgInfo_LblCon_OnTouch(e);" onTouchEnded="pgInfo_LblCon_OnTouchEnded(e);" />
+						<Label name="CopyofLblCon" id="AA41BCF1-BD7B-4C88-A830-955035784155" parent="A44FDCB7-9276-46D3-9EFE-FF8DEAF47D79" parentMode="-1" width="100%" height="100%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="true" backgroundTransparent="true" text="&quot;Continue&quot;" font.name="HelveticaNeue" font.size="5pt" fontColor="#999999" font.bold="true" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.center" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" />
+					</controls>
+				</Container>
+			</controls>
+			<EVENTS onShow="pgInfo_Self_OnShow(e);" onKeyPress="pgInfo_Self_OnKeyPress(e);" />
+		</Page>
+	</UI>
+</SMF>

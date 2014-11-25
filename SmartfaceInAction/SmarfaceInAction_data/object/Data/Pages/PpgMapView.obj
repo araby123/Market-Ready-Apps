@@ -1,0 +1,43 @@
+<PG ID="137CB2D8-FAE4-4DEC-AB39-D5030EE0EEBC" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgMapView" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<MAPVIEW ID="1795B594-E71A-4D8E-8FA1-78A4CAC0AD52" Nm="mapAddress" Vsb="1" MapType="0" CenterLatitude="41,035972" CenterLongitude="29,046902" ZoomLevel="10" EnableZoom="1" EnableScroll="1" ShowUserLocation="0" ShowPins="1" TouchEnabled="1">
+			<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<DATA>
+				<PRM Nm="Bind1" Val="" />
+				<PRM Nm="Bind2" Val="" />
+				<PRM Nm="Bind3" Val="" />
+				<PRM Nm="Bind4" Val="" />
+				<PRM Nm="Bind5" Val="" />
+				<PRM Nm="Bind6" Val="" />
+			</DATA>
+			<ONPINSELECTED script="pgMapView_mapAddress_OnPINSelected(e);" />
+			<ONLONGTOUCH script="pgMapView_mapAddress_OnLongTouch(e);" />
+		</MAPVIEW>
+		<CONTAINER ID="B2A68703-8729-4C25-8294-E628ECDCC187" Nm="contAddress" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="0%" Y="900%" W="1000%" H="100%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="555555" />
+			<ITEMS>
+				<RECT ID="13BEBF22-B776-4B84-A2CB-D6A15257C344" Nm="recBackground" Vsb="1" Alpha="50" TouchEnabled="1" Clr="666666" BrW="1" Fill="1" BrClr="666666" PxlEdg="3">
+					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<ROT Angle="0" />
+					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
+				</RECT>
+				<LBL ID="F776FC9F-8ABA-407E-A594-2A3265B6694C" Nm="lblMapAddress" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+					<LCT X="60%" Y="50%" W="880%" H="900%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<FONT FName="Default" FSize="7p" FUnit="pt" AdjustFSize="1" MinFSize="5" FColor="ffffff" FStyle="0" Undrln="0" />
+					<STYLE BgTparent="1" BgClr="000000" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
+					<DATA>
+						<PRM Nm="Bind" Val="&quot;&quot;" />
+					</DATA>
+				</LBL>
+			</ITEMS>
+		</CONTAINER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgMapView_Self_OnShow(e);" />
+		<ONKEYP script="pgMapView_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>
