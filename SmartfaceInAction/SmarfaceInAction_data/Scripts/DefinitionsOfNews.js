@@ -34,4 +34,3 @@ squareStyleNewsScrollViewsContentHeights = []; // array for holding scrollView(c
 
 
 setupNewsRepeatBoxImageHeights(); // array for holding rpbxLine,rpbxSquare and rpbxBoxed height values in pgSquareStyle
-

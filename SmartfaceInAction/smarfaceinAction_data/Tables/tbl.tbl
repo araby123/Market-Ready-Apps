@@ -1,0 +1,9 @@
+<OBJECT>
+	<Table name="tbl" id="37F051B1-1464-443F-9C84-DD601D67B053" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific LastFieldID="0" Guid="" OverrideOnUpdate="1" ReadOnly="0" isServerObject="0" OneToOneType="1684371567" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="col1" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+		</TypeSpecific>
+	</Table>
+</OBJECT>

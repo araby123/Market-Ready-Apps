@@ -1,0 +1,26 @@
+<OBJECT>
+	<WebClient name="wcListView" id="BE326890-073A-4F1D-9C9C-2FB3FA46B4B4" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific HostUrl="http://services.smartface.io/SmartfaceInAction/News?page=${pagenumber}&amp;rowNumber=${rowNumber}" Method="0" ContentType="json" NotifyUpdateStatus="1" AddUserInfo="0" MaxReceiveCount="0" TimeOutInterval="60" WriteMode="1">
+			<RequestRawBody Enabled="0" ContentType="application/json" />
+			<CustomRequestHeaders>
+			</CustomRequestHeaders>
+			<SendParams>
+				<Params>
+					<Param ParamName="rowNumber" ParamValue="Data.wcListView_InDSet.rowNumber" ParamSROffset="0" ParentName="URL" />
+					<Param ParamName="pagenumber" ParamValue="Data.wcListView_InDSet.pagenumber" ParamSROffset="1" ParentName="URL" />
+				</Params>
+			</SendParams>
+			<ReceiveParams>
+				<Params>
+					<Param ParamName="news" ParamXPath="$.news" ParamValue="Data.wcListView_OutDSetnews.news" ParentName="BODY" />
+					<Param ParamName="title" ParamXPath="$.news.title" ParamValue="Data.wcListView_OutDSetnews.title" ParentName="BODY" />
+					<Param ParamName="id" ParamXPath="$.news.id" ParamValue="Data.wcListView_OutDSetnews.id" ParentName="BODY" />
+					<Param ParamName="type" ParamXPath="$.news.type" ParamValue="Data.wcListView_OutDSetnews.type" ParentName="BODY" />
+					<Param ParamName="description" ParamXPath="$.news.description" ParamValue="Data.wcListView_OutDSetnews.description" ParentName="BODY" />
+					<Param ParamName="id" ParamXPath="$.news.image.id" ParamValue="Data.wcListView_OutDSetnews.id1" ParentName="BODY" />
+					<Param ParamName="url" ParamXPath="$.news.image.url" ParamValue="Data.wcListView_OutDSetnews.url" ParentName="BODY" />
+				</Params>
+			</ReceiveParams>
+		</TypeSpecific>
+	</WebClient>
+</OBJECT>

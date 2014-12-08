@@ -1,0 +1,16 @@
+<OBJECT>
+	<Dataset name="wcTwitter_OutDSetwcTwitter" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="0" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="wcTwitter_OutDTblwcTwitter.wcTwitterId" TblID="CDDE33E2-780C-4363-83A6-0AD48CD6449F" />
+				<Field ID="2" Name="wcTwitter_OutDTblwcTwitter.wcTwitter" TblID="CDDE33E2-780C-4363-83A6-0AD48CD6449F" />
+				<Field ID="3" Name="wcTwitter_OutDTblwcTwitter.coordinates" TblID="CDDE33E2-780C-4363-83A6-0AD48CD6449F" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT "wcTwitter_OutDTblwcTwitter"."wcTwitterId", "wcTwitter_OutDTblwcTwitter"."wcTwitter", "wcTwitter_OutDTblwcTwitter"."coordinates" FROM "wcTwitter_OutDTblwcTwitter"
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>

@@ -1,0 +1,38 @@
+<OBJECT>
+	<WebClient name="wcMap" id="18D8B820-57A9-4DD6-B70E-D5073B0D25D5" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific HostUrl="http://services.smartface.io/SmartfaceInAction/Maps" Method="0" ContentType="json" NotifyUpdateStatus="1" AddUserInfo="0" MaxReceiveCount="0" TimeOutInterval="60" WriteMode="1">
+			<RequestRawBody Enabled="0" ContentType="application/json" />
+			<CustomRequestHeaders>
+			</CustomRequestHeaders>
+			<SendParams>
+			</SendParams>
+			<ReceiveParams>
+				<Params>
+					<Param ParamName="wcMap" ParamXPath="$" ParamValue="Data.wcMap_OutDSetwcMap.wcMap" ParentName="BODY" />
+					<Param ParamName="pins" ParamXPath="$.pins" ParamValue="Data.wcMap_OutDSetpins.pins" ParentName="BODY" />
+					<Param ParamName="title" ParamXPath="$.pins.title" ParamValue="Data.wcMap_OutDSetpins.title" ParentName="BODY" />
+					<Param ParamName="id" ParamXPath="$.pins.id" ParamValue="Data.wcMap_OutDSetpins.id" ParentName="BODY" />
+					<Param ParamName="type" ParamXPath="$.pins.type" ParamValue="Data.wcMap_OutDSetpins.type" ParentName="BODY" />
+					<Param ParamName="subtitle" ParamXPath="$.pins.subtitle" ParamValue="Data.wcMap_OutDSetpins.subtitle" ParentName="BODY" />
+					<Param ParamName="latitude" ParamXPath="$.pins.latitude" ParamValue="Data.wcMap_OutDSetpins.latitude" ParentName="BODY" />
+					<Param ParamName="address" ParamXPath="$.pins.address" ParamValue="Data.wcMap_OutDSetpins.address" ParentName="BODY" />
+					<Param ParamName="longitude" ParamXPath="$.pins.longitude" ParamValue="Data.wcMap_OutDSetpins.longitude" ParentName="BODY" />
+					<Param ParamName="success" ParamXPath="$.success" ParamValue="Data.wcMap_OutDSetwcMap.success" ParentName="BODY" />
+					<Param ParamName="error" ParamXPath="$.error" ParamValue="Data.wcMap_OutDSetwcMap.error" ParentName="BODY" />
+					<Param ParamName="wcMap" ParamXPath="$" ParamValue="Data.wcMap_HeaderOutDSetwcMap.wcMap" ParentName="HEADER" />
+					<Param ParamName="Cache-Control" ParamXPath="$.Cache-Control" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Cache_Control" ParentName="HEADER" />
+					<Param ParamName="Pragma" ParamXPath="$.Pragma" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Pragma" ParentName="HEADER" />
+					<Param ParamName="Transfer-Encoding" ParamXPath="$.Transfer-Encoding" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Transfer_Encoding" ParentName="HEADER" />
+					<Param ParamName="Content-Type" ParamXPath="$.Content-Type" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Content_Type" ParentName="HEADER" />
+					<Param ParamName="Content-Encoding" ParamXPath="$.Content-Encoding" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Content_Encoding" ParentName="HEADER" />
+					<Param ParamName="Expires" ParamXPath="$.Expires" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Expires" ParentName="HEADER" />
+					<Param ParamName="Vary" ParamXPath="$.Vary" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Vary" ParentName="HEADER" />
+					<Param ParamName="Server" ParamXPath="$.Server" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Server" ParentName="HEADER" />
+					<Param ParamName="X-AspNet-Version" ParamXPath="$.X-AspNet-Version" ParamValue="Data.wcMap_HeaderOutDSetwcMap.X_AspNet_Version" ParentName="HEADER" />
+					<Param ParamName="X-Powered-By" ParamXPath="$.X-Powered-By" ParamValue="Data.wcMap_HeaderOutDSetwcMap.X_Powered_By" ParentName="HEADER" />
+					<Param ParamName="Date" ParamXPath="$.Date" ParamValue="Data.wcMap_HeaderOutDSetwcMap.Date" ParentName="HEADER" />
+				</Params>
+			</ReceiveParams>
+		</TypeSpecific>
+	</WebClient>
+</OBJECT>

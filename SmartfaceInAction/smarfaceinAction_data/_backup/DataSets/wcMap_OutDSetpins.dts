@@ -1,0 +1,22 @@
+<OBJECT>
+	<Dataset name="wcMap_OutDSetpins" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="0" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="wcMap_OutDTblpins.pinsId" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="2" Name="wcMap_OutDTblpins.pins" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="3" Name="wcMap_OutDTblpins.title" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="4" Name="wcMap_OutDTblpins.id" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="5" Name="wcMap_OutDTblpins.type" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="6" Name="wcMap_OutDTblpins.subtitle" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="7" Name="wcMap_OutDTblpins.latitude" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="8" Name="wcMap_OutDTblpins.address" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+				<Field ID="9" Name="wcMap_OutDTblpins.longitude" TblID="FE147B5B-3E2F-4887-A945-010D064454A4" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT "wcMap_OutDTblpins"."pinsId", "wcMap_OutDTblpins"."pins", "wcMap_OutDTblpins"."title", "wcMap_OutDTblpins"."id", "wcMap_OutDTblpins"."type", "wcMap_OutDTblpins"."subtitle", "wcMap_OutDTblpins"."latitude", "wcMap_OutDTblpins"."address", "wcMap_OutDTblpins"."longitude" FROM "wcMap_OutDTblpins"
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>

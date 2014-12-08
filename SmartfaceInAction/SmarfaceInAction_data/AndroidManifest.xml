@@ -178,6 +178,25 @@
 			android:value="true"/>
         <meta-data
 		   android:name="com.google.android.maps.v2.API_KEY"
-		   android:value="AIzaSyCJCdAPx0hYubkYAlz4TOKa9Yo-gSho2r8"/>
+		   android:value="AIzaSyDYMd2n7_RAVBu-lacJ1FaJtgZWIeDcBUg"/>
+		   
+		   		   <!-- ADMOB and LOCALNOT. -->
+		    <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+ 
+        <service android:name="com.geniem.sprat.notifications.LocalNotificationService"
+                 android:enabled="true" />
+         
+        <receiver android:name="com.geniem.sprat.notifications.LocalNotificationReceiver"/>
+        
+        <service android:name="com.geniem.sprat.notifications.NLService"
+            android:enabled="true"
+          android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+     		<intent-filter>
+         		<action android:name="android.service.notification.NotificationListenerService" />
+     		</intent-filter>
+ 		</service>
+		   
+		  <!-- ADMOB and LOCALNOT. --> 
     </application>
 </manifest>
