@@ -12,10 +12,8 @@ function pgMap2_Self_OnShow(e) {
     getDistanceFromLatLonInKm(37.7, -122.43, parseFloat(Data.wcMap_OutDSetpins.latitude), parseFloat(Data.wcMap_OutDSetpins.longitude));
     this.showStatusBar = true;
     var title = lang.mapFiltre;
-    if (Device.deviceOS == "Android") {
-        header.init(this, mapHeader, mapStatusbarColor, title);
-        header.setLeftItem(pagesBack);
-    } else {
+    if (Device.deviceOS == "Android") {}
+    else {
         header.init(this, mapHeader, mapStatusbarColor, title);
         header.setLeftItem(pagesBack);
     }
@@ -137,9 +135,9 @@ function pgMap2_btnAddPin_OnPressed(e) {
         pinDataset.seek(0);
         rowAddedToPinDataset = true;
         var alertObj = alert({
-                title : lang.mapMessage,
-                message : lang.mapSaveLoc,
-                firstButtonText : lang.mapTextDone,
+                title : 'Message',
+                message : 'Location is saved.',
+                firstButtonText : "Done",
                 onFirstButtonPressed : function () {},
             });
         Pages.back();
@@ -153,9 +151,9 @@ function pgMap2_btnAddContact_OnPressed(e) {
         address : Pages.pgMap2.contMain.contFunctions.lblAdressDef.text,
         onSuccess : function (e) {
             var alertObj = alert({
-                    title : lang.mapMessage,
-                    message : lang.mapSave,
-                    firstButtonText : lang.mapTextDone,
+                    title : 'Message',
+                    message : 'Contact is saved.',
+                    firstButtonText : "Done",
                     onFirstButtonPressed : function () {},
                 });
         }
@@ -169,7 +167,9 @@ function pgMap2_btnShare_OnPressed(e) {
         var messageText = Pages.pgMap2.contMain.contFunctions.lblAdressDef.text + "  " + "http://maps.google.com/maps?saddr=" + encodeURIComponent(str);
     else
         var messageText = Pages.pgMap2.contMain.contFunctions.lblAdressDef.text + "  " + "http://maps.apple.com/?q=" + encodeURIComponent(str);
-    Social.share(Pages.pgMap2.contMain.contMap.edtPinName.text, messageText, function () {}, function () {});
+    Social.share(Pages.pgMap2.contMain.contMap.edtPinName.text, messageText, function () {}, function () {
+        alert("failure");
+    });
     SES.Analytics.eventLog("Share address link", '{\"function\":\"pgMap2_btnShare_OnPressed\"}');
 }
 function pgMap2_btnShowRoute_OnPressed(e) {

@@ -1,12 +1,14 @@
-//taking 20 tweet, add them into twitterTable, notify to see
+
+
 function Project_wcTwitter_OnSyndicationSuccess(e) {
     resObjGetTwitter = JSON.parse(SMF.Net.wcTwitter.responseText);
+
     for (var i = 0; i < 20; i++) {
         Data.DS_twitterTable.add();
     }
     Data.notify("Data.DS_twitterTable");
 }
-//assigning map zoom level to see wider or narrower angle then attached pins
+
 function Project_wcMap_OnSyndicationSuccess(e) {
     Pages.pgMap1.map.zoomLevel = 10;
     counter = 0;
@@ -14,7 +16,7 @@ function Project_wcMap_OnSyndicationSuccess(e) {
     timeGettingPin();
     webclientSuccessed = 1;
 }
-//adding pin with animation
+
 function timeGettingPin() {
     var imgPath;
     if (counter < Data.wcMap_OutDSetpins.rowCount) {
@@ -51,7 +53,7 @@ function timeGettingPin() {
     }
 
 }
-//adding number of row to the squareDataset then draw squares calculating screenwidth
+
 function Project_wcSquareView_OnSyndicationSuccess(e) {
     var responseText = SMF.Net.wcSquareView.responseText;
     var parsedResponse = JSON.parse(responseText);
@@ -138,22 +140,6 @@ function Project_wcSquareView_OnSyndicationSuccess(e) {
 }
 
 function Project_wcListView_OnSyndicationSuccess(e) {
-    // added new handler
-    var tempNewsObj = JSON.parse(this.responseText);
-    if (tempNewsObj.news.length > 0) {
-        shareListViewNews.news = shareListViewNews.news.concat(tempNewsObj.news);
-
-        var i;
-        for (i = 0; i < tempNewsObj.news.length; i++) {
-            Data.DS_News.add();
-        }
-        Pages.pgListView.rpbxLine.insertRows(Pages.pgListView.rpbxLine.count, tempNewsObj.news.length);
-    }
-    var timeout = setTimeout(function () {
-            Pages.pgListView.rpbxLine.closePullItems();
-            clearTimeout(timeout);
-        }, 3000);
-    Pages.pgListView.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.rightToLeft, SMF.UI.TransitionEffectType.push, false, false);
     var index = newsArrayList.length - 1;
     var parsedResponseList = [];
     var responseTextList = SMF.Net.wcListView.responseText;
@@ -162,14 +148,14 @@ function Project_wcListView_OnSyndicationSuccess(e) {
     if (parsedResponseList.length > 0) {
         for (var i = 0; i < parsedResponseList.length; i++) {
             newsArrayList.push(parsedResponseList[i]);
-            //Data.DS_News.add();
+            Data.DS_News.add();
         }
         //Data.notify("Data.DS_News");
         var a = Pages.pgListView.rpbxLine.count;
-        //Pages.pgListView.rpbxLine.insertRows(a, parsedResponseList.length);
-    } else {}
-
-    // Pages.pgListView.rpbxLine.closePullItems();
+        Pages.pgListView.rpbxLine.insertRows(a, parsedResponseList.length);
+    } else {
+        Pages.pgListView.rpbxLine.closePullItems();
+    }
     Pages.pgLineStyle.svNewsContentPager.contentWidth = newsArrayList.length * Device.screenWidth;
     Pages.pgLineStyle.svNewsContentPager.svNewsContent0.width = Device.screenWidth;
     Pages.pgLineStyle.svNewsContentPager.svNewsContent1.width = Device.screenWidth;
@@ -210,9 +196,9 @@ function Project_wcListView_OnSyndicationSuccess(e) {
         lineStyleNewsScrollViewsContentHeights[i] = initialContentHeight + labelHeight;
     }
 
+    Data.notify("Data.wcListView_OutDSetnews");
     if (!isUsingSwipe) {
         Pages.pgListView.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.rightToLeft, SMF.UI.TransitionEffectType.push, false, false);
-        Data.notify("Data.wcListView_OutDSetnews");
     }
     if (index > 0 && index < newsArrayList.length - 1) {
         if (isUsingSwipe) {

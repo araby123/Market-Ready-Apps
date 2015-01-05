@@ -14,18 +14,13 @@ function showDlgListLineInfo() {
 }
 function pgLineStyle_Self_OnShow(e) {
     // setting iOS NavigationBar
-    var title = lang.pgLineStyleTitle;
-    if (Device.deviceOS == "Android") {
-        header.init(this, listHeader, listStatusbarColor, title);
-        header.setLeftItem(pagesBack);
-    } else {
+    var title = "Line Content";
+    if (Device.deviceOS == "Android") {}
+    else {
         header.init(this, listHeader, listStatusbarColor, title);
         header.setLeftItem(pagesBack);
         header.setRightItem(showDlgListLineInfo);
     }
-    Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.image = "";
-    Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.image = "";
-    Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.image = "";
     // setting size of imgNewsContent,imgNewsContent1,imgNewsContent2
     var a = Device.screenWidth / 1.5;
     this.svNewsContentPager.svNewsContent0.imgNewsContent.height = a;
@@ -53,14 +48,9 @@ function onScroll1(e) {
             if (e.scrollY == 0) {
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.imageFillType = SMF.UI.ImageFillType.aspectFit;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.height = imgHeight;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.width = Device.screenWidth;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.left = 0;
             } else if ((defaultContentTop + (e.scrollY * -1)) > imgHeight) {
-                if (Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.imageFillType != 2)
-                    Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.imageFillType = SMF.UI.ImageFillType.stretch;
+                Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.imageFillType = SMF.UI.ImageFillType.stretch;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.height = defaultContentTop + (e.scrollY * -1);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.width = Device.screenWidth + (e.scrollY * -1 * 1.500938);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent0.imgNewsContent.left =  - (e.scrollY * -1 * 1.500938 / 2);
             }
         }
         if (!Pages.pgLineStyle.svNewsContentPager.svNewsContent0.content0.backgroundTransparent)
@@ -77,14 +67,9 @@ function onScroll2(e) {
             if (e.scrollY == 0) {
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.imageFillType = SMF.UI.ImageFillType.aspectFit;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.height = imgHeight2;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.width = Device.screenWidth;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.left = 0;
             } else if ((defaultContentTop2 + (e.scrollY * -1)) > imgHeight2) {
-                if (Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.imageFillType != 2)
-                    Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.imageFillType = SMF.UI.ImageFillType.stretch;
+                Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.imageFillType = SMF.UI.ImageFillType.stretch;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.height = defaultContentTop2 + (e.scrollY * -1);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.width = Device.screenWidth + (e.scrollY * -1 * 1.500938);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent1.imgNewsContent1.left =  - (e.scrollY * -1 * 1.500938 / 2);
             }
         }
         if (!Pages.pgLineStyle.svNewsContentPager.svNewsContent1.content1.backgroundTransparent)
@@ -101,14 +86,9 @@ function onScroll3(e) {
             if (e.scrollY == 0) {
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.imageFillType = SMF.UI.ImageFillType.aspectFit;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.height = imgHeight3;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.width = Device.screenWidth;
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.left = 0;
             } else if ((defaultContentTop3 + (e.scrollY * -1)) > imgHeight3) {
-                if (Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.imageFillType != 2)
-                    Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.imageFillType = SMF.UI.ImageFillType.stretch;
+                Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.imageFillType = SMF.UI.ImageFillType.stretch;
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.height = defaultContentTop3 + (e.scrollY * -1);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.width = Device.screenWidth + (e.scrollY * -1 * 1.500938);
-                Pages.pgLineStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.left =  - (e.scrollY * -1 * 1.500938 / 2);
             }
             if (!Pages.pgLineStyle.svNewsContentPager.svNewsContent2.content2.backgroundTransparent)
                 Pages.pgLineStyle.svNewsContentPager.svNewsContent2.content2.backgroundTransparent = false;

@@ -1,5 +1,5 @@
 <PG ID="AB969C41-F7AD-4A20-823D-EBB432CCE916" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgLogin" BgClr="f1f0ec" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="320" H="480" />
+	<EDGE X="0" Y="0" W="2048" H="1536" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<CONTAINER ID="AE0D4212-E437-412E-B310-AFC82D69C6F9" Nm="contValidation" Vsb="1" TouchEnabled="1" AutoSize="0">
@@ -26,12 +26,12 @@
 			</ITEMS>
 		</CONTAINER>
 		<CONTAINER ID="AD130979-7401-4535-AFFF-D6697DD9525E" Nm="cntLogin" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="159%" W="1000%" H="211%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="-3%" Y="159%" W="1006%" H="211%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<STYLE BrClr="c7c3be" BrW="1" BgTparent="0" BgClr="e8e6e2" />
 			<ITEMS>
 				<LINE ID="305091E3-523A-43F2-B411-E1981261FCC9" Nm="lineDivideRow1" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
-					<LCT X="90%" Y="496%" W="910%" H="9%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<LCT X="47%" Y="496%" W="953%" H="9%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 					<ROT Angle="0" />
 				</LINE>
 				<EDIT ID="E78FB34D-A24A-4D71-A2A3-0512CCE3BE1E" Nm="edtEmail" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
@@ -44,7 +44,6 @@
 					<DATA>
 						<PRM Nm="Bind" Val="" />
 					</DATA>
-					<ONENTER script="pgLogin_edtEmail_OnEnter(e);" />
 					<ONCHANGE script="pgLogin_edtEmail_OnChange(e);" />
 					<ONRETURNKEY script="pgLogin_edtEmail_OnReturnKey(e);" />
 				</EDIT>

@@ -1,5 +1,5 @@
 <PG ID="AA98DF0E-8BA2-4F30-8F79-A0C59D9E3DE4" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgRegister" BgClr="f1f0ec" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="0" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="720" H="1280" />
+	<EDGE X="0" Y="0" W="2048" H="1536" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<SCROLLVIEW ID="203DB084-F898-484E-8662-2FCFF92BDF1E" Nm="scrollMainRegister" Vsb="1" TouchEnabled="1">
@@ -77,7 +77,7 @@
 							<ROT Angle="0" />
 						</LINE>
 						<EDIT ID="4C120B8C-CC70-4D53-8267-925CA23D6142" Nm="edtPhoneNumber" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="0" EnableClearButton="0" EnableUpperCase="0">
-							<LCT X="25%" Y="756%" W="939%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<LCT X="31%" Y="756%" W="939%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 							<PlaceHolder>
 								<PRM Nm="Bind" Val="lang.phoneNumber" />
 							</PlaceHolder>
@@ -87,7 +87,6 @@
 								<PRM Nm="Bind" Val="" />
 							</DATA>
 							<ONENTER script="pgRegister_edtPhoneNumber_OnEnter(e);" />
-							<ONRETURNKEY script="pgRegister_edtPhoneNumber_OnReturnKey(e);" />
 						</EDIT>
 						<LBL ID="A97FD246-AB03-4669-967F-467598F84157" Nm="lblBirthDate" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="5" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
 							<LCT X="54%" Y="504%" W="939%" H="243%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -155,9 +154,9 @@
 								<PRM Nm="Bind" Val="lang.allowMsg" />
 							</DATA>
 						</LBL>
-						<SWITCHBUTTON ID="7FB8F2C3-4D50-41BE-86C5-E5362344030F" Nm="sliderNotifications" Vsb="1" Alpha="100" Checked="0" TouchEnabled="1" TintColor="00ea7f">
+						<SWITCHBUTTON ID="7FB8F2C3-4D50-41BE-86C5-E5362344030F" Nm="sbNotifications" Vsb="1" Alpha="100" Checked="1" TouchEnabled="1" TintColor="00ea7f">
 							<LCT X="730%" Y="50%" W="5100d" H="3100d" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-							<ONCHANGE script="pgRegister_sliderNotifications_OnChange(e);" />
+							<ONCHANGE script="pgRegister_sbNotifications_OnChange(e);" />
 						</SWITCHBUTTON>
 						<LINE ID="CC090B86-294F-49AF-BFAA-D6F6090B9F5C" Nm="lineDivideRow4" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
 							<LCT X="0%" Y="226%" W="1000%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
