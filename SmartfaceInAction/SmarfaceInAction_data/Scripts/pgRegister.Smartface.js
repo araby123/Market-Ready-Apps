@@ -1,21 +1,81 @@
-var isAllow = Pages.pgRegister.scrollMainRegister.contUserInfo4.sliderNotifications.checked = false; // a flag , holding SwitchButton check value
+var isAllow = Pages.pgRegister.scrollMainRegister.contUserInfo4.sbNotifications.checked; // a flag , holding SwitchButton check value
 var birthDate; // a flag , holding date value from datepicker
 var registerProfileImageWebClient = new SMF.Net.WebClient(); // webClient object for fetching server response
+var imageFileRegister;
 // to show how to get the image
 function pgRegister_imgProfile_OnTouchEnded(e) {
-    fromProfile = false;
     var item1 = {
         title : "Select from Gallery",
         icon : "icon.png", // Andrid 3.0- only
         onSelected : function (e) {
-            takeCropImage(false);
+            Device.Media.pickFromGallery({
+                type : [SMF.MediaType.image],
+                onSuccess : function (e) {
+                    var im = new SMF.Image({
+                            imageUri : e.file,
+                            onSuccess : function (e) {
+                                im.resize({
+                                    width : 200,
+                                    height : 200,
+                                    format : SMF.ImageFormat.PNG,
+                                    compressionRate : 0.7,
+                                    onSuccess : function (e) {
+                                        Pages.pgRegister.scrollMainRegister.contUserInfo1.cntProfile.imgProfile.image = e.image;
+                                        if (Device.deviceOS == "Android")
+                                            imageFileRegister = new SMF.IO.File(e.image);
+                                        else
+                                            imageFileRegister = new SMF.IO.File(SMF.IO.applicationDataDirectory, e.image);
+                                    },
+                                    onError : function (e) {
+                                        alert(e.message);
+                                    }
+                                });
+                            },
+                            onError : function (e) {
+                                alert( + e.message);
+                            }
+                        });
+                  //  Pages.pgRegister.scrollMainRegister.contUserInfo1.cntProfile.imgProfile.image = e.file;
+                },
+                onCancel : function (e) {},
+                onError : function (e) {}
+            });
         }
     };
     var item2 = {
         title : "Capture a Photo",
         icon : "icon.png", // Andrid 3.0- only
         onSelected : function (e) {
-            takeCropImage(true);
+            SMF.Multimedia.startCamera(0, 0, 1,
+                function () {},
+                function (e) {
+                var im = new SMF.Image({
+                        imageUri : e.photoUri,
+                        onSuccess : function (e) {
+                            im.resize({
+                                width : 200,
+                                height : 200,
+                                format : SMF.ImageFormat.PNG,
+                                compressionRate : 0.7,
+                                onSuccess : function (e) {
+                                    Pages.pgRegister.scrollMainRegister.contUserInfo1.cntProfile.imgProfile.image = e.image;
+                                    if (Device.deviceOS == "Android")
+                                        imageFileRegister = new SMF.IO.File(e.image);
+                                    else
+                                        imageFileRegister = new SMF.IO.File(SMF.IO.applicationDataDirectory, e.image);
+                                },
+                                onError : function (e) {
+                                    alert(e.message);
+                                }
+                            });
+                        },
+                        onError : function (e) {
+                            alert( + e.message);
+                        }
+                    });
+            },
+                function () {},
+                function () {});
         }
     };
     var item3 = {
@@ -53,20 +113,20 @@ function pgRegister_btnSubmit_OnPressed(e) {
                 registerWebClient.run(false);
                 SES.Analytics.customerLog("", "", Pages.pgRegister.scrollMainRegister.contUserInfo2.edtPhoneNumber.text, Pages.pgRegister.scrollMainRegister.contUserInfo2.edtEmail.text, Pages.pgRegister.scrollMainRegister.contUserInfo2.edtEmail.text);
             } else {
-                alert(lang.limitPassword);
+                alert("Password must be at least 4 characters");
             }
         } else {
-            alert(lang.validateMail);
+            alert("Please enter valid email");
         }
     } else {
-        alert(lang.validateMail);
+        alert("Please enter email");
     }
 }
 function registerOnsyndicationSuccess(e) {
     var responseObject = JSON.parse(registerWebClient.responseText);
     if (responseObject.isSuccess == "false") {
         Dialogs.dlgHomePgLoading.close();
-        alert(lang.registerMailUsed);
+        alert("An error is occured.Maybe your email used has been used before..");
     } else {
         registerProfileImageWebClient.url = "http://services.smartface.io/SmartfaceInAction/UploadProfileLogo?email=" + Pages.pgRegister.scrollMainRegister.contUserInfo2.edtEmail.text;
         registerProfileImageWebClient.httpMethod = "PUT";
@@ -77,17 +137,12 @@ function registerOnsyndicationSuccess(e) {
         registerProfileImageWebClient.onSyndicationSuccess = function (e) {
             var response = JSON.parse(registerProfileImageWebClient.responseText);
             Dialogs.dlgHomePgLoading.close();
-            alert({
-                message : lang.registersuccess,
-                title : lang.register,
-                alpha : 1,
-                firstButtonText : "OK",
-                OnFirstButtonPressed : function () {
-                    Pages.pgLogin.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.leftToRight, SMF.UI.TransitionEffectType.push, false, false);
-                },
-                OnSecondButtonPressed : function () {},
-                OnThirdButtonPressed : function () {}
-            });
+            if (response.isSuccess == "false") {
+                alert("Image can't be uploaded or you didn't select any image");
+            } else {
+                alert("Register succesfully.");
+            }
+            Pages.pgLogin.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.leftToRight, SMF.UI.TransitionEffectType.push, false, false);
         }
     }
 }
@@ -110,16 +165,8 @@ function pgRegister_sliderLike_OnChange(e) {
     }
     Pages.pgRegister.scrollMainRegister.contUserInfo4.lblLikePoint.text = this.value;
 }
-function pgRegister_sliderNotifications_OnChange(e) {
-    if (this.checked) {
-        if (Device.deviceOS == 'iOS') {
-            notPicker(false);
-        } else {
-            notPicker(true);
-        }
-    } else {
-        disableNotification();
-    }
+function pgRegister_sbNotifications_OnChange(e) {
+    isAllow = Pages.pgRegister.scrollMainRegister.contUserInfo4.sbNotifications.checked;
 }
 function pgRegister_btnInteres_OnPressed(e) {
     if (Device.deviceOS == "Android") {
@@ -135,26 +182,20 @@ function showdlgFormRegister() {
 }
 // setting back button function
 function registerBack() {
-    Pages.back(Pages.pgLogin);
+    Pages.pgLogin.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.leftToRight, SMF.UI.TransitionEffectType.push, false, false);
 }
 function pgRegister_Self_OnShow(e) {
-    //instead of picker you can use menuItem for localNotification
-    //    createNotMenu();
-    sDateGlobal = new Date("November 14, 1994 11:13:00");
     this.scrollMainRegister.contUserInfo1.cntProfile.width = this.scrollMainRegister.contUserInfo1.cntProfile.height;
-    var title = lang.pgRegisterTitle;
-    Pages.pgRegister.scrollMainRegister.contUserInfo2.edtPassword.isPassword = true;
+    var title = "Register";
     if (Device.deviceOS == "Android") {
-        this.scrollMainRegister.contUserInfo4.sliderNotifications.thumbTintColor = "#7FEA00";
-        header.init(this, formHeader, formStatusbarColor, title);
-        header.setLeftItem(registerBack);
+        this.scrollMainRegister.contUserInfo4.sbNotifications.thumbTintColor = "#7FEA00";
     } else {
         header.init(this, formHeader, formStatusbarColor, title);
         header.setLeftItem(registerBack);
         header.setRightItem(showdlgFormRegister);
-        this.scrollMainRegister.contUserInfo4.sliderNotifications.tintColor = "#BEC3C7";
-        this.scrollMainRegister.contUserInfo4.sliderNotifications.thumbTintColor = "white";
-        this.scrollMainRegister.contUserInfo4.sliderNotifications.onTintColor = "#6FD865";
+        this.scrollMainRegister.contUserInfo4.sbNotifications.tintColor = "#BEC3C7";
+        this.scrollMainRegister.contUserInfo4.sbNotifications.thumbTintColor = "white";
+        this.scrollMainRegister.contUserInfo4.sbNotifications.onTintColor = "#6FD865";
     }
     this.scrollMainRegister.contUserInfo4.lblInterest.text = "";
     Data.DS_Interest.seek(0);
@@ -164,20 +205,17 @@ function pgRegister_Self_OnShow(e) {
         Data.DS_Interest.moveNext();
         continue;
     }
-    Pages.pgRegister.scrollMainRegister.contUserInfo2.edtPhoneNumber.keyboardType = SMF.UI.KeyboardType.phonePad;
-    Pages.pgRegister.scrollMainRegister.contUserInfo2.edtEmail.keyboardType = SMF.UI.KeyboardType.emailAddress;
 }
 // selecting date from datepicker
 function pgRegister_lblBirthDate_OnTouchEnded(e) {
     SMF.UI.showDatePicker({
-        currentDate : sDateGlobal,
+        currentDate : new Date("November 14, 1994 11:13:00"),
         mask : "YYYY-MM-DD",
         minDate : new Date("December 31, 1920 11:13:00"),
         maxDate : new Date("December 31, 2000 11:13:00"),
         showWorkingDate : true,
         onSelect : function (e) {
             var sDate = new Date(e.date);
-            sDateGlobal = sDate;
             Pages.pgRegister.scrollMainRegister.contUserInfo2.lblBirthDate.text = formattedDate(sDate);
             birthDate = formattedDate(sDate);
             Pages.pgRegister.scrollMainRegister.contUserInfo2.lblBirthDate.fontColor = "#7A7A7A";
@@ -217,7 +255,4 @@ function pgRegister_Self_OnKeyPress(e) {
 }
 function pgRegister_edtEmail_OnReturnKey(e) {
     Pages.pgRegister.scrollMainRegister.contUserInfo2.edtPassword.focus();
-}
-function pgRegister_edtPhoneNumber_OnReturnKey(e) {
-    Pages.pgRegister.scrollMainRegister.contUserInfo2.edtPhoneNumber.closeKeyboard();
 }

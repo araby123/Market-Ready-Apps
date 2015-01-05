@@ -27,8 +27,8 @@ var minValueForCoordinateY = 0; // define the min value for the Y-axes (for RESI
 // M : Number of the points to create a line graphic
 // ------------------------------------------------------------------------------
 var inputValuesX = [[1, 120, 240, 360, 480, 600, 720, 840, 960, 1100],
-    [1, 120, 240, 360, 480, 600, 720, 840, 960, 1100],
-    [1, 120, 240, 360, 480, 600, 720, 840, 960, 1100]];
+	[1, 120, 240, 360, 480, 600, 720, 840, 960, 1100],
+	[1, 120, 240, 360, 480, 600, 720, 840, 960, 1100]];
 
 // ------------------------------------------------------------------------------
 // NxM matris for the values of y coordinates of a canvas
@@ -36,8 +36,8 @@ var inputValuesX = [[1, 120, 240, 360, 480, 600, 720, 840, 960, 1100],
 // M : Number of the points to create a line graphic
 // ------------------------------------------------------------------------------
 var inputValuesY = [[240, 200, 220, 210, 300, 330, 310, 320, 400, 300],
-    [160, 140, 150, 160, 250, 270, 260, 200, 320, 230],
-    [70, 40, 60, 130, 140, 100, 110, 150, 210, 110]];
+	[160, 140, 150, 160, 250, 270, 260, 200, 320, 230],
+	[70, 40, 60, 130, 140, 100, 110, 150, 210, 110]];
 
 var LineColorValuesOfGraphs = ["#008592", "#00656d", "#004449"]; // Line color choice for each of the line graphs on LineGraph-1
 var FillColorValuesOfGraphs = ["#008592", "#00656d", "#004449"]; // Fill color choice for each of the line graphs on LineGraph-1

@@ -65,8 +65,7 @@ function pgCanvas2_cnvsLineGraph1_OnDraw(e) {
 function pgCanvas2_Self_OnShow(e) {
     // setting iOS NavigationBar
     var title = lang.lineGraph1;
-    if (Device.deviceOS == "Android") {        header.init(this, canvasHeader, canvasStatusBarColor, title);
-        header.setLeftItem(pagesBack);}
+    if (Device.deviceOS == "Android") {}
     else {
         header.init(this, canvasHeader, canvasStatusBarColor, title);
         header.setLeftItem(pagesBack);

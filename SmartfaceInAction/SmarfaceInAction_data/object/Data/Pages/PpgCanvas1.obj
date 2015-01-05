@@ -1,5 +1,5 @@
 <PG ID="74D9002C-E204-4E46-BB5C-DF4CC0AEAAA7" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgCanvas1" BgClr="333333" BgTparent="0" BgPicName="canvas_back.png" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="320" H="480" />
+	<EDGE X="0" Y="0" W="2048" H="1536" />
 	<POS Pos="3" SMode="2" />
 	<BODY>
 		<CONTAINER ID="E56CA58F-D99B-4AD4-ADAC-9F8D67777FF3" Nm="contMain" Vsb="1" TouchEnabled="1" AutoSize="1">

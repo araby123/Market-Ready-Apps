@@ -23,6 +23,7 @@ function HeaderBar() {
     this.init = function (page, image, color, titleText) {
         SMF.UI.StatusBar.color = color;
         if (this.isAndroid == true) {
+
             this.actionBar = page.actionBar;
             this.actionBar.visible = true;
             this.actionBar.backgroundImage = image;
@@ -35,6 +36,8 @@ function HeaderBar() {
             };
         } else {
             //Sets NavigationITem for iOS
+
+
             this.navigationItem = page.navigationItem;
             this.navigationItem.titleView = {
                 type : SMF.UI.TitleViewType.text,
@@ -55,7 +58,6 @@ function HeaderBar() {
             var item2 = new SMF.UI.Android.MenuItem({
                     id : "itemRefresh",
                     icon : "info.png",
-                    title : "How to use",
                     showAsAction : SMF.UI.Android.ShowAsAction.always,
                     onSelected : function () {
                         infoPressed.show();
@@ -66,28 +68,6 @@ function HeaderBar() {
             var rightItem = new SMF.UI.iOS.BarButtonItem({
                     image : "info.png",
                     onSelected : infoPressed
-                });
-            this.navigationItem.rightBarButtonItems = [rightItem];
-        }
-    }
-    this.setRightItemDash = function (infoImage) {
-        if (this.isAndroid) {
-            var item2 = new SMF.UI.Android.MenuItem({
-                    id : "itemRefresh",
-                    icon : infoImage,
-                    title : "SMFSocialPass",
-                    showAsAction : SMF.UI.Android.ShowAsAction.always,
-                    onSelected : function () {
-                        Pages.back();
-                    }
-                });
-            this.actionBar.menuItems = [item2];
-        } else {
-            var rightItem = new SMF.UI.iOS.BarButtonItem({
-                    image : infoImage,
-                    onSelected : function () {
-                        Pages.back();
-                    }
                 });
             this.navigationItem.rightBarButtonItems = [rightItem];
         }
@@ -111,12 +91,10 @@ function HeaderBar() {
     }
     this.setLeftItem = function (back) {
         if (this.isAndroid) {
-            this.actionBar.displayHomeAsUpEnabled = false;
+            this.actionBar.displayHomeAsUpEnabled = true;
             this.actionBar.displayShowHomeEnabled = true;
-            this.actionBar.logo = "navbar_back.png";
-            this.actionBar.onHomeIconItemSelected = function () {
-                Pages.back();
-            }
+            this.actionBar.onHomeIconItemSelected = back;
+            this.actionBar.icon = "bosimaj.png";
         } else {
             var leftItem = new SMF.UI.iOS.BarButtonItem({
                     image : "navbar_back.png",
@@ -128,15 +106,16 @@ function HeaderBar() {
     this.setLeftItemBos = function () {
         if (this.isAndroid) {
             this.actionBar.displayHomeAsUpEnabled = false;
-            this.actionBar.displayShowHomeEnabled = true;
+            this.actionBar.displayShowHomeEnabled = false;
             this.actionBar.onHomeIconItemSelected = function () {}
-            this.actionBar.icon = "logodash.png";
+            this.actionBar.icon = " ";
         } else {
             var leftItem = new SMF.UI.iOS.BarButtonItem({
-                    image : "logodash.png",
+                    image : "bosimaj.png",
                     onSelected : function (e) {}
                 });
             this.navigationItem.leftBarButtonItems = [leftItem];
         }
     }
+
 }

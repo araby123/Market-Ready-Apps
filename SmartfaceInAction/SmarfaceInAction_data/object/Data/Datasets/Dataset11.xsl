@@ -1,13 +1,11 @@
-<DATASET ID="F788FE5E-230E-42AA-A7B3-4F039DEC86F1" Name="wcMap_OutDSetwcMap" TableID="404F6D12-0F3D-46F3-B343-B654C6ABFFF4" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="0BAF45CC-1903-4D9C-AEDB-D800FA987092" Name="wcSquareView_InDSet" TableID="7620770A-B7DC-4A83-8CD1-F2C657016A59" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "wcMap_OutDTblwcMap"."wcMapId", "wcMap_OutDTblwcMap"."wcMap", "wcMap_OutDTblwcMap"."success", "wcMap_OutDTblwcMap"."error" FROM "wcMap_OutDTblwcMap"
+SELECT "wcSquareView_InDTbl"."rowNumber", "wcSquareView_InDTbl"."pageNumber" FROM "wcSquareView_InDTbl"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="wcMap_OutDTblwcMap.wcMapId" />
-		<COLUMN ID="2" Name="wcMap_OutDTblwcMap.wcMap" />
-		<COLUMN ID="3" Name="wcMap_OutDTblwcMap.success" />
-		<COLUMN ID="4" Name="wcMap_OutDTblwcMap.error" />
+		<COLUMN ID="1" Name="wcSquareView_InDTbl.rowNumber" />
+		<COLUMN ID="2" Name="wcSquareView_InDTbl.pageNumber" />
 	</COLUMNS>
 </DATASET>

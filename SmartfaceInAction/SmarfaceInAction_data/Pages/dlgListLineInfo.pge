@@ -20,7 +20,7 @@
 						</Container>
 					</controls>
 				</Container>
-				<Image name="imgInfo" id="BC34B0F6-BB10-451F-B06D-74CBC911D0A8" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="100%" height="25%" left="0%" top="69,9999988079071%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.normal" imagePosition="SMF.UI.Alignment.center" dataSource="" image="info_logo" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
+				<Image name="imgInfo" id="BC34B0F6-BB10-451F-B06D-74CBC911D0A8" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="100%" height="25%" left="0%" top="75%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" imageFillType="SMF.UI.ImageFillType.normal" imagePosition="SMF.UI.Alignment.center" dataSource="" image="info_logo" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="false" enableZoom="false" />
 			</controls>
 			<EVENTS onKeyPress="dlgListLineInfo_Self_OnKeyPress(e);" />
 		</Dialog>

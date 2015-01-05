@@ -4,7 +4,6 @@ var fbBirthDay; // Facebook BirthDay
 var fbuserName; // Facebook UserName
 var count = 0;
 function pgLogin_btnLogin_OnPressed(e) {
-    didImageChanged = false;
     Pages.pgProfile.scrollMainProfile.scrollY = 0; // before going to pgProfile page , making scroll of scrollview to top
     emailorFbLogin = 0;
     // controlling email and password
@@ -46,21 +45,16 @@ function pgLogin_btnLogin_OnPressed(e) {
                         path.imgFbLogo.visible = false;
                         // filling data from service to objects
                         path.edtEmail1.text = responseObjectProfile.Email;
+                        Pages.pgProfile.cntNotifications.recNotificationRectangle.height = "100%";
                         path.edtPassword.text = responseObjectProfile.Password;
                         path.edtPhoneNumber.text = responseObjectProfile.Phone;
                         path.lblBirthDate.text = responseObjectProfile.BirthDate.toString();
-                        if (responseObjectProfile.BirthDate == "01.01.0001")
-                            path.lblBirthDate.text = "";
                         path2.lblInterest.text = responseObjectProfile.Interests;
                         interestCheck(responseObjectProfile.Interests);
                         path2.lblLikePoint.text = responseObjectProfile.LikePoint;
                         path2.sliderLike.value = Number(responseObjectProfile.LikePoint);
                         Pages.pgProfile.scrollMainProfile.contUserInfo3.lblAddress.text = responseObjectProfile.Address;
-                        if (ofsNotCtrl) {
-                            Pages.pgProfile.scrollMainProfile.contUserInfo4.sliderNotifications.checked = false;
-                        } else {
-                            Pages.pgProfile.scrollMainProfile.contUserInfo4.sliderNotifications.checked = responseObjectProfile.IsAllowMessage === "true";
-                        }
+                        Pages.pgProfile.scrollMainProfile.contUserInfo4.SwitchButton1.checked = responseObjectProfile.IsAllowMessage === "true";
                         if (responseObjectProfile.ImageUrl == "") {
                             Pages.pgProfile.scrollMainProfile.contUserInfo1.cntProfile.imgProfile.image = "empty_photo.png";
                         } else {
@@ -80,6 +74,9 @@ function pgLogin_btnLogin_OnPressed(e) {
                             }
                         },
                             function () {});
+                        Data.DS_Notification.refresh();
+                        Pages.pgProfile.cntNotifications.lineDivideRow7.top = "98%";
+                        Pages.pgProfile.contNotificationNumber.lblNotificationNumber.text = 5;
                         // setting Android ActionBar
                         if (Device.deviceOS == "Android") {
                             header.init(Pages.pgProfile, formHeader, formStatusbarColor, "User Profile");
@@ -143,16 +140,11 @@ function showdlgFormDashboard(e) {
 function pgLogin_Self_OnShow(e) {
     Pages.pgLogin.cntLogin.edtEmail.text = "";
     Pages.pgLogin.cntLogin.edtPassword.text = "";
-    Pages.pgLogin.cntLogin.edtPassword.isPassword = true;
     Pages.pgLogin.contValidation.top = "-16%";
-    Pages.pgLogin.cntLogin.edtEmail.keyboardType = SMF.UI.KeyboardType.emailAddress;
     // setting iOS NavigationBar
-    var title = lang.pgLoginTitle;
-    if (Device.deviceOS == "Android") {
-        //this.actionBar.displayShowHomeEnabled = false;
-        header.init(this, formHeader, formStatusbarColor, title);
-        header.setLeftItem(homeBack);
-    } else {
+    var title = "Login";
+    if (Device.deviceOS == "Android") {}
+    else {
         header.init(this, formHeader, formStatusbarColor, title);
         header.setLeftItem(homeBack);
         header.setRightItem(showdlgFormDashboard);
@@ -215,10 +207,9 @@ function pgLogin_btnRegister_OnPressed(e) {
     pathScroll.contUserInfo3.lblAddress.text = address;
     pathScroll.contUserInfo3.mapAddress.centerLatitude = myCurrentLat;
     pathScroll.contUserInfo3.mapAddress.centerLongitude = myCurrentLon;
-    pathScroll.contUserInfo2.lblBirthDate.fontColor = "#B4B8BF";
     // setting Android ActionBar
     if (Device.deviceOS == "Android") {
-        header.init(Pages.pgRegister, formHeader, formStatusbarColor, lang.pgRegisterTitle);
+        header.init(Pages.pgRegister, formHeader, formStatusbarColor, "Register");
         header.setLeftItem(profileBack);
         header.setRightItem(Dialogs.dlgFormRegister);
     }
@@ -265,7 +256,7 @@ function pgLogin_btnFacebook_OnPressed(e) {
 function fbLoginWebClientOnsyndicationSuccess(e) {
     fbResponseObject = JSON.parse(fbLoginWebClient.responseText);
     if (fbResponseObject.isSuccess == false) {
-        alert(lang.applicationError);
+        alert("An error is occured");
     } else {
         var path = Pages.pgProfile.scrollMainProfile.contUserInfo2;
         var path2 = Pages.pgProfile.scrollMainProfile.contUserInfo4;
@@ -292,9 +283,9 @@ function fbLoginWebClientOnsyndicationSuccess(e) {
         path2.lblLikePoint.text = fbResponseObject.LikePoint;
         Pages.pgProfile.scrollMainProfile.contUserInfo3.lblAddress.text = fbResponseObject.Address;
         path2.sliderLike.value = Number(fbResponseObject.LikePoint);
-        Pages.pgProfile.scrollMainProfile.contUserInfo4.sliderNotifications.checked = fbResponseObject.IsAllowMessage === "true";
+        Pages.pgProfile.scrollMainProfile.contUserInfo4.SwitchButton1.checked = fbResponseObject.IsAllowMessage === "true";
         if (Device.deviceOS == "Android") {
-            header.init(Pages.pgProfile, formHeader, formStatusbarColor, lang.pgProfileTitle);
+            header.init(Pages.pgProfile, formHeader, formStatusbarColor, "User Profile");
             header.setLeftItem(profileBack);
             header.setRightItem(Dialogs.dlgFormUserInfo);
         }
@@ -346,4 +337,3 @@ function interestCheck(data) {
         }
     }
 }
-function pgLogin_edtEmail_OnEnter(e) {}
