@@ -1,5 +1,5 @@
 <PG ID="137CB2D8-FAE4-4DEC-AB39-D5030EE0EEBC" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgMapView" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<EDGE X="0" Y="0" W="720" H="1280" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<MAPVIEW ID="1795B594-E71A-4D8E-8FA1-78A4CAC0AD52" Nm="mapAddress" Vsb="1" MapType="0" CenterLatitude="41,035972" CenterLongitude="29,046902" ZoomLevel="10" EnableZoom="1" EnableScroll="1" ShowUserLocation="0" ShowPins="1" TouchEnabled="1">
@@ -16,7 +16,7 @@
 			<ONLONGTOUCH script="pgMapView_mapAddress_OnLongTouch(e);" />
 		</MAPVIEW>
 		<CONTAINER ID="B2A68703-8729-4C25-8294-E628ECDCC187" Nm="contAddress" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="900%" W="1000%" H="100%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="0%" Y="850%" W="1000%" H="150%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="555555" />
 			<ITEMS>

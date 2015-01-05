@@ -6,7 +6,7 @@ function pgMapView_mapAddress_OnLongTouch(e) {
         addressNew = e.results[0].addressValue;
     },
         function (e) {
-        alert("onError");
+        alert(lang.applicationError);
     });
     if (address == null) {
         address = "address not identify";
@@ -23,7 +23,7 @@ function pgMapView_mapAddress_OnLongTouch(e) {
         draggable : true,
         animate : true
     });
-    Pages.pgMapView.contAddress.lblMapAddress.text = addressNew;
+    //Pages.pgMapView.contAddress.lblMapAddress.text = addressNew;
     if (fromRegisterorProfile == 2) {
         Pages.pgRegister.scrollMainRegister.contUserInfo3.lblAddress.text = addressNew;
     } else if (fromRegisterorProfile == 1) {

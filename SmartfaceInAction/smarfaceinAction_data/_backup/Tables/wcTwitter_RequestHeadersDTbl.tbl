@@ -1,0 +1,14 @@
+<OBJECT>
+	<Table name="wcTwitter_RequestHeadersDTbl" id="3730FAD9-5699-4D74-A9A4-E17A60D3A2EF" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific LastFieldID="1" Guid="" OverrideOnUpdate="1" ReadOnly="0" isServerObject="0" OneToOneType="0" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="Authorization" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+			<Rows>
+				<Row ID="-1" Caption="">
+					<Cell Value=" bearer AAAAAAAAAAAAAAAAAAAAAGEuXgAAAAAAKGvY2X0%2BiVIrTnrRHLL5caBcdYk%3DC8tr2hZdtjgrY45YhEgcdsoy2JkVvfUusjMxOQIcI8HXqy03Ak" />
+				</Row>
+			</Rows>
+		</TypeSpecific>
+	</Table>
+</OBJECT>

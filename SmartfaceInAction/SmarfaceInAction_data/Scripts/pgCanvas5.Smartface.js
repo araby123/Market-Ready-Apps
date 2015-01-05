@@ -8,7 +8,9 @@ var shiftLeft = Device.screenWidth * 0.038; // it is default value for shift bar
 function pgCanvas5_Self_OnShow() {
     // setting iOS NavigationBar
     var title = lang.barGraph;
-    if (Device.deviceOS == "Android") {}
+    if (Device.deviceOS == "Android") {
+            header.init(this, canvasHeader, canvasStatusBarColor, title);
+        header.setLeftItem(pagesBack);}
     else {
         header.init(this, canvasHeader, canvasStatusBarColor, title);
         header.setLeftItem(pagesBack);

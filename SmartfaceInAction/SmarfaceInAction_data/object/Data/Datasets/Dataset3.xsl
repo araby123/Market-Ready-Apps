@@ -1,11 +1,10 @@
-<DATASET ID="076727F0-065E-4E91-B1BE-A1BBCE23B8EF" Name="DS_Notification" TableID="1AE4AAFF-4DF4-49CE-980D-603ACE251E8B" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="8A6201EB-CB73-42AE-B588-5235115E0830" Name="DS_News" TableID="A5CE94F2-5AAC-466F-99CD-9440D7C87647" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "tblNotification"."imgNotification", "tblNotification"."textNotification" FROM "tblNotification"
+SELECT "EmptyTableforNews".* FROM "EmptyTableforNews"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="tblNotification.imgNotification" />
-		<COLUMN ID="2" Name="tblNotification.textNotification" />
+		<COLUMN ID="1" Name="EmptyTableforNews.id" />
 	</COLUMNS>
 </DATASET>

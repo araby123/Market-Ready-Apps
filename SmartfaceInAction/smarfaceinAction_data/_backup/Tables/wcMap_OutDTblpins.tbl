@@ -1,0 +1,17 @@
+<OBJECT>
+	<Table name="wcMap_OutDTblpins" id="FE147B5B-3E2F-4887-A945-010D064454A4" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific LastFieldID="9" Guid="" OverrideOnUpdate="1" ReadOnly="0" isServerObject="0" OneToOneType="655373" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="pinsId" Type="1" DefaultValue="" AutoIncrement="1" PrimaryKey="1" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="2" Name="pins" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="1" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="3" Name="title" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="4" Name="id" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="5" Name="type" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="6" Name="subtitle" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="7" Name="latitude" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="8" Name="address" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="9" Name="longitude" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+		</TypeSpecific>
+	</Table>
+</OBJECT>

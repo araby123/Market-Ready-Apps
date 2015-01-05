@@ -6,45 +6,33 @@ function pgDashboard_Self_OnKeyPress(e) {
 }
 //event function for displaying info in navigation/action bar.
 function showdlgDashboard() {
-    Dialogs.dlgDashboard.show();
+    Pages.back();
 }
 function pgDashboard_Self_OnShow(e) {
     isUsingSwipe = false; //defined in DefinitionsOfNews.js
     var title = "";
     this.cntBottom.cntTweet.rbTweets.allowDeletingItems = false;
     //for header items
-    header.init(this, navbarHeader1, statusbarColor1, title);
-    header.setLeftItemBos();
+    header.init(this, "list_header.png", "#000000", lang.pgDashboardTitle);
+   //SMF.UI.iOS.NavigationBar.backgroundColor = statusbarColor1;
     if (Device.deviceOS == "Android") {
-        header.setRightItem(Dialogs.dlgDashboard);
+        Pages.pgDashboard.actionBar.displayShowHomeEnabled = true;
+        Pages.pgDashboard.actionBar.displayHomeAsUpEnabled = true;
+        Pages.pgDashboard.actionBar.logo = "logodash.png";
+        header.setRightItemDash("socialpass.png");
     } else {
-        header.setRightItem(showdlgDashboard);
+        header.setRightItemDash("socialpass.png");
     }
+    header.setLeftItemBos();
     //this is for scrolling repatbox to the most top scroll position
     this.cntBottom.cntTweet.rbTweets.setTopIndex(0, 0, 0);
-}
-function pgDashboard_Twitter_OnPressed(e) {
-    //checks if this URL can be handled by device. Such as openning in another app
-    canOpen = Device.canOpenUrl(url);
-    if (canOpen) {
-        //first go to service and get the token. In success call the twitter app
-        Application.call({
-            app : "twitter://twitter.com/smartface_io",
-            data : null
-        });
-    } else {
-        //if device cannot handle the URL, than opens the browser
-        SMF.Net.browseOut("https://twitter.com/smartface_io");
-    }
-    //logging the analytics action
-    SES.Analytics.eventLog("Twitter", '{\"function\":\"pgDashboard_Twitter_OnPressed\"}');
 }
 function pgDashboard_lblTweetAnimationArea_OnTouchEnded(e) {
     //in this function expansion of bottom area to top is handled.
     //this motion is done with animation
     var animationDuration = 300; //in miliseconds
     if (!isAnimateUp) {
-        Pages.pgDashboard.cntBottom.cntTweet.ImageArrow.image = "arrowDown.png";
+        Pages.pgDashboard.cntBottom.cntTweet.ImageArrow.image = "arrowdown.png";
         Pages.pgDashboard.cntBottom.cntTweet.animate({
             property : 'Y',
             endValue : 0,
@@ -56,7 +44,7 @@ function pgDashboard_lblTweetAnimationArea_OnTouchEnded(e) {
             }
         });
     } else {
-        Pages.pgDashboard.cntBottom.cntTweet.ImageArrow.image = "arrowUp.png";
+        Pages.pgDashboard.cntBottom.cntTweet.ImageArrow.image = "arrowup.png";
         Pages.pgDashboard.cntBottom.cntTweet.animate({
             property : 'Y',
             endValue : "56%", //original position
@@ -99,7 +87,7 @@ function pgDashboard_btnCanvas_OnPressed(e) {
     if (Device.deviceOS === "Android") {
         //if the device is android and if you do not want to see the change animation of
         //actionBar, this header has to be changed before the page is shown
-        header.init(Pages.pgCanvas1, canvasHeader, canvasStatusBarColor, "Canvas");
+        header.init(Pages.pgCanvas1, canvasHeader, canvasStatusBarColor, lang.pgCanvas1);
         header.setLeftItem(homeBack);
         header.setRightItem(Dialogs.dlgCanvasInfo);
     }
@@ -137,12 +125,13 @@ function pgDashboard_btnListView_OnPressed(e) {
     Dialogs.dlgHomePgLoading.show(); //common waiting dialog to cut user interaction
     pageNum = 1;
     newsArrayList = [];
+    shareListViewNews.news = [];
     Data.DS_News.clear();
     Data.wcListView_InDSet.rowNumber = rowNum;
     Data.wcListView_InDSet.pagenumber = 1;
     SMF.Net.wcListView.run();
     if (Device.deviceOS === "Android") {
-        header.init(Pages.pgListView, listHeader, listStatusbarColor, "List View");
+        header.init(Pages.pgListView, listHeader, listStatusbarColor, lang.pgListViewTitle);
         header.setLeftItem(homeBack);
         header.setRightItem(Dialogs.dlgListViewInfo);
     }

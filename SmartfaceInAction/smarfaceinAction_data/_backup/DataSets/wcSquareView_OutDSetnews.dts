@@ -1,0 +1,21 @@
+<OBJECT>
+	<Dataset name="wcSquareView_OutDSetnews" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="0" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="wcSquareView_OutDTblnews.newsId" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="2" Name="wcSquareView_OutDTblnews.news" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="3" Name="wcSquareView_OutDTblnews.title" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="4" Name="wcSquareView_OutDTblnews.id" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="5" Name="wcSquareView_OutDTblnews.type" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="6" Name="wcSquareView_OutDTblnews.description" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="7" Name="wcSquareView_OutDTblnews.id1" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+				<Field ID="8" Name="wcSquareView_OutDTblnews.url" TblID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT "wcSquareView_OutDTblnews"."newsId", "wcSquareView_OutDTblnews"."news", "wcSquareView_OutDTblnews"."title", "wcSquareView_OutDTblnews"."id", "wcSquareView_OutDTblnews"."type", "wcSquareView_OutDTblnews"."description", "wcSquareView_OutDTblnews"."id1", "wcSquareView_OutDTblnews"."url" FROM "wcSquareView_OutDTblnews"
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>

@@ -1,16 +1,16 @@
 <PG ID="FEA0DC97-727F-4A8B-B7E8-CAAA3CA21529" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgListView" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<EDGE X="0" Y="0" W="320" H="480" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<CONTAINER ID="565648A5-13BA-46E1-847F-0E58E81E78E7" Nm="contTabHome" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="0%" W="1000%" H="81%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="0%" Y="0%" W="1000%" H="4275d" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="1" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="0" LayoutVerticalGap="0" />
-			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+			<STYLE BrClr="313031" BrW="0" BgTparent="0" BgClr="d7d7d7" />
 			<ITEMS>
 				<CONTAINER ID="D246047F-8080-428C-B683-154378A411DE" Nm="contLine" Vsb="1" TouchEnabled="1" AutoSize="0">
 					<LCT X="0%" Y="0%" W="333%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-					<STYLE BrClr="999999" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<STYLE BrClr="999999" BrW="0" BgTparent="0" BgClr="d7d7d7" />
 					<ITEMS>
 						<PIC ID="32083866-C483-4F3D-8B36-CE8B2A2701C6" Nm="imgLineInactive" Vsb="0" Alpha="100" TouchEnabled="1">
 							<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -33,7 +33,7 @@
 				<CONTAINER ID="0AEBEEEF-B552-458A-BDD6-A65B60AC3C65" Nm="contSquare" Vsb="1" TouchEnabled="1" AutoSize="0">
 					<LCT X="0%" Y="0%" W="333%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-					<STYLE BrClr="999999" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<STYLE BrClr="999999" BrW="0" BgTparent="0" BgClr="d7d7d7" />
 					<ITEMS>
 						<PIC ID="BF6F7E59-BCA2-47B2-B794-4E76ABCD212C" Nm="imgSquareInactive" Vsb="1" Alpha="100" TouchEnabled="1">
 							<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -56,7 +56,7 @@
 				<CONTAINER ID="57C26803-6B93-467A-AEEF-340D2A686CBF" Nm="contBoxed" Vsb="1" TouchEnabled="1" AutoSize="0">
 					<LCT X="0%" Y="0%" W="333%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-					<STYLE BrClr="999999" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<STYLE BrClr="999999" BrW="0" BgTparent="0" BgClr="d7d7d7" />
 					<ITEMS>
 						<PIC ID="434964B8-F70B-4ECB-A4A7-41EDD7C51446" Nm="imgBoxedInactive" Vsb="1" Alpha="100" TouchEnabled="1">
 							<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -79,7 +79,7 @@
 			</ITEMS>
 		</CONTAINER>
 		<REPEATBOX ID="1C50C499-56DB-4551-B8D4-C6857077F42C" Nm="rpbxLine" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="0" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="1" PxlEdg="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="0" StrokeColor="999999" AutoSize="0" Loop="0" UseActiveItem="0">
-			<LCT X="0%" Y="81%" W="1000%" H="919%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="0%" Y="4200d" W="1000%" H="914%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<DATASOURCE>
 				<PRM Nm="Bind" Val="Data.DS_News" />
@@ -87,7 +87,7 @@
 			<GROUPINGDATASOURCE>
 				<PRM Nm="Bind" Val="" />
 			</GROUPINGDATASOURCE>
-			<ITM InActItemH="160%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="80%">
+			<ITM InActItemH="160%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="100%">
 				<STYLE BgTparent="1" InActBgClr="ffffff" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="e2e7a6" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="8d8d8d" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="9f9f9f" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="eaebe3" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="eaebe3" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
 				<BODY>
 					<INACTIVEITEMS>
@@ -99,8 +99,8 @@
 							</DATA>
 						</PIC>
 						<PIC ID="CBFB0391-3363-4540-9149-00E603DE76B8" Nm="imgLine" Vsb="1" Alpha="100" TouchEnabled="0">
-							<LCT X="0%" Y="150%" W="400%" H="850%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-							<POS Pos="15" SMode="2" EnableZoom="0" EnableScroll="0" EnableCache="1" />
+							<LCT X="0%" Y="149%" W="400%" H="851%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="1" />
 							<DATA>
 								<PRM Nm="Bind" Val="resources://empty_photo.png" />
 							</DATA>
@@ -116,7 +116,7 @@
 					</INACTIVEITEMS>
 					<PULLUPITEMS>
 						<ACTIVITYINDICATOR ID="3BE321DA-B99D-410F-9967-026A032D7AF0" Nm="aiLine" Vsb="1" Style="1" TouchEnabled="0">
-							<LCT X="490%" Y="418%" W="21" H="21" Z="0" Anc="3" LockAutoPosition="0" />
+							<LCT X="490%" Y="380%" W="21" H="21" Z="0" Anc="3" LockAutoPosition="0" />
 						</ACTIVITYINDICATOR>
 					</PULLUPITEMS>
 				</BODY>
@@ -126,7 +126,7 @@
 			<ONPULLUP script="pgListView_rpbxLine_OnPullUp(e);" />
 		</REPEATBOX>
 		<REPEATBOX ID="1E61855B-E3B4-462D-ADD2-066E2B794A23" Nm="rpbxSquare" Vsb="0" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="0" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" PxlEdg="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="0" StrokeColor="ffffff" AutoSize="0" Loop="0" UseActiveItem="0">
-			<LCT X="0%" Y="81%" W="1000%" H="919%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="0%" Y="4200d" W="1000%" H="914%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<DATASOURCE>
 				<PRM Nm="Bind" Val="Data.SquareDataset" />
@@ -134,7 +134,7 @@
 			<GROUPINGDATASOURCE>
 				<PRM Nm="Bind" Val="" />
 			</GROUPINGDATASOURCE>
-			<ITM InActItemH="333%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="284%">
+			<ITM InActItemH="250%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="284%">
 				<STYLE BgTparent="1" InActBgClr="000000" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="e2e7a6" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="8d8d8d" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="9f9f9f" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="eaebe3" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="eaebe3" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
 				<BODY>
 					<INACTIVEITEMS>
@@ -193,7 +193,7 @@
 			<ONROWRENDER script="pgListView_rpbxSquare_OnRowRender(e);" />
 		</REPEATBOX>
 		<REPEATBOX ID="D4B39828-D0F1-40F9-91D3-0CEA94E4B93E" Nm="rpbxBoxed" Vsb="0" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="0" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" PxlEdg="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="0" StrokeColor="999999" AutoSize="0" Loop="0" UseActiveItem="0">
-			<LCT X="0%" Y="81%" W="1000%" H="919%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<LCT X="0%" Y="4200d" W="1000%" H="914%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<DATASOURCE>
 				<PRM Nm="Bind" Val="Data.wcSquareView_OutDSetnews" />
@@ -201,7 +201,7 @@
 			<GROUPINGDATASOURCE>
 				<PRM Nm="Bind" Val="" />
 			</GROUPINGDATASOURCE>
-			<ITM InActItemH="250%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="284%">
+			<ITM InActItemH="368%" ActItemH="40" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="284%">
 				<STYLE BgTparent="1" InActBgClr="000000" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="e2e7a6" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="8d8d8d" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="9f9f9f" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="eaebe3" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="eaebe3" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
 				<BODY>
 					<INACTIVEITEMS>
@@ -233,6 +233,13 @@
 			<ONSELECTEDITEM script="pgListView_rpbxBoxed_OnSelectedItem(e);" />
 			<ONROWRENDER script="pgListView_rpbxBoxed_OnRowRender(e);" />
 		</REPEATBOX>
+		<PIC ID="35282C20-6DD3-406F-B685-687D4B7FEA98" Nm="imgShare" Vsb="0" Alpha="100" TouchEnabled="0">
+			<LCT X="0%" Y="0%" W="750%" H="250%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+			<POS Pos="15" SMode="1" EnableZoom="0" EnableScroll="0" EnableCache="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</PIC>
 	</BODY>
 	<EVENTS>
 		<ONSHOW script="pgListView_Self_OnShow(e);" />

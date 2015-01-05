@@ -1,0 +1,16 @@
+<OBJECT>
+	<Dataset name="DS_Interest" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="1" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="tblInterest.interestName" TblID="B76A55F2-717B-4BFB-B8DF-863F346011C2" />
+				<Field ID="2" Name="tblInterest.image" TblID="B76A55F2-717B-4BFB-B8DF-863F346011C2" />
+				<Field ID="3" Name="tblInterest.fontColor" TblID="B76A55F2-717B-4BFB-B8DF-863F346011C2" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT "tblInterest".* FROM "tblInterest"
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>
