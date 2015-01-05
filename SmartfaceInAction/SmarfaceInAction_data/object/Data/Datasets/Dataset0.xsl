@@ -1,10 +1,10 @@
-<DATASET ID="4FB04D03-7ACA-4A3B-AED5-235965D2BFF0" Name="DS_Image" TableID="E109CCF7-9634-46F8-B2F9-94F26E2BD350" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="663E002B-CDBB-40C3-B8EF-8A071D8F6E1B" Name="DS_Blog" TableID="37F051B1-1464-443F-9C84-DD601D67B053" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "tblImage"."data" FROM "tblImage"
+SELECT "tbl".* FROM "tbl"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="tblImage.data" />
+		<COLUMN ID="1" Name="tbl.col1" />
 	</COLUMNS>
 </DATASET>

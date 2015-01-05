@@ -1,18 +1,22 @@
-<DATASET ID="B4E2632D-01D7-43EC-B9A7-5741C26A3ED7" Name="wcMap_OutDSetpins" TableID="FE147B5B-3E2F-4887-A945-010D064454A4" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="BAF948B5-9098-4878-8881-4B27E306B9C4" Name="wcMap_HeaderOutDSetwcMap" TableID="61CCEF5E-09D7-486A-8B4C-CBD6DA48FD7A" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "wcMap_OutDTblpins"."pinsId", "wcMap_OutDTblpins"."pins", "wcMap_OutDTblpins"."title", "wcMap_OutDTblpins"."id", "wcMap_OutDTblpins"."type", "wcMap_OutDTblpins"."subtitle", "wcMap_OutDTblpins"."latitude", "wcMap_OutDTblpins"."address", "wcMap_OutDTblpins"."longitude" FROM "wcMap_OutDTblpins"
+SELECT "wcMap_HeaderOutDTblwcMap"."wcMapId", "wcMap_HeaderOutDTblwcMap"."wcMap", "wcMap_HeaderOutDTblwcMap"."Cache_Control", "wcMap_HeaderOutDTblwcMap"."Pragma", "wcMap_HeaderOutDTblwcMap"."Transfer_Encoding", "wcMap_HeaderOutDTblwcMap"."Content_Type", "wcMap_HeaderOutDTblwcMap"."Content_Encoding", "wcMap_HeaderOutDTblwcMap"."Expires", "wcMap_HeaderOutDTblwcMap"."Vary", "wcMap_HeaderOutDTblwcMap"."Server", "wcMap_HeaderOutDTblwcMap"."X_AspNet_Version", "wcMap_HeaderOutDTblwcMap"."X_Powered_By", "wcMap_HeaderOutDTblwcMap"."Date" FROM "wcMap_HeaderOutDTblwcMap"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="wcMap_OutDTblpins.pinsId" />
-		<COLUMN ID="2" Name="wcMap_OutDTblpins.pins" />
-		<COLUMN ID="3" Name="wcMap_OutDTblpins.title" />
-		<COLUMN ID="4" Name="wcMap_OutDTblpins.id" />
-		<COLUMN ID="5" Name="wcMap_OutDTblpins.type" />
-		<COLUMN ID="6" Name="wcMap_OutDTblpins.subtitle" />
-		<COLUMN ID="7" Name="wcMap_OutDTblpins.latitude" />
-		<COLUMN ID="8" Name="wcMap_OutDTblpins.address" />
-		<COLUMN ID="9" Name="wcMap_OutDTblpins.longitude" />
+		<COLUMN ID="1" Name="wcMap_HeaderOutDTblwcMap.wcMapId" />
+		<COLUMN ID="2" Name="wcMap_HeaderOutDTblwcMap.wcMap" />
+		<COLUMN ID="3" Name="wcMap_HeaderOutDTblwcMap.Cache_Control" />
+		<COLUMN ID="4" Name="wcMap_HeaderOutDTblwcMap.Pragma" />
+		<COLUMN ID="5" Name="wcMap_HeaderOutDTblwcMap.Transfer_Encoding" />
+		<COLUMN ID="6" Name="wcMap_HeaderOutDTblwcMap.Content_Type" />
+		<COLUMN ID="7" Name="wcMap_HeaderOutDTblwcMap.Content_Encoding" />
+		<COLUMN ID="8" Name="wcMap_HeaderOutDTblwcMap.Expires" />
+		<COLUMN ID="9" Name="wcMap_HeaderOutDTblwcMap.Vary" />
+		<COLUMN ID="10" Name="wcMap_HeaderOutDTblwcMap.Server" />
+		<COLUMN ID="11" Name="wcMap_HeaderOutDTblwcMap.X_AspNet_Version" />
+		<COLUMN ID="12" Name="wcMap_HeaderOutDTblwcMap.X_Powered_By" />
+		<COLUMN ID="13" Name="wcMap_HeaderOutDTblwcMap.Date" />
 	</COLUMNS>
 </DATASET>

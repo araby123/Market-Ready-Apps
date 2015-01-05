@@ -64,6 +64,28 @@
 						</PIC>
 					</ITEMS>
 				</CONTAINER>
+				<CONTAINER ID="0754BC97-87D6-408B-8E22-F3F3C391141F" Nm="cntItem3" Vsb="1" TouchEnabled="1" AutoSize="0">
+					<LCT X="50%" Y="0%" W="1000%" H="270%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="eff3ef" />
+					<ITEMS>
+						<LBL ID="C24160FC-5C1F-4D3C-8C2F-EE43CB4555DC" Nm="lblDescription21" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+							<LCT X="226%" Y="349%" W="732%" H="642%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<FONT FName="Default" FSize="6p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="0" Undrln="0" />
+							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="0" TxtDir="0" HorizontalGapValue="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="lang.listView3" />
+							</DATA>
+						</LBL>
+						<PIC ID="5A1DAA8B-ACE4-4231-A6C6-B4568AA15C1B" Nm="imgIcon21" Vsb="1" Alpha="100" TouchEnabled="1">
+							<LCT X="64%" Y="356%" W="156%" H="372%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
+							<DATA>
+								<PRM Nm="Bind" Val="resources://listline_info2.png" />
+							</DATA>
+						</PIC>
+					</ITEMS>
+				</CONTAINER>
 			</ITEMS>
 		</CONTAINER>
 		<PIC ID="D3667213-DF49-4034-B2B1-8255A4EBDA8B" Nm="imgInfo" Vsb="1" Alpha="100" TouchEnabled="1">

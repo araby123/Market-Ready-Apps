@@ -11,15 +11,91 @@ function pgListView_Self_OnShow() {
     Pages.pgListView.rpbxLine.allowDeletingItems = false;
     Pages.pgListView.rpbxSquare.allowDeletingItems = false;
     Pages.pgListView.rpbxBoxed.allowDeletingItems = false;
-    var title = "List View";
-    // setting iOS NavigationBar
-    if (Device.deviceOS == "Android") {}
-    else {
+    var title = lang.pgListViewTitle;
+    if (Device.deviceOS == "Android") {
+        header.init(this, listHeader, listStatusbarColor, title);
+        header.setLeftItem(homeBack);
+    } else {
+        // setting iOS NavigationBar
         header.init(this, listHeader, listStatusbarColor, title);
         header.setLeftItem(homeBack);
         header.setRightItem(showDlgListViewInfo);
+        //For RepeatBox Swipe item to delete
+        var itemDelete = new SMF.UI.RepeatboxSwipeItem({
+                width : "25%",
+                height : "83.5%",
+                left : "75%",
+                top : "16.5%",
+                text : lang.deleteNews,
+                fontColor : "#dddddd",
+                pressedFontColor : "#ffffff",
+                fillColor : "#ff0000",
+                onSelected : function (e) {
+                    //Delete row from newsArrayList
+                    Data.DS_News.seek(e.rowIndex);
+                    shareListViewNews.news.splice(e.rowIndex, 1);
+                    Pages.pgListView.rpbxLine.deleteAnimationType = SMF.UI.RepeatBoxRowAnimation.left;
+                    Pages.pgListView.rpbxLine.deleteRow(0, e.rowIndex);
+                    setDeleteRowTime();
+                }
+            });
+        var itemShare = new SMF.UI.RepeatboxSwipeItem({
+                width : "25%",
+                height : "83.5%",
+                left : "50%",
+                top : "16.5%",
+                text : lang.shareNews,
+                fontColor : "#ffffff",
+                pressedFontColor : "#ffffff",
+                fillColor : "#2b92b5",
+                onSelected : function (e) {
+                    Dialogs.dlgHomePgLoading.show();
+                    //Sending image,title and content
+                    var shareTitle = shareListViewNews.news[e.rowIndex].title;
+                    var shareDesc = shareListViewNews.news[e.rowIndex].description;
+                    var imgUrl = shareListViewNews.news[e.rowIndex].image[0].url;
+                    Pages.pgListView.imgShare.image = shareListViewNews.news[e.rowIndex].image[0].url;
+                    var shareImg = new SMF.Image({
+                            imageUri : Pages.pgListView.imgShare.image,
+                            onSuccess : function (e) {
+                                //image details can be shown like
+                                //alert(e.width + " " + e.height + " " + e.imageUri);
+                            },
+                            onError : function (e) {
+                                alert(lang.applicationError);
+                            }
+                        });
+                    var items = [shareDesc, shareImg];
+                    Social.share({
+                        items : items,
+                        keys : {
+                            "subject" : shareTitle
+                        },
+                        onSuccess : function (e) {},
+                        exclude : [
+                            Social.ActivityType.assignToContact,
+                            Social.ActivityType.saveToCameraRoll
+                        ],
+                        onError : function (e) {
+                            alert("Error: " + e.message);
+                        }
+                    });
+                    Dialogs.dlgHomePgLoading.close();
+                }
+            });
+        var items = [itemDelete, itemShare];
+        Pages.pgListView.rpbxLine.setSwipeItems(items);
     }
     Dialogs.dlgHomePgLoading.close();
+}
+function setDeleteRowTime() {
+    timeoutRow = setTimeout(function () {
+            Data.notify("Data.DS_News");
+            cancelDeleteRowTime();
+        }, 500);
+}
+function cancelDeleteRowTime() {
+    clearTimeout(timeoutRow);
 }
 function pgListView_imgLineInactive_OnTouch(e) {
     // sliding scroll of repeatbox to top
@@ -47,11 +123,8 @@ function pgListView_rpbxLine_OnRowRender(e) {
     Pages.pgListView.rpbxLine.imgLine.image = "empty_photo.png"; // setting default image
     Pages.pgListView.rpbxLine.imgLabelBackground.changeAnimation = "fade"; // when changing image , causing good transition with animated
     Pages.pgListView.rpbxLine.imgLine.changeAnimation = "fade"; // when changing image , causing good transition with animated
-    var index = e.rowIndex;
-    // filling data to objects
-    var newsObject = newsArrayList[index];
-    this.lblLine.text = newsObject.title;
-    this.imgLine.image = newsObject.image[0].url;
+    Pages.pgListView.rpbxLine.lblLine.text = shareListViewNews.news[e.rowIndex].title;
+    Pages.pgListView.rpbxLine.imgLine.image = shareListViewNews.news[e.rowIndex].image[0].url;
 }
 function pgListView_rpbxBoxed_OnRowRender(e) {
     this.imgBoxed.changeAnimation = "None";
@@ -92,7 +165,7 @@ function pgListView_rpbxLine_OnSelectedItem(e) {
     // setting position of scrollview
     Pages.pgLineStyle.svNewsContentPager.scrollX = Device.screenWidth * e.rowIndex;
     var startingIndex;
-    if (e.rowIndex > 0 && e.rowIndex < newsArrayList.length - 1) {
+    if (e.rowIndex > 0 && e.rowIndex < shareListViewNews.news.length - 1) {
         startingIndex = e.rowIndex - 1;
         lineStyleNewsScrollViews[0].left = Device.screenWidth * (e.rowIndex - 1);
         lineStyleNewsScrollViews[1].left = Device.screenWidth * e.rowIndex;
@@ -110,7 +183,7 @@ function pgListView_rpbxLine_OnSelectedItem(e) {
     }
     fillDataToLineStyledScrollViews(startingIndex);
     if (Device.deviceOS == "Android") {
-        header.init(Pages.pgLineStyle, listHeader, listStatusbarColor, "Line Content");
+        header.init(Pages.pgLineStyle, listHeader, listStatusbarColor, lang.pgLineStyleTitle);
         header.setLeftItem(pagesBack);
         header.setRightItem(Dialogs.dlgListLineInfo);
     }
@@ -142,7 +215,7 @@ function pgListView_rpbxBoxed_OnSelectedItem(e) {
     fillDataToBoxedStyledScrollViews(startingIndex);
     // setting Android ActionBar
     if (Device.deviceOS == "Android") {
-        header.init(Pages.pgBoxedStyle, listHeader, listStatusbarColor, "Boxed Content");
+        header.init(Pages.pgBoxedStyle, listHeader, listStatusbarColor, lang.pgBoxedStyleTitle);
         header.setLeftItem(pagesBack);
         header.setRightItem(Dialogs.dlgBoxedInfo);
     }
@@ -179,7 +252,7 @@ function pgListView_rpbxSquare_OnSelectedItem(e) {
     }
     fillDataToSquareStyledScrollViews(startingIndex);
     if (Device.deviceOS == "Android") {
-        header.init(Pages.pgSquareStyle, listHeader, listStatusbarColor, "Square Content");
+        header.init(Pages.pgSquareStyle, listHeader, listStatusbarColor, lang.pgSquareContentTitle);
         header.setLeftItem(pagesBack);
         header.setRightItem(Dialogs.dlgSquareInfo);
     }
@@ -191,10 +264,13 @@ function showdlgSquareInfo() {
 function pgListView_rpbxLine_OnPullUp(e) {
     isUsingSwipe = true;
     rowNum = 11; // it is a default value. How many values are setting when pull up repeatbox
-    pageNum = Number(pageNum) + 1;
+    pageNum += 1;
     Data.wcListView_InDSet.rowNumber = rowNum;
     Data.wcListView_InDSet.pagenumber = pageNum;
-    SMF.Net.wcListView.run();
+    var intervalID = setInterval(function () {
+            SMF.Net.wcListView.run();
+            clearInterval(intervalID);
+        }, 500);
 }
 function pgListView_imgLineActive_OnTouchEnded(e) {
     // sliding scroll of repeatbox to top

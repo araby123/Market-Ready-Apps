@@ -37,7 +37,7 @@
 							<LCT X="64%" Y="153%" W="156%" H="252%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 							<POS Pos="7" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
 							<DATA>
-								<PRM Nm="Bind" Val="" />
+								<PRM Nm="Bind" Val="resources://mapinfo3.png" />
 							</DATA>
 						</PIC>
 					</ITEMS>

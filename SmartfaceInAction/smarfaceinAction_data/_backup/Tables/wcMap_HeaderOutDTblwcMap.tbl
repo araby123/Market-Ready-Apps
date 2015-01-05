@@ -1,0 +1,21 @@
+<OBJECT>
+	<Table name="wcMap_HeaderOutDTblwcMap" id="61CCEF5E-09D7-486A-8B4C-CBD6DA48FD7A" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific LastFieldID="13" Guid="" OverrideOnUpdate="1" ReadOnly="0" isServerObject="0" OneToOneType="0" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="wcMapId" Type="1" DefaultValue="" AutoIncrement="1" PrimaryKey="1" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="2" Name="wcMap" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="1" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="3" Name="Cache_Control" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="4" Name="Pragma" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="5" Name="Transfer_Encoding" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="6" Name="Content_Type" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="7" Name="Content_Encoding" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="8" Name="Expires" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="9" Name="Vary" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="10" Name="Server" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="11" Name="X_AspNet_Version" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="12" Name="X_Powered_By" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="13" Name="Date" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+		</TypeSpecific>
+	</Table>
+</OBJECT>

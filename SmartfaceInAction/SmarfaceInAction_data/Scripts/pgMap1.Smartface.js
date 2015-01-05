@@ -6,6 +6,8 @@ var counterPin = 0;
 var counterforAll = 0;
 var pinType;
 var imgPath;
+var centLat = Pages.pgMap1.map.centerLatitude;
+var centLng = Pages.pgMap1.map.centerLongitude;
 function pgMap1_Self_OnKeyPress(e) {
     if (e.keyCode === 4) {
         Pages.pgDashboard.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.leftToRight, SMF.UI.TransitionEffectType.push, false, false);
@@ -18,13 +20,13 @@ function pgMap1_Self_OnShow() {
     counter = 0;
     /* Navigation Bar Customizing */
     var title = lang.map;
-        if (Device.deviceOS == "Android") {}
-        else {
-            header.init(this, mapHeader, mapStatusbarColor, title);
-            header.setLeftItem(homeBack);
-            header.setRightItem(showDlgMap);
-        }
-        this.contFilter.btnFilter.height = this.contFilter.btnFilter.width / 2;
+    if (Device.deviceOS == "Android") {}
+    else {
+        header.init(this, mapHeader, mapStatusbarColor, title);
+        header.setLeftItem(homeBack);
+        header.setRightItem(showDlgMap);
+    }
+    this.contFilter.btnFilter.height = this.contFilter.btnFilter.width / 2;
     this.contFilter.btnFilter.top = (this.contFilter.height - this.contFilter.btnFilter.height) / 2;
     this.contFilter.btnMapType.height = this.contFilter.btnMapType.width;
     this.contFilter.btnMapType.top = (this.contFilter.height - this.contFilter.btnMapType.height) / 2;
@@ -94,6 +96,8 @@ function pgMap1_contFilter_OnTouchEnded(e) {
 }
 /* Function to show all filter types Pins */
 function pgMap1_imgBtnAll_OnPressed(e) {
+    Pages.pgMap1.map.centerLatitude = centLat;
+    Pages.pgMap1.map.centerLongitude = centLng;
     if (selectedFilterValue != 0) {
         switch (selectedFilterValue) {
         case 1:
@@ -124,6 +128,8 @@ function pgMap1_imgBtnAll_OnPressed(e) {
 }
 /* If Triangle type Selected */
 function pgMap1_imgBtnTriangle_OnPressed(e) {
+    Pages.pgMap1.map.centerLatitude = centLat;
+    Pages.pgMap1.map.centerLongitude = centLng;
     if (selectedFilterValue != 1) {
         switch (selectedFilterValue) {
         case 0:
@@ -156,6 +162,8 @@ function pgMap1_imgBtnTriangle_OnPressed(e) {
 }
 /* If Square Selected */
 function pgMap1_imgBtnSquare_OnPressed(e) {
+    Pages.pgMap1.map.centerLatitude = centLat;
+    Pages.pgMap1.map.centerLongitude = centLng;
     if (selectedFilterValue != 2) {
         switch (selectedFilterValue) {
         case 0:
@@ -188,6 +196,8 @@ function pgMap1_imgBtnSquare_OnPressed(e) {
 }
 /* If Circle selected */
 function pgMap1_imgBtnCircle_OnPressed(e) {
+    Pages.pgMap1.map.centerLatitude = centLat;
+    Pages.pgMap1.map.centerLongitude = centLng;
     if (selectedFilterValue != 3) {
         switch (selectedFilterValue) {
         case 0:
@@ -248,22 +258,20 @@ function pgMap1_btnMapType_OnPressed(e) {
 function pgMap1_map_OnPINSelected(e) {
     selectedPinId = e.id;
     if (Device.deviceOS == "Android") {
-        header.init(Pages.pgMap2, mapHeader, mapStatusbarColor, lang.mapDetails );
+        header.init(Pages.pgMap2, mapHeader, mapStatusbarColor, lang.mapDetails);
         header.setLeftItem(pagesBack);
     }
     Pages.pgMap2.show(SMF.UI.MotionEase.accelerating, SMF.UI.TransitionEffect.rightToLeft, SMF.UI.TransitionEffectType.push, false, false);
     SES.Analytics.eventLog("Show Map Detail", '{\"function\":\"pgMap1_Map_OnPINSelected\"}');
 }
+var idForPin;
+var timeoutID;
 /* MapView onLongTouch Function to add new Pin manually */
 function pgMap1_map_OnLongTouch(e) {
-    var idForPin = Data.wcMap_OutDSetpins.rowCount;
+    clearTimeout(timeoutID);
+    idForPin = Data.wcMap_OutDSetpins.rowCount;
     lastLat = e.latitude;
     lastLon = e.longitude;
-    SMF.Map.lookupAddress(e.latitude, e.longitude,
-        function (e) {
-        lastAddress = e.results[0].addressValue;
-    },
-        function (e) {});
     var imgPath;
     pinTypeToAdd = selectedFilterValue - 1;
     if (selectedFilterValue - 1 == 0)
@@ -277,7 +285,7 @@ function pgMap1_map_OnLongTouch(e) {
     Pages.pgMap1.map.addPin({
         id : idForPin.toString(),
         title : "Dropped Pin",
-        subtitle : lastAddress,
+        subtitle : "Dropped Address",
         latitude : e.latitude,
         longitude : e.longitude,
         selectedImage : imgPath,
@@ -285,7 +293,19 @@ function pgMap1_map_OnLongTouch(e) {
         draggable : true,
         animate : true
     });
+    changeAddress();
     pinAdded = true;
+}
+function changeAddress() {
+    timeoutID = setTimeout(function () {
+            SMF.Map.lookupAddress(lastLat, lastLon,
+                function (e) {
+                lastAddress = e.results[0].addressValue;
+                Pages.pgMap1.map.getPin(idForPin.toString()).subtitle = lastAddress;
+                clearTimeout(timeoutID);
+            },
+                function (e) {});
+        }, 3000);
 }
 // Function to show all filter types Pins by a Timer
 function addingAll() {
