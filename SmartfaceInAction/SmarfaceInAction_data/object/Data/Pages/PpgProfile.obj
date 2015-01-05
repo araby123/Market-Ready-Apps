@@ -1,5 +1,5 @@
 <PG ID="4AE2198B-9CB3-48C5-92D9-9092E16B0210" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgProfile" BgClr="f1f0ec" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="0" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="2048" H="1536" />
+	<EDGE X="0" Y="0" W="320" H="480" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<SCROLLVIEW ID="F142DB18-1222-490D-93F3-8DC8FF3EB5DA" Nm="scrollMainProfile" Vsb="1" TouchEnabled="1">
@@ -77,7 +77,7 @@
 							<ROT Angle="0" />
 						</LINE>
 						<EDIT ID="36308E3C-B121-4BDB-AF7F-A13FA90C5FE0" Nm="edtPhoneNumber" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="0" EnableClearButton="1" EnableUpperCase="0">
-							<LCT X="421%" Y="756%" W="552%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
+							<LCT X="450%" Y="756%" W="530%" H="244%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 							<PlaceHolder>
 								<PRM Nm="Bind" Val="&quot;+1&quot;" />
 							</PlaceHolder>
@@ -123,7 +123,7 @@
 						</LBL>
 						<LBL ID="D065CD85-7572-43F5-AFA1-9105DA8786F0" Nm="lblPhonenumber" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
 							<LCT X="54%" Y="757%" W="413%" H="243%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="bfb8b4" FStyle="0" Undrln="0" />
+							<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="1" MinFSize="7" FColor="bfb8b4" FStyle="0" Undrln="0" />
 							<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
 							<DATA>
 								<PRM Nm="Bind" Val="lang.phoneNumber" />
@@ -202,9 +202,9 @@
 								<PRM Nm="Bind" Val="lang.allowMsg" />
 							</DATA>
 						</LBL>
-						<SWITCHBUTTON ID="4B6CA9B5-211A-4196-9B57-C757679301FF" Nm="SwitchButton1" Vsb="1" Alpha="100" Checked="0" TouchEnabled="1" TintColor="00ea7f">
+						<SWITCHBUTTON ID="4B6CA9B5-211A-4196-9B57-C757679301FF" Nm="sliderNotifications" Vsb="1" Alpha="100" Checked="0" TouchEnabled="1" TintColor="00ea7f">
 							<LCT X="750%" Y="50%" W="5100d" H="3100d" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-							<ONCHANGE script="pgProfile_SwitchButton1_OnChange(e);" />
+							<ONCHANGE script="pgProfile_sliderNotifications_OnChange(e);" />
 						</SWITCHBUTTON>
 						<LINE ID="3CDB0A46-D3C1-411D-9161-FC98BD4515A2" Nm="lineDivideRow4" Vsb="1" Alpha="100" TouchEnabled="1" Clr="c7c3be" BrW="1" Dashed="0">
 							<LCT X="0%" Y="226%" W="1000%" H="4%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -282,82 +282,6 @@
 				</BTN>
 			</ITEMS>
 		</SCROLLVIEW>
-		<CONTAINER ID="30825FCC-58D9-481F-A56B-4B2A2CCE4DE0" Nm="cntNotifications" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="-433%" W="1000%" H="433%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="ffffff" BrW="0" BgTparent="1" BgClr="808000" />
-			<ITEMS>
-				<RECT ID="8BCA156A-D01D-4DDE-9321-213DCF4E5D25" Nm="recNotificationRectangle" Vsb="1" Alpha="100" TouchEnabled="1" Clr="000000" BrW="0" Fill="1" BrClr="666666" PxlEdg="0">
-					<LCT X="0%" Y="0%" W="1000%" H="987%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-					<ROT Angle="0" />
-					<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
-				</RECT>
-				<REPEATBOX ID="6881852F-CB9B-4CCD-81E0-0FB4AD188F49" Nm="rboxNotifications" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" PxlEdg="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="0" StrokeColor="999999" AutoSize="0" Loop="0" UseActiveItem="0">
-					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-					<DATASOURCE>
-						<PRM Nm="Bind" Val="Data.DS_Notification" />
-					</DATASOURCE>
-					<GROUPINGDATASOURCE>
-						<PRM Nm="Bind" Val="" />
-					</GROUPINGDATASOURCE>
-					<ITM InActItemH="333%" ActItemH="333%" HeaderItemH="284%" GroupingHeaderItemH="284%" PullDownItemH="284%" PullUpItemH="284%">
-						<STYLE BgTparent="0" InActBgClr="000000" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="000000" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="8d8d8d" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="9f9f9f" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="eaebe3" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="eaebe3" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
-						<BODY>
-							<INACTIVEITEMS>
-								<LBL ID="001D6370-3445-4755-ABD3-E6746F7C12D1" Nm="lblNotification" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="1" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
-									<LCT X="200%" Y="0%" W="750%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-									<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="868678" FStyle="0" Undrln="0" />
-									<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
-									<DATA>
-										<PRM Nm="Bind" Val="Data.DS_Notification.textNotification" />
-									</DATA>
-								</LBL>
-								<PIC ID="F62B3148-6F05-417B-8F66-B052A6094961" Nm="imgNotification" Vsb="1" Alpha="100" TouchEnabled="0">
-									<LCT X="55%" Y="0%" W="125%" H="1000%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-									<POS Pos="15" SMode="1" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-									<DATA>
-										<PRM Nm="Bind" Val="Data.DS_Notification.imgNotification" />
-									</DATA>
-								</PIC>
-								<LINE ID="DDF47DE2-D7EA-49CB-B655-728D68A2903A" Nm="lineDivideRow6" Vsb="1" Alpha="100" TouchEnabled="0" Clr="666666" BrW="1" Dashed="0">
-									<LCT X="0%" Y="986%" W="1000%" H="14%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-									<ROT Angle="0" />
-								</LINE>
-							</INACTIVEITEMS>
-						</BODY>
-					</ITM>
-					<ONLONGTOUCH script="pgProfile_rboxNotifications_OnLongTouch(e);" />
-				</REPEATBOX>
-				<LINE ID="0CD7720B-FCCF-4864-8E43-64CC9DF68513" Nm="lineDivideRow7" Vsb="1" Alpha="100" TouchEnabled="1" Clr="2d39c1" BrW="6" Dashed="0">
-					<LCT X="0%" Y="983%" W="1000%" H="17%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-					<ROT Angle="0" />
-				</LINE>
-			</ITEMS>
-		</CONTAINER>
-		<CONTAINER ID="52F6BC77-79C1-4488-8563-679CE27CDAE0" Nm="contNotificationNumber" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="0%" W="1000%" H="142%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="313031" BrW="0" BgTparent="1" BgClr="993333" />
-			<ITEMS>
-				<PIC ID="F12BB5CC-AAAC-49B2-8379-54D61805FA1C" Nm="imgNotificationNumber" Vsb="1" Alpha="100" TouchEnabled="1">
-					<LCT X="677%" Y="0%" W="214%" H="1000%" Z="0" Anc="2" LockAutoSize="0" LockAutoPosition="0" />
-					<POS Pos="7" SMode="1" EnableZoom="0" EnableScroll="0" EnableCache="0" />
-					<DATA>
-						<PRM Nm="Bind" Val="resources://news_switch.png" />
-					</DATA>
-					<ONTOUCHENDED script="pgProfile_imgNotificationNumber_OnTouchEnded(e);" />
-				</PIC>
-				<LBL ID="3DDE1F01-5073-446F-89AA-6D5D87B8A22D" Nm="lblNotificationNumber" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="0" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
-					<LCT X="722%" Y="247%" W="130%" H="523%" Z="0" Anc="15" LockAutoSize="0" LockAutoPosition="0" />
-					<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="ffffff" FStyle="1" Undrln="0" />
-					<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="0" />
-					<DATA>
-						<PRM Nm="Bind" Val="Data.DS_Notification.rowCount" />
-					</DATA>
-				</LBL>
-			</ITEMS>
-		</CONTAINER>
 	</BODY>
 	<EVENTS>
 		<ONSHOW script="pgProfile_Self_OnShow(e);" />

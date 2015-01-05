@@ -7,8 +7,8 @@
 			<ROT Angle="0" />
 			<GRAD FillGrad="0" GSColor="666666" GEColor="000000" GOrientation="0" />
 		</RECT>
-		<ACTIVITYINDICATOR ID="821F3708-EEEC-4B83-85D3-C756691512CA" Nm="aiLoading" Vsb="1" Style="0" TouchEnabled="1">
-			<LCT X="466%" Y="477%" W="21" H="21" Z="0" Anc="3" LockAutoPosition="0" />
+		<ACTIVITYINDICATOR ID="821F3708-EEEC-4B83-85D3-C756691512CA" Nm="aiLoading" Vsb="1" Style="2" TouchEnabled="1">
+			<LCT X="466%" Y="477%" W="36" H="36" Z="0" Anc="3" LockAutoPosition="0" />
 		</ACTIVITYINDICATOR>
 	</BODY>
 	<EVENTS>

@@ -11,7 +11,7 @@ function pgBoxedStyle_Self_OnShow(e) {
     Pages.pgBoxedStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.width = Device.screenWidth;
     Pages.pgBoxedStyle.svNewsContentPager.svNewsContent2.imgNewsContent2.height = Device.screenWidth / 1.5;
     // setting iOS NavigationBar
-    var title = "Boxed Content";
+    var title = lang.pgBoxedStyleTitle;
     if (Device.deviceOS == "Android") {}
     else {
         header.init(this, listHeader, listStatusbarColor, title);

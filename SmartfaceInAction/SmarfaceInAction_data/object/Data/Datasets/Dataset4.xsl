@@ -1,10 +1,11 @@
-<DATASET ID="DA82D54F-00E8-450A-96D1-A9F09667844D" Name="DS_twitterTable" TableID="E26B429C-3E97-49AD-B604-23BFE370AC2B" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="69DBF73B-C5C4-40DA-85E2-25F8DB92F2FC" Name="DS_Notification" TableID="1AE4AAFF-4DF4-49CE-980D-603ACE251E8B" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "twitterTable".* FROM "twitterTable"
+SELECT "tblNotification"."imgNotification", "tblNotification"."textNotification" FROM "tblNotification"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="twitterTable.id" />
+		<COLUMN ID="1" Name="tblNotification.imgNotification" />
+		<COLUMN ID="2" Name="tblNotification.textNotification" />
 	</COLUMNS>
 </DATASET>

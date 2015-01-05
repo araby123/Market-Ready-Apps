@@ -2,10 +2,17 @@
 function showdlgSquareInfo() {
     Dialogs.dlgSquareInfo.show();
 }
+var index2;
+var index3;
+var index1;
 function pgSquareStyle_Self_OnShow(e) {
-    index = 0;
+    index1 = 0;
+    index2 = 0;
+    index3 = 0;
     var title = "Square Content";
-    if (Device.deviceOS == "Android") {}
+    if (Device.deviceOS == "Android") {
+            header.init(this, listHeader, listStatusbarColor, title);
+        header.setLeftItem(pagesBack);}
     else {
         header.init(this, listHeader, listStatusbarColor, title);
         header.setLeftItem(pagesBack);
@@ -82,16 +89,15 @@ function pgSquareStyle_Self_OnKeyPress(e) {
 }
 function pgSquareStyle_svNewsImages0_OnPageChanged(e) {
     // setting sliderPointBar
-    if (index < e.pageIndex) {
+    if (index1 < e.pageIndex) {
         Pages.pgSquareStyle.svNewsContentPager.svNewsContent0.contSlideIndex0.controls[e.pageIndex - 1].image = "point.png"
     } else {
         Pages.pgSquareStyle.svNewsContentPager.svNewsContent0.contSlideIndex0.controls[e.pageIndex + 1].image = "point.png";
     }
     Pages.pgSquareStyle.svNewsContentPager.svNewsContent0.contSlideIndex0.controls[e.pageIndex].image = "point_selected.png";
-    index = e.pageIndex;
+    index1 = e.pageIndex;
 }
 function pgSquareStyle_svNewsImages1_OnPageChanged(e) {
-    var index2 = 0;
     // setting sliderPointBar
     if (index2 < e.pageIndex) {
         Pages.pgSquareStyle.svNewsContentPager.svNewsContent1.contSlideIndex1.controls[e.pageIndex - 1].image = "point.png"
@@ -102,7 +108,6 @@ function pgSquareStyle_svNewsImages1_OnPageChanged(e) {
     index2 = e.pageIndex;
 }
 function pgSquareStyle_svNewsImages2_OnPageChanged(e) {
-    var index3 = 0;
     // setting sliderPointBar
     if (index3 < e.pageIndex) {
         Pages.pgSquareStyle.svNewsContentPager.svNewsContent2.contSlideIndex2.controls[e.pageIndex - 1].image = "point.png"

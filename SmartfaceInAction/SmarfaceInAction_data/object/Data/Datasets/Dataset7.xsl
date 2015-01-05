@@ -1,17 +1,11 @@
-<DATASET ID="302C8037-D8D4-4BEE-B846-C91D704C19E7" Name="wcListView_OutDSetnews" TableID="B3F61813-FF01-4B64-A13D-A8EE9DFAD49A" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="93DDB431-7B5B-4D1E-9A5A-30E42A705EF4" Name="wcListView_InDSet" TableID="13F43F73-F592-45FE-B923-9D3F5DA92667" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "wcListView_OutDTblnews"."newsId", "wcListView_OutDTblnews"."news", "wcListView_OutDTblnews"."title", "wcListView_OutDTblnews"."id", "wcListView_OutDTblnews"."type", "wcListView_OutDTblnews"."description", "wcListView_OutDTblnews"."id1", "wcListView_OutDTblnews"."url" FROM "wcListView_OutDTblnews"
+SELECT "wcListView_InDTbl"."rowNumber", "wcListView_InDTbl"."pagenumber" FROM "wcListView_InDTbl"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="wcListView_OutDTblnews.newsId" />
-		<COLUMN ID="2" Name="wcListView_OutDTblnews.news" />
-		<COLUMN ID="3" Name="wcListView_OutDTblnews.title" />
-		<COLUMN ID="4" Name="wcListView_OutDTblnews.id" />
-		<COLUMN ID="5" Name="wcListView_OutDTblnews.type" />
-		<COLUMN ID="6" Name="wcListView_OutDTblnews.description" />
-		<COLUMN ID="7" Name="wcListView_OutDTblnews.id1" />
-		<COLUMN ID="8" Name="wcListView_OutDTblnews.url" />
+		<COLUMN ID="1" Name="wcListView_InDTbl.rowNumber" />
+		<COLUMN ID="2" Name="wcListView_InDTbl.pagenumber" />
 	</COLUMNS>
 </DATASET>

@@ -1,12 +1,10 @@
-<DATASET ID="39B298AA-B1F2-4F2D-95FD-2AEA1494D127" Name="DS_Interest" TableID="B76A55F2-717B-4BFB-B8DF-863F346011C2" AutoCommit="0" FastCommit="0" PreserveState="0">
+<DATASET ID="70DAD55E-2B38-4F52-94BF-8F05439C2AD2" Name="DS_Image" TableID="E109CCF7-9634-46F8-B2F9-94F26E2BD350" AutoCommit="0" FastCommit="0" PreserveState="0">
 	<SQLTEXT>
 	<![CDATA[
-SELECT "tblInterest".* FROM "tblInterest"
+SELECT "tblImage"."data" FROM "tblImage"
 	]]>
 	</SQLTEXT>
 	<COLUMNS>
-		<COLUMN ID="1" Name="tblInterest.interestName" />
-		<COLUMN ID="2" Name="tblInterest.image" />
-		<COLUMN ID="3" Name="tblInterest.fontColor" />
+		<COLUMN ID="1" Name="tblImage.data" />
 	</COLUMNS>
 </DATASET>

@@ -1,4 +1,4 @@
-function dlgMap_imgClose_OnTouch(e) {
+function dlgMap_imgClose_OnTouchEnded(e){
     Dialogs.dlgMap.close();
 }
 function dlgMap_Self_OnKeyPress(e) {

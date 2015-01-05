@@ -1,0 +1,14 @@
+<OBJECT>
+	<Dataset name="wcTwitter_RequestHeadersDSet" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="0" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="wcTwitter_RequestHeadersDTbl.Authorization" TblID="3730FAD9-5699-4D74-A9A4-E17A60D3A2EF" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT "wcTwitter_RequestHeadersDTbl"."Authorization" FROM "wcTwitter_RequestHeadersDTbl"
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>
