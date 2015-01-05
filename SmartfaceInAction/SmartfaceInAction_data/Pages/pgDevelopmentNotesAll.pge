@@ -1,0 +1,29 @@
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<Page id="B862A2D2-9556-4C3E-9BC3-1094B4DB868C" name="pgDevelopmentNotesAll" backgroundImage="" fillColor="#ffffff" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" showNavigationBar="true" showActionBar="false" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<controls>
+				<RepeatBox name="RepeatBox1" id="12F0AAA0-BDA7-4FB9-8876-86B40A82FA70" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="100%" height="100%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="true" showScrollBar="true" groupItems="false" lockAutoSize="false" designVisible="true" groupStyle="SMF.UI.GroupingStyle.plain" enablePullDownToRefresh="false" enablePullUpToRefresh="false" roundEdge="0" editMode="1" previousEditMode="1" showHeader="false" scrollHeader="false" borderColor="#999999" borderWitdh="0" autoSize="false" loop="false" layoutType="SMF.UI.LayoutType.absolute" alignment="SMF.UI.LayoutAlignment.none" orientation="SMF.UI.Orientation.none" verticalGap="5px" horizontalGap="5px" backgroundTransparent="false" dataSource="" groupingDataSource="" useActiveItem="false" onSelectedItem="pgDevelopmentNotesAll_RepeatBox1_OnSelectedItem(e);" onRowRender="pgDevelopmentNotesAll_RepeatBox1_OnRowRender(e);">
+					<itemTemplate positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#ffffff" height="49,0797538757324dp" imageFillType="SMF.UI.Alignment.topLeft">
+						<controls>
+							<Label name="lblNote" id="5B93868B-48AD-494B-9422-750802C66594" parent="12F0AAA0-BDA7-4FB9-8876-86B40A82FA70" parentMode="1" width="87,3749971389771%" height="100%" left="2,65624839812517%" top="-0,0992063549347222%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="false" designVisible="true" backgroundTransparent="true" text="" font.name="Default" font.size="8pt" fontColor="#666666" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.left" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="0" horizontalGap="0px" />
+							<Line name="Line1" id="E1F37496-4BCF-450A-84C8-D7DAD8125EC9" parent="12F0AAA0-BDA7-4FB9-8876-86B40A82FA70" parentMode="1" width="95,9999978542328%" height="2,99999993294477%" left="2,03124992549419%" top="97,0000028610229%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="false" designVisible="true" enabled="true" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" color="#cacaca" thickness="1" dashed="false" lineRotationAngle="SMF.UI.LineRotationAngle.horizontal" />
+							<Image name="imgArrow" id="C66F4F95-694D-4B4F-AAA8-2516568476DB" parent="12F0AAA0-BDA7-4FB9-8876-86B40A82FA70" parentMode="1" width="10,0000001490116%" height="100%" left="89,9999976158142%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="false" designVisible="true" imageFillType="SMF.UI.ImageFillType.normal" imagePosition="SMF.UI.Alignment.center" dataSource="" image="arrow" alpha="1" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enableScroll="false" enableCache="true" enableZoom="false" />
+						</controls>
+					</itemTemplate>
+					<activeItemTemplate positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#eff3ef" height="40dp" imageFillType="SMF.UI.Alignment.topLeft">
+					</activeItemTemplate>
+					<pullUpItem positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#65625a" height="40dp" imageFillType="SMF.UI.Alignment.topLeft">
+					</pullUpItem>
+					<pullDownItem positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#65625a" height="40dp" imageFillType="SMF.UI.Alignment.topLeft">
+					</pullDownItem>
+					<headerItem positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#eff3ef" height="40dp" imageFillType="SMF.UI.Alignment.topLeft">
+					</headerItem>
+					<grouppingHeaderTemplate positionBackroundImage="SMF.UI.ImageFillType.stretch" backgroundImage="" fillColor="#d6dce0" height="40dp" imageFillType="SMF.UI.Alignment.topLeft">
+					</grouppingHeaderTemplate>
+				</RepeatBox>
+				<Label name="lblNoNotes" id="4410B345-A8A6-494A-A63D-2C31BCC7697F" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="100%" height="100%" left="0%" top="0%" lockAutoSize="false" lockAutoPosition="false" visible="false" touchEnabled="true" designVisible="false" backgroundTransparent="true" text="lang[&quot;noNotes&quot;]" font.name="Default" font.size="8pt" fontColor="#666666" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" textAlignment="SMF.UI.Alignment.center" multipleLine="false" fillColor="#cccccc" borderColor="#999999" borderWitdh="0" alpha="1" autoSize="false" showScrollbars="false" adjustFontSizeToFit="false" minimumFontSize="7" detectURLsInString="false" roundEdge="3" horizontalGap="0px" />
+			</controls>
+			<EVENTS onShow="pgDevelopmentNotesAll_Self_OnShow(e);" />
+		</Page>
+	</UI>
+</SMF>

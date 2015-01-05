@@ -1,0 +1,10 @@
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0/sasObjects.xsd sasObjects.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UI>
+		<Page id="BE862204-4554-4940-A4E2-64CA4972FFC4" name="pgCanvas5" backgroundImage="00000000-0000-0000-0000-100000000001" fillColor="#333333" imageFillType="SMF.UI.ImageFillType.normal" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" showNavigationBar="true" showActionBar="true" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<controls>
+				<TextButton name="btnStart" id="FB1EA516-DD98-4FEA-B59D-700331D42391" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="55,0000011920929%" height="10,0000001490116%" left="22,4999994039536%" top="81,4584136009216%" lockAutoSize="false" lockAutoPosition="false" visible="true" touchEnabled="true" designVisible="true" enabled="true" alpha="1" fillColor="#e84c3d" font.name="Default" font.size="8pt" font.bold="false" font.italic="false" font.underline="false" font.strikeThrough="false" fontColor="#000000" pressedFillColor="#000000" pressedFontColor="#ffffff" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" roundEdge="3" stlye3D="false" text="&quot;Button&quot;" textAlignment="SMF.UI.Alignment.center" horizontalGap="0px" />
+			</controls>
+			<EVENTS onShow="pgCanvas5_Self_OnShow(e);" onKeyPress="pgCanvas5_Self_OnKeyPress(e);" />
+		</Page>
+	</UI>
+</SMF>
