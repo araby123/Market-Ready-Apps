@@ -6,8 +6,7 @@ function pgCanvas3_Self_OnKeyPress(e) {
 function pgCanvas3_Self_OnShow() {
     // setting iOS NavigationBar
     var title = lang.lineGraph2;
-    if (Device.deviceOS == "Android") {        header.init(this, canvasHeader, canvasStatusBarColor, title);
-        header.setLeftItem(pagesBack);}
+    if (Device.deviceOS == "Android") {}
     else {
         header.init(this, canvasHeader, canvasStatusBarColor, title);
         header.setLeftItem(pagesBack);

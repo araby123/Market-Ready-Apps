@@ -35,9 +35,9 @@ function fillDataToLineStyledScrollViews(startingIndex) {
     for (i = 0; i < 3; i++) {
         // lineStyleNewsScrollViews[i].scrollY = 0;
         lineStyleNewsScrollViews[i].left = (startingIndex + i) * Device.screenWidth;
-        lineStyleNewsScrollViews[i].controls[0].image = shareListViewNews.news[startingIndex + i].image[0].url;
-        lineStyleNewsScrollViews[i].controls[1].controls[0].text = shareListViewNews.news[startingIndex + i].title;
-        lineStyleNewsScrollViews[i].controls[1].controls[1].text = shareListViewNews.news[startingIndex + i].description;
+        lineStyleNewsScrollViews[i].controls[0].image = newsArrayList[startingIndex + i].image[0].url;
+        lineStyleNewsScrollViews[i].controls[1].controls[0].text = newsArrayList[startingIndex + i].title;
+        lineStyleNewsScrollViews[i].controls[1].controls[1].text = newsArrayList[startingIndex + i].description;
         lineStyleNewsScrollViews[i].controls[1].controls[1].height = lineStyleNewsLblHeights[startingIndex + i];
         lineStyleNewsScrollViews[i].controls[1].contentHeight = lineStyleNewsScrollViewsContentHeights[startingIndex + i];
     }

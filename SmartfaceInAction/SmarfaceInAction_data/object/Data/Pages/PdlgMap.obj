@@ -13,7 +13,7 @@
 			<DATA>
 				<PRM Nm="Bind" Val="resources://closer.png" />
 			</DATA>
-			<ONTOUCHENDED script="dlgMap_imgClose_OnTouchEnded(e);" />
+			<ONTOUCH script="dlgMap_imgClose_OnTouch(e);" />
 		</PIC>
 		<CONTAINER ID="96273F46-6320-44F3-B4C8-FC53BC212FDF" Nm="cntItems" Vsb="1" TouchEnabled="1" AutoSize="0">
 			<LCT X="100%" Y="150%" W="800%" H="700%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
@@ -59,7 +59,7 @@
 							<LCT X="64%" Y="140%" W="156%" H="593%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 							<POS Pos="7" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
 							<DATA>
-								<PRM Nm="Bind" Val="resources://mapinfo3.png" />
+								<PRM Nm="Bind" Val="resources://mapInfo3.png" />
 							</DATA>
 						</PIC>
 					</ITEMS>
@@ -81,7 +81,7 @@
 							<LCT X="64%" Y="100%" W="156%" H="593%" Z="0" Anc="3" LockAutoSize="0" LockAutoPosition="0" />
 							<POS Pos="15" SMode="64" EnableZoom="0" EnableScroll="0" EnableCache="0" />
 							<DATA>
-								<PRM Nm="Bind" Val="resources://mapinfo4.png" />
+								<PRM Nm="Bind" Val="resources://mapInfo4.png" />
 							</DATA>
 						</PIC>
 					</ITEMS>

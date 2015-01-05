@@ -21,13 +21,11 @@ function showdlgInterestListInfo() {
     Dialogs.dlgInterestList.show();
 }
 function pgInterestList_Self_OnShow(e) {
-    Data.notify("Data.DS_Interest");
     this.rBoxInterest.allowDeletingItems = false;
     fromLogin = 3;
-    var title = lang.interestlist;
+    var title = lang.interestlist ;
     // setting iOS NavigationBar
-    if (Device.deviceOS == "Android") {header.init(this, formHeader, formStatusbarColor, title);
-        header.setLeftItem(pagesBack);}
+    if (Device.deviceOS == "Android") {}
     else {
         header.init(this, formHeader, formStatusbarColor, title);
         header.setLeftItem(pagesBack);

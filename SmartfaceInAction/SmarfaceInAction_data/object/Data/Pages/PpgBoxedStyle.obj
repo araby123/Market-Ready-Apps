@@ -1,5 +1,5 @@
 <PG ID="19540283-5D09-4741-A594-E7CF704B7E80" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgBoxedStyle" BgClr="000000" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" TouchEnabled="1">
-	<EDGE X="0" Y="0" W="320" H="480" />
+	<EDGE X="0" Y="0" W="2048" H="1536" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
 		<SCROLLVIEW ID="5BC732E9-F936-40AD-909F-81D25C577A0B" Nm="svNewsContentPager" Vsb="1" TouchEnabled="1">

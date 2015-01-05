@@ -8,9 +8,7 @@ function showDlgCounterInfo() {
 }
 function pgCanvas4_Self_OnShow() {
     var title = lang.counter;
-    if (Device.deviceOS == "Android") {
-            header.init(this, canvasHeader, canvasStatusBarColor, title);
-        header.setLeftItem(pagesBack);}
+    if (Device.deviceOS == "Android") {}
     else {
         header.init(this, canvasHeader, canvasStatusBarColor, title);
         header.setLeftItem(pagesBack);

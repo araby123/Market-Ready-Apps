@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd">
-<PROJECT SID="-1" WS="http://www.smartface.biz" dateLastResourceUpdated="010101000000" AppID="1701667150" AppName="Smartface Demo" CID="0" Ver="1.1.0" ScreenW="320" ScreenH="480" Dpi="163" FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="">
+<PROJECT SID="-1" WS="http://www.smartface.biz" dateLastResourceUpdated="010101000000" AppID="1701667150" AppName="Smartface Demo" CID="0" Ver="1.0.0" ScreenW="2048" ScreenH="1536" Dpi="264" FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="">
 	<MAPAPI AndroidMapKey="" IosGeocodingKey="" />
 	<ADMOB AdMobPublisherId="" AdMobTestUsage="0" />
 	<DEVICEORIENTATIONS DeviceOrientationPortrait="1" DeviceOrientationUpsideDown="0" DeviceOrientationLandscapeLeft="0" DeviceOrientationLandscapeRight="0" />
 	<ANDROIDPRODUCTKEY AndroidProductKey="" />
 	<ANDROIDSENDERID AndroidSenderID="" />
 	<APPLICATIONCACHESIZE ApplicationCacheSize="50" />
-	<APPLICATIONNAME ApplicationName="Smartface" />
+	<APPLICATIONNAME ApplicationName="Smartface in Action" />
 	<NAVIGATIONBARUPDATE NavigationBarUpdate="1" />
 	<RESOURCES>
 	</RESOURCES>
@@ -27,9 +27,6 @@
 		</TABLE>
 		<TABLE ID="A5CE94F2-5AAC-466F-99CD-9440D7C87647" Name="EmptyTableforNews" Media="0" Guid="" OverrideOnUpdate="1" IsSecure="0" RunOnMemory="0">
 			<COLUMN ID="1" Name="id" Type="STRING" PrimaryKey="0" AutoIncrement="0" ForeignKey="00000000-0000-0000-0000-000000000000" DefaultValue="" PrimaryAssistant="0" IsSecure="0" />
-		</TABLE>
-		<TABLE ID="37F051B1-1464-443F-9C84-DD601D67B053" Name="tbl" Media="0" Guid="" OverrideOnUpdate="1" IsSecure="0" RunOnMemory="0">
-			<COLUMN ID="1" Name="col1" Type="STRING" PrimaryKey="0" AutoIncrement="0" ForeignKey="00000000-0000-0000-0000-000000000000" DefaultValue="" PrimaryAssistant="0" IsSecure="0" />
 		</TABLE>
 		<TABLE ID="E109CCF7-9634-46F8-B2F9-94F26E2BD350" Name="tblImage" Media="0" Guid="" OverrideOnUpdate="1" IsSecure="0" RunOnMemory="0">
 			<COLUMN ID="1" Name="data" Type="PICTURE" PrimaryKey="0" AutoIncrement="0" ForeignKey="00000000-0000-0000-0000-000000000000" DefaultValue="" PrimaryAssistant="0" IsSecure="0" />
@@ -116,17 +113,7 @@
 		</TABLE>
 	</DATATABLES>
 	<DATASETS>
-		<DATASET ID="663E002B-CDBB-40C3-B8EF-8A071D8F6E1B" Name="DS_Blog" TableID="37F051B1-1464-443F-9C84-DD601D67B053" AutoCommit="0" FastCommit="0" PreserveState="0">
-			<SQLTEXT>
-			<![CDATA[
-SELECT "tbl".* FROM "tbl"
-			]]>
-			</SQLTEXT>
-			<COLUMNS>
-				<COLUMN ID="1" Name="tbl.col1" />
-			</COLUMNS>
-		</DATASET>
-		<DATASET ID="70DAD55E-2B38-4F52-94BF-8F05439C2AD2" Name="DS_Image" TableID="E109CCF7-9634-46F8-B2F9-94F26E2BD350" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="4FB04D03-7ACA-4A3B-AED5-235965D2BFF0" Name="DS_Image" TableID="E109CCF7-9634-46F8-B2F9-94F26E2BD350" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "tblImage"."data" FROM "tblImage"
@@ -136,7 +123,7 @@ SELECT "tblImage"."data" FROM "tblImage"
 				<COLUMN ID="1" Name="tblImage.data" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="3C2393F2-EBD0-439B-B7D5-BCFC328C2BF8" Name="DS_Interest" TableID="B76A55F2-717B-4BFB-B8DF-863F346011C2" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="39B298AA-B1F2-4F2D-95FD-2AEA1494D127" Name="DS_Interest" TableID="B76A55F2-717B-4BFB-B8DF-863F346011C2" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "tblInterest".* FROM "tblInterest"
@@ -148,7 +135,7 @@ SELECT "tblInterest".* FROM "tblInterest"
 				<COLUMN ID="3" Name="tblInterest.fontColor" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="8A6201EB-CB73-42AE-B588-5235115E0830" Name="DS_News" TableID="A5CE94F2-5AAC-466F-99CD-9440D7C87647" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="D9E98780-F205-466F-86D2-EB1B2B24DA22" Name="DS_News" TableID="A5CE94F2-5AAC-466F-99CD-9440D7C87647" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "EmptyTableforNews".* FROM "EmptyTableforNews"
@@ -158,7 +145,7 @@ SELECT "EmptyTableforNews".* FROM "EmptyTableforNews"
 				<COLUMN ID="1" Name="EmptyTableforNews.id" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="69DBF73B-C5C4-40DA-85E2-25F8DB92F2FC" Name="DS_Notification" TableID="1AE4AAFF-4DF4-49CE-980D-603ACE251E8B" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="076727F0-065E-4E91-B1BE-A1BBCE23B8EF" Name="DS_Notification" TableID="1AE4AAFF-4DF4-49CE-980D-603ACE251E8B" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "tblNotification"."imgNotification", "tblNotification"."textNotification" FROM "tblNotification"
@@ -169,7 +156,7 @@ SELECT "tblNotification"."imgNotification", "tblNotification"."textNotification"
 				<COLUMN ID="2" Name="tblNotification.textNotification" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="5565745E-8DAF-48E9-99A1-03BDECC6B3A1" Name="DS_twitterTable" TableID="E26B429C-3E97-49AD-B604-23BFE370AC2B" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="DA82D54F-00E8-450A-96D1-A9F09667844D" Name="DS_twitterTable" TableID="E26B429C-3E97-49AD-B604-23BFE370AC2B" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "twitterTable".* FROM "twitterTable"
@@ -179,7 +166,7 @@ SELECT "twitterTable".* FROM "twitterTable"
 				<COLUMN ID="1" Name="twitterTable.id" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="B29B70C3-54FA-4271-A511-73D58334BA3F" Name="SquareDataset" TableID="42E39513-5220-47F1-B073-188455826EAC" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="B28EE248-44AA-4D1B-A1F2-0E5E5067A76E" Name="SquareDataset" TableID="42E39513-5220-47F1-B073-188455826EAC" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "EmptyTable"."emptyColumn" FROM "EmptyTable"
@@ -189,7 +176,7 @@ SELECT "EmptyTable"."emptyColumn" FROM "EmptyTable"
 				<COLUMN ID="1" Name="EmptyTable.emptyColumn" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="93DDB431-7B5B-4D1E-9A5A-30E42A705EF4" Name="wcListView_InDSet" TableID="13F43F73-F592-45FE-B923-9D3F5DA92667" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="C3F3BD9E-1900-4252-ACA0-C56079E3908C" Name="wcListView_InDSet" TableID="13F43F73-F592-45FE-B923-9D3F5DA92667" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcListView_InDTbl"."rowNumber", "wcListView_InDTbl"."pagenumber" FROM "wcListView_InDTbl"
@@ -200,7 +187,7 @@ SELECT "wcListView_InDTbl"."rowNumber", "wcListView_InDTbl"."pagenumber" FROM "w
 				<COLUMN ID="2" Name="wcListView_InDTbl.pagenumber" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="D50A2841-96DF-45A7-8F18-5CD191BC7A84" Name="wcListView_OutDSetnews" TableID="B3F61813-FF01-4B64-A13D-A8EE9DFAD49A" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="302C8037-D8D4-4BEE-B846-C91D704C19E7" Name="wcListView_OutDSetnews" TableID="B3F61813-FF01-4B64-A13D-A8EE9DFAD49A" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcListView_OutDTblnews"."newsId", "wcListView_OutDTblnews"."news", "wcListView_OutDTblnews"."title", "wcListView_OutDTblnews"."id", "wcListView_OutDTblnews"."type", "wcListView_OutDTblnews"."description", "wcListView_OutDTblnews"."id1", "wcListView_OutDTblnews"."url" FROM "wcListView_OutDTblnews"
@@ -217,7 +204,7 @@ SELECT "wcListView_OutDTblnews"."newsId", "wcListView_OutDTblnews"."news", "wcLi
 				<COLUMN ID="8" Name="wcListView_OutDTblnews.url" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="BAF948B5-9098-4878-8881-4B27E306B9C4" Name="wcMap_HeaderOutDSetwcMap" TableID="61CCEF5E-09D7-486A-8B4C-CBD6DA48FD7A" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="F3E105F8-A56D-4E64-890D-76CDB9357600" Name="wcMap_HeaderOutDSetwcMap" TableID="61CCEF5E-09D7-486A-8B4C-CBD6DA48FD7A" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcMap_HeaderOutDTblwcMap"."wcMapId", "wcMap_HeaderOutDTblwcMap"."wcMap", "wcMap_HeaderOutDTblwcMap"."Cache_Control", "wcMap_HeaderOutDTblwcMap"."Pragma", "wcMap_HeaderOutDTblwcMap"."Transfer_Encoding", "wcMap_HeaderOutDTblwcMap"."Content_Type", "wcMap_HeaderOutDTblwcMap"."Content_Encoding", "wcMap_HeaderOutDTblwcMap"."Expires", "wcMap_HeaderOutDTblwcMap"."Vary", "wcMap_HeaderOutDTblwcMap"."Server", "wcMap_HeaderOutDTblwcMap"."X_AspNet_Version", "wcMap_HeaderOutDTblwcMap"."X_Powered_By", "wcMap_HeaderOutDTblwcMap"."Date" FROM "wcMap_HeaderOutDTblwcMap"
@@ -239,7 +226,7 @@ SELECT "wcMap_HeaderOutDTblwcMap"."wcMapId", "wcMap_HeaderOutDTblwcMap"."wcMap",
 				<COLUMN ID="13" Name="wcMap_HeaderOutDTblwcMap.Date" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="C0E54AD1-82FD-4FE5-8A4B-D9F9D44B169E" Name="wcMap_OutDSetpins" TableID="FE147B5B-3E2F-4887-A945-010D064454A4" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="B4E2632D-01D7-43EC-B9A7-5741C26A3ED7" Name="wcMap_OutDSetpins" TableID="FE147B5B-3E2F-4887-A945-010D064454A4" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcMap_OutDTblpins"."pinsId", "wcMap_OutDTblpins"."pins", "wcMap_OutDTblpins"."title", "wcMap_OutDTblpins"."id", "wcMap_OutDTblpins"."type", "wcMap_OutDTblpins"."subtitle", "wcMap_OutDTblpins"."latitude", "wcMap_OutDTblpins"."address", "wcMap_OutDTblpins"."longitude" FROM "wcMap_OutDTblpins"
@@ -257,7 +244,7 @@ SELECT "wcMap_OutDTblpins"."pinsId", "wcMap_OutDTblpins"."pins", "wcMap_OutDTblp
 				<COLUMN ID="9" Name="wcMap_OutDTblpins.longitude" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="F788FE5E-230E-42AA-A7B3-4F039DEC86F1" Name="wcMap_OutDSetwcMap" TableID="404F6D12-0F3D-46F3-B343-B654C6ABFFF4" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="1BF5B9B5-C32F-46F9-94D2-F1C14465BD71" Name="wcMap_OutDSetwcMap" TableID="404F6D12-0F3D-46F3-B343-B654C6ABFFF4" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcMap_OutDTblwcMap"."wcMapId", "wcMap_OutDTblwcMap"."wcMap", "wcMap_OutDTblwcMap"."success", "wcMap_OutDTblwcMap"."error" FROM "wcMap_OutDTblwcMap"
@@ -270,7 +257,7 @@ SELECT "wcMap_OutDTblwcMap"."wcMapId", "wcMap_OutDTblwcMap"."wcMap", "wcMap_OutD
 				<COLUMN ID="4" Name="wcMap_OutDTblwcMap.error" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="882DA62D-5EE9-429B-9C60-6A3C91C24F29" Name="wcSquareView_InDSet" TableID="7620770A-B7DC-4A83-8CD1-F2C657016A59" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="0BAF45CC-1903-4D9C-AEDB-D800FA987092" Name="wcSquareView_InDSet" TableID="7620770A-B7DC-4A83-8CD1-F2C657016A59" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcSquareView_InDTbl"."rowNumber", "wcSquareView_InDTbl"."pageNumber" FROM "wcSquareView_InDTbl"
@@ -281,7 +268,7 @@ SELECT "wcSquareView_InDTbl"."rowNumber", "wcSquareView_InDTbl"."pageNumber" FRO
 				<COLUMN ID="2" Name="wcSquareView_InDTbl.pageNumber" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="132E5A94-5527-425F-AC6E-5A86DDC66309" Name="wcSquareView_OutDSetnews" TableID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="73693DCF-2798-45B4-A19E-5C3E327D29AF" Name="wcSquareView_OutDSetnews" TableID="422B7D2E-F8C2-4C74-AEC4-20B7C076D248" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcSquareView_OutDTblnews"."newsId", "wcSquareView_OutDTblnews"."news", "wcSquareView_OutDTblnews"."title", "wcSquareView_OutDTblnews"."id", "wcSquareView_OutDTblnews"."type", "wcSquareView_OutDTblnews"."description", "wcSquareView_OutDTblnews"."id1", "wcSquareView_OutDTblnews"."url" FROM "wcSquareView_OutDTblnews"
@@ -298,7 +285,7 @@ SELECT "wcSquareView_OutDTblnews"."newsId", "wcSquareView_OutDTblnews"."news", "
 				<COLUMN ID="8" Name="wcSquareView_OutDTblnews.url" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="FD818F72-B501-4634-B258-67D33DD6252C" Name="wcTwitter_OutDSetwcTwitter" TableID="CDDE33E2-780C-4363-83A6-0AD48CD6449F" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="D7CFB943-3453-4F14-8162-4BC5AAFF4C11" Name="wcTwitter_OutDSetwcTwitter" TableID="CDDE33E2-780C-4363-83A6-0AD48CD6449F" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcTwitter_OutDTblwcTwitter"."wcTwitterId", "wcTwitter_OutDTblwcTwitter"."wcTwitter", "wcTwitter_OutDTblwcTwitter"."coordinates" FROM "wcTwitter_OutDTblwcTwitter"
@@ -310,7 +297,7 @@ SELECT "wcTwitter_OutDTblwcTwitter"."wcTwitterId", "wcTwitter_OutDTblwcTwitter".
 				<COLUMN ID="3" Name="wcTwitter_OutDTblwcTwitter.coordinates" />
 			</COLUMNS>
 		</DATASET>
-		<DATASET ID="C2719793-A948-499C-985B-D740B42829A2" Name="wcTwitter_RequestHeadersDSet" TableID="3730FAD9-5699-4D74-A9A4-E17A60D3A2EF" AutoCommit="0" FastCommit="0" PreserveState="0">
+		<DATASET ID="A8D0441C-A42D-4956-A0FC-6A6BD9DD387C" Name="wcTwitter_RequestHeadersDSet" TableID="3730FAD9-5699-4D74-A9A4-E17A60D3A2EF" AutoCommit="0" FastCommit="0" PreserveState="0">
 			<SQLTEXT>
 			<![CDATA[
 SELECT "wcTwitter_RequestHeadersDTbl"."Authorization" FROM "wcTwitter_RequestHeadersDTbl"
@@ -419,11 +406,8 @@ SELECT "wcTwitter_RequestHeadersDTbl"."Authorization" FROM "wcTwitter_RequestHea
 	</WEBCLIENTS>
 	<GLOBALEVENTS>
 		<ONSTART script="Global_Events_OnStart(e);" />
-		<ONFIRSTSTART script="Global_Events_OnFirstStart(e);" />
 		<ONLOCATIONCHANGED script="Global_Events_OnLocationChanged(e);" />
-		<ONCONNECTIONTYPECHANGED script="Global_Events_OnConnectionTypeChanged(e);" />
 		<ONERROR script="Global_Events_OnError(e);" />
-		<ONRECEIVEDNOTIFICATION script="Global_Events_OnReceivedNotification(e);" />
 	</GLOBALEVENTS>
 </PROJECT>
 </SMARTFACEPROJECT>
